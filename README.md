@@ -187,9 +187,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Panagiotis Mantas** - mCubedDevLabs
 
-- Website: [your-website.com](https://your-website.com)
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- Website: [mcubeddevlabs.com]
+- GitHub: [@pagman]
+- LinkedIn: [linkedin.com/in/panagiotis-mantas-968ba1188/]
 
 ---
 

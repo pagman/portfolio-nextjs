@@ -13,9 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "YourName | Creative Developer & Designer",
+  title: "Panagiotis Mantas | mCubedDevLabs - Creative Developer & Designer",
   description:
     "Building beautiful mobile apps, web applications, and websites that make a difference",
+  keywords: ["developer", "portfolio", "web development", "mobile apps", "React", "Next.js"],
+  authors: [{ name: "Panagiotis Mantas" }],
+  openGraph: {
+    title: "Panagiotis Mantas | mCubedDevLabs",
+    description: "Building beautiful mobile apps, web applications, and websites that make a difference",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Panagiotis Mantas | mCubedDevLabs",
+    description: "Building beautiful mobile apps, web applications, and websites that make a difference",
+  },
 };
 
 export default function RootLayout({

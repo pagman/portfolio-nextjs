@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -17,20 +18,20 @@ export function Navbar() {
     <nav className="fixed top-0 w-full z-50 backdrop-blur-md bg-background/80 border-b border-border px-[5%] py-4 md:py-6">
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="text-xl md:text-2xl font-bold gradient-text">
+        <Link href="/" className="text-xl md:text-2xl font-bold gradient-text">
           Panagiotis Mantas - mCubedDevLabs
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex gap-8 list-none">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
+              <Link
                 href={link.href}
                 className="text-white/90 hover:text-primary transition-colors text-sm font-medium"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -51,13 +52,13 @@ export function Navbar() {
           <ul className="flex flex-col py-4 px-[5%] gap-4 list-none">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
+                <Link
                   href={link.href}
                   className="text-white/90 hover:text-primary transition-colors text-base font-medium block py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
