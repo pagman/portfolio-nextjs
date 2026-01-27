@@ -8,40 +8,50 @@ export function HeroSection() {
     >
       {/* Animated background gradient effects */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Primary floating orb - morphing blob */}
+        {/* Primary floating orb - blue */}
         <div
-          className="absolute w-[700px] h-[700px] animate-float-slow animate-pulse-glow animate-morph"
-          style={{
-            background: "radial-gradient(circle, #667eea 0%, transparent 60%)",
-            left: "15%",
-            top: "50%",
-            filter: "blur(60px)",
-          }}
-        />
-        {/* Secondary floating orb */}
+          className="absolute animate-float-slow"
+          style={{ left: "15%", top: "50%" }}
+        >
+          <div
+            className="w-[700px] h-[700px] animate-morph"
+            style={{
+              background: "radial-gradient(circle, #667eea 0%, transparent 60%)",
+              filter: "blur(80px)",
+              opacity: 0.3,
+            }}
+          />
+        </div>
+        {/* Secondary floating orb - purple */}
         <div
-          className="absolute w-[600px] h-[600px] animate-float-slow-reverse animate-morph"
-          style={{
-            background: "radial-gradient(circle, #764ba2 0%, transparent 60%)",
-            right: "-10%",
-            bottom: "10%",
-            filter: "blur(80px)",
-            opacity: 0.35,
-            animationDelay: "2s",
-          }}
-        />
-        {/* Third drifting orb */}
+          className="absolute animate-float-slow-reverse"
+          style={{ right: "-10%", bottom: "10%" }}
+        >
+          <div
+            className="w-[600px] h-[600px] animate-morph"
+            style={{
+              background: "radial-gradient(circle, #764ba2 0%, transparent 60%)",
+              filter: "blur(80px)",
+              opacity: 0.35,
+              animationDelay: "2s",
+            }}
+          />
+        </div>
+        {/* Third drifting orb - mixed */}
         <div
-          className="absolute w-[500px] h-[500px] animate-drift animate-morph"
-          style={{
-            background: "radial-gradient(circle, #667eea 0%, #764ba2 40%, transparent 60%)",
-            left: "55%",
-            top: "15%",
-            filter: "blur(70px)",
-            opacity: 0.25,
-            animationDelay: "4s",
-          }}
-        />
+          className="absolute animate-drift"
+          style={{ left: "55%", top: "15%" }}
+        >
+          <div
+            className="w-[500px] h-[500px] animate-morph"
+            style={{
+              background: "radial-gradient(circle, #667eea 0%, #764ba2 40%, transparent 60%)",
+              filter: "blur(70px)",
+              opacity: 0.25,
+              animationDelay: "4s",
+            }}
+          />
+        </div>
 
         {/* Floating geometric shapes - more visible */}
         <div className="absolute inset-0">
