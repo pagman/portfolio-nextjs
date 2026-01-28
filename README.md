@@ -122,10 +122,22 @@ Edit your projects in `data/projects.ts`:
   outcome: "Results and impact",
   year: "2024",
   role: "Lead Developer",
+  images: ["/images/projects/project-name/image1.svg"],
   liveUrl: "https://example.com",
   githubUrl: "https://github.com/example"
 }
 ```
+
+### Project Images
+
+Store project images in `public/images/projects/<project-name>/`.
+
+| Use Case | Dimensions | Aspect Ratio |
+|----------|------------|--------------|
+| Project Card | 800 x 600px | 4:3 |
+| Project Detail | 1920 x 1080px | 16:9 |
+
+Supported formats: `.svg`, `.png`, `.jpg`, `.webp`
 
 ### Colors
 

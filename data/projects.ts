@@ -13,6 +13,7 @@ export interface Project {
   outcome: string;
   year: string;
   role: string;
+  images?: string[];
   liveUrl?: string;
   githubUrl?: string;
 }
@@ -44,6 +45,10 @@ export const projects: Project[] = [
       "The app achieved 50,000+ downloads in the first month with a 4.8-star rating. User engagement increased by 40% compared to the client's previous solution.",
     year: "2024",
     role: "Lead Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg",
+      "/images/projects/fitness-tracker-pro/workout.svg",
+    ],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
   },

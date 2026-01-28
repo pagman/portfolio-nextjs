@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import {
   Card,
@@ -15,6 +16,7 @@ export interface ProjectCardProps {
   techStack: string[];
   gradientFrom: string;
   gradientTo: string;
+  image?: string;
 }
 
 export function ProjectCard({
@@ -25,6 +27,7 @@ export function ProjectCard({
   techStack,
   gradientFrom,
   gradientTo,
+  image,
 }: ProjectCardProps) {
   return (
     <Link href={`/projects/${id}`}>
@@ -36,8 +39,16 @@ export function ProjectCard({
               background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)`,
             }}
           >
-            {/* Device mockup placeholder */}
-            <div className="w-[70%] h-[80%] bg-white rounded-lg shadow-xl" />
+            {image ? (
+              <Image
+                src={image}
+                alt={title}
+                fill
+                className="object-cover"
+              />
+            ) : (
+              <div className="w-[70%] h-[80%] bg-white rounded-lg shadow-xl" />
+            )}
             {/* Hover overlay */}
             <div className="absolute inset-0 bg-black/0 hover:bg-black/30 transition-all duration-300" />
           </div>

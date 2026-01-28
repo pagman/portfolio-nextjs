@@ -38,6 +38,7 @@ export function ProjectsSection() {
             techStack={project.techStack}
             gradientFrom={project.gradientFrom}
             gradientTo={project.gradientTo}
+            image={project.images?.[0]}
           />
         ))}
       </div>
