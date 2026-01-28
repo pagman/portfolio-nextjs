@@ -46,8 +46,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Lead Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg",
-      "/images/projects/fitness-tracker-pro/workout.svg",
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
     ],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
@@ -78,6 +77,9 @@ export const projects: Project[] = [
       "Reduced project delivery time by 35% for teams using the platform. Currently serving 200+ enterprise clients with 99.9% uptime.",
     year: "2024",
     role: "Full Stack Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
     liveUrl: "https://example.com",
   },
   {
@@ -106,6 +108,9 @@ export const projects: Project[] = [
       "Platform processes $2M+ in monthly transactions with 99.99% payment success rate. Conversion rate improved by 25% compared to the previous platform.",
     year: "2023",
     role: "Technical Lead",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
   },
@@ -135,6 +140,9 @@ export const projects: Project[] = [
       "App handles 10,000+ daily orders with an average delivery time 20% faster than competitors. Customer satisfaction rating of 4.7 stars.",
     year: "2024",
     role: "Mobile Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
     liveUrl: "https://example.com",
   },
   {
@@ -163,6 +171,9 @@ export const projects: Project[] = [
       "Platform analyzes 5M+ posts daily for 500+ brands. Helped clients achieve an average 30% improvement in engagement rates through data-driven insights.",
     year: "2023",
     role: "Backend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
     liveUrl: "https://example.com",
     githubUrl: "https://github.com",
   },
@@ -192,6 +203,9 @@ export const projects: Project[] = [
       "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
     year: "2024",
     role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
     liveUrl: "https://example.com",
   },
 ];

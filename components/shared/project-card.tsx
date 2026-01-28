@@ -34,7 +34,7 @@ export function ProjectCard({
       <Card className="bg-card border-border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 h-full">
         <CardHeader className="p-0">
           <div
-            className="w-full h-56 md:h-64 flex items-center justify-center relative overflow-hidden"
+            className="w-full aspect-video flex items-center justify-center relative overflow-hidden"
             style={{
               background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)`,
             }}
