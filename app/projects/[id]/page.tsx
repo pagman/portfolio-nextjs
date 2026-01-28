@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowLeft, ExternalLink, Github, Calendar, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Navbar } from "@/components/layout/navbar";
+import { ImageSlider } from "@/components/shared/image-slider";
 import { projects, getProjectById } from "@/data/projects";
 import type { Metadata } from "next";
 
@@ -122,23 +122,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         {/* Device Mockup Section */}
         <section className="px-[5%] -mt-16 relative z-20 max-w-5xl mx-auto">
-          <div
-            className="rounded-2xl overflow-hidden shadow-2xl aspect-video flex items-center justify-center relative"
-            style={{
-              background: `linear-gradient(135deg, ${project.gradientFrom} 0%, ${project.gradientTo} 100%)`,
-            }}
-          >
-            {project.images?.[0] ? (
-              <Image
-                src={project.images[0]}
-                alt={project.title}
-                fill
-                className="object-cover"
-              />
-            ) : (
-              <div className="w-[80%] h-[85%] bg-white rounded-lg shadow-xl" />
-            )}
-          </div>
+          <ImageSlider
+            images={project.images || []}
+            alt={project.title}
+            gradientFrom={project.gradientFrom}
+            gradientTo={project.gradientTo}
+          />
         </section>
 
         {/* Content Section */}

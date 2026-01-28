@@ -46,6 +46,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Lead Developer",
     images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg",
       "/images/projects/fitness-tracker-pro/dashboard.svg"
     ],
     liveUrl: "https://example.com",
