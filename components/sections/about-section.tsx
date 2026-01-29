@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const skills = [
   "React",
   "Next.js",
@@ -18,8 +20,16 @@ export function AboutSection() {
     <section id="about" className="py-16 md:py-24 px-[5%] max-w-7xl mx-auto">
       {/* Two-column layout */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-12 md:mb-20">
-        {/* Image placeholder */}
-        <div className="aspect-square w-full max-w-md mx-auto lg:max-w-none gradient-bg rounded-2xl" />
+        {/* Profile image */}
+        <div className="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden">
+          <Image
+            src="/images/me.jfif"
+            alt="Profile picture"
+            width={400}
+            height={400}
+            className="w-full h-full object-cover"
+          />
+        </div>
 
         {/* About text */}
         <div>
@@ -33,7 +43,7 @@ export function AboutSection() {
               across mobile, web, and desktop platforms.
             </p>
             <p>
-              With 5+ years of experience, I&apos;ve helped startups and
+              With 10+ years of experience, I&apos;ve helped startups and
               established companies bring their ideas to life through clean code
               and intuitive interfaces.
             </p>
