@@ -388,7 +388,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/capcap/preview.svg"
+      "/images/projects/capcap/capcap_1.png",
+      "/images/projects/capcap/capcap_2.png",
+      "/images/projects/capcap/capcap_3.png",
     ],
     liveUrl: "https://www.capcap.gr/",
   },
@@ -427,7 +429,8 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/bubble-tea/preview.svg"
+      "/images/projects/bubbletea/bubble_1.png",
+      "/images/projects/bubbletea/bubble_2.png"
     ],
     liveUrl: "https://bubbletea.gr/",
   },
@@ -714,7 +717,8 @@ export const projects: Project[] = [
   year: "2024",
   role: "Web Developer",
   images: [
-    "/images/projects/selene-luxury-rooms/preview.svg"
+    "/images/projects/selene/selene_1.png",
+    "/images/projects/selene/selene_2.png"
   ],
   liveUrl: "https://example.com"
 },
