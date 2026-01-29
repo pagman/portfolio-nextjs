@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   keywords: ["developer", "portfolio", "web development", "mobile apps", "React", "Next.js"],
   authors: [{ name: "Panagiotis Mantas" }],
   openGraph: {
-    title: "Panagiotis Mantas | mCubedDevLabs",
+    title: "mCubedDevLabs",
     description: "Building beautiful mobile apps, web applications, and websites that make a difference",
     type: "website",
   },
