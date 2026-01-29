@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Panagiotis Mantas | mCubedDevLabs - Creative Developer & Designer",
+  title: "mCubedDevLabs - Creative Developer & Designer",
   description:
     "Building beautiful mobile apps, web applications, and websites that make a difference",
   keywords: ["developer", "portfolio", "web development", "mobile apps", "React", "Next.js"],
