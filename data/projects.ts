@@ -56,7 +56,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/mcubed-tracker/preview.svg"
+      "/images/projects/mCubedTracker/mCubedTracker_mobile_1.png",
+      "/images/projects/mCubedTracker/mCubedTracker_mobile_2.png",
+      "/images/projects/mCubedTracker/mCubedTracker_mobile_3.png"
     ],
     liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.mcubed&hl=el",
   },
@@ -97,7 +99,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/telefarm-tracking/preview.svg"
+      "/images/projects/TMTracking/TMTracking_mobile_1.png",
+      "/images/projects/TMTracking/TMTracking_mobile_2.png",
+      "/images/projects/TMTracking/TMTracking_mobile_3.png"
     ],
     liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.telecubed&hl=el",
   },
@@ -136,7 +140,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/camel-study/preview.svg"
+      "/images/projects/CamelStudy/CamelStudy_mobile_1.png",
+      "/images/projects/CamelStudy/CamelStudy_mobile_2.png",
+      "/images/projects/CamelStudy/CamelStudy_laptop_1.png"
     ],
     liveUrl: "https://github.com/pagman/camel_study",
   },
@@ -176,7 +182,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/mcubed-manager/preview.svg"
+      "/images/projects/mCubedManager/mCubedManager_mobile_1.png",
+      "/images/projects/mCubedManager/mCubedManager_mobile_2.png",
+      "/images/projects/mCubedManager/mCubedManager_mobile_3.png"
     ],
   },
   {
@@ -216,7 +224,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/habit-tracker/preview.svg"
+      "/images/projects/habit-tracker/habit-tracker_laptop_1.png"
     ],
     liveUrl: "https://habit-tracker-phi-hazel.vercel.app/",
   },
@@ -257,7 +265,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/replog/preview.svg"
+      "/images/projects/replog/replog_laptop_1.png",
+      "/images/projects/replog/replog_laptop_2.png",
+      "/images/projects/replog/replog_laptop_3.png"
     ],
     liveUrl: "https://replog-pi.vercel.app/",
   },
@@ -299,7 +309,8 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/mcubed-dashboard/preview.svg"
+      "/images/projects/mcubedDashboard/mcubedDashboard_laptop_1.png",
+      "/images/projects/mcubedDashboard/mcubedDashboard_laptop_2.png"
     ],
     liveUrl: "https://mcubed.io",
   },
@@ -338,7 +349,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/trip-cost-calculator/preview.svg"
+      "/images/projects/tripcost/tripcost_laptop_1.png"
     ],
     liveUrl: "https://trip-cost-calculator-psi.vercel.app/",
   },
@@ -456,7 +467,8 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/econest/preview.svg"
+      "/images/projects/econest/econest_laptop_1.png",
+      "/images/projects/econest/econest_laptop_2.png"
     ],
     liveUrl: "https://econestshop.gr/",
   },
@@ -495,7 +507,9 @@ export const projects: Project[] = [
     year: "2025",
     role: "Web Developer",
     images: [
-      "/images/projects/golden-smile/preview.svg"
+      "/images/projects/goldensmile/goldensmile_laptop_1.png",
+      "/images/projects/goldensmile/goldensmile_laptop_2.png",
+      "/images/projects/goldensmile/goldensmile_laptop_3.png"
     ],
     liveUrl: "https://goldensmile.gr/",
   },
@@ -535,7 +549,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/greek-property-hunters/preview.svg"
+      "/images/projects/gph/gph_laptop_1.png",
+      "/images/projects/gph/gph_laptop_2.png",
+      "/images/projects/gph/gph_laptop_3.png"
     ],
     liveUrl: "https://greekpropertyhunters.com/",
   },
@@ -575,7 +591,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/hona-festival/preview.svg"
+      "/images/projects/honafestival/honafestival_laptop_1.png",
+      "/images/projects/honafestival/honafestival_laptop_2.png",
+      "/images/projects/honafestival/honafestival_laptop_3.png"
     ],
     liveUrl: "https://honafestival.com/",
   },
@@ -615,7 +633,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/ichnos-soap/preview.svg"
+      "/images/projects/ichnossoap/ichnossoap_laptop_1.png"
     ],
     liveUrl: "https://ichnossoap.gr",
   },
@@ -655,7 +673,9 @@ export const projects: Project[] = [
   year: "2024",
   role: "Web Developer",
   images: [
-    "/images/projects/milianjo/preview.svg"
+    "/images/projects/milianjo/milianjo_laptop_1.png",
+    "/images/projects/milianjo/milianjo_laptop_2.png",
+    "/images/projects/milianjo/milianjo_laptop_3.png"
   ],
   liveUrl: "https://milianjo.gr/"
 },
@@ -733,7 +753,10 @@ export const projects: Project[] = [
   year: "2024",
   role: "Web Developer",
   images: [
-    "/images/projects/velvore-transfers/preview.svg"
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_1.png",
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_2.png",
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_3.png",
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_4.png"
   ],
   liveUrl: "http://velvoretransfers.gr/"
 }

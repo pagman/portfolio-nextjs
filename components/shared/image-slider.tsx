@@ -51,7 +51,7 @@ export function ImageSlider({
         src={images[currentIndex]}
         alt={`${alt} - Image ${currentIndex + 1}`}
         fill
-        className="object-cover transition-opacity duration-300"
+        className="object-contain transition-opacity duration-300"
       />
 
       {images.length > 1 && (

@@ -44,7 +44,7 @@ export function ProjectCard({
                 src={image}
                 alt={title}
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             ) : (
               <div className="w-[70%] h-[80%] bg-white rounded-lg shadow-xl" />
