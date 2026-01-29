@@ -19,7 +19,7 @@ export function Navbar() {
       <div className="flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-xl md:text-2xl font-bold gradient-text">
-          Panagiotis Mantas | mCubedDevLabs
+          mCubedDevLabs
         </Link>
 
         {/* Desktop Navigation */}

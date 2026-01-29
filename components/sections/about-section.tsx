@@ -34,7 +34,7 @@ export function AboutSection() {
         {/* About text */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            About Me
+            Full-Stack Developer
           </h2>
           <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
             <p>
