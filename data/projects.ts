@@ -21,566 +21,723 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "mCubed tracker",
+    title: "MCubed Tracker",
     description:
-      "A comprehensive fitness tracking app with real-time analytics and personalized workout plans.",
+      "Pet tracking app with real-time GPS, activity monitoring, geofencing, and health calendar.",
     fullDescription:
-      "Fitness Tracker Pro is a comprehensive mobile application designed to help users achieve their fitness goals through personalized workout plans, real-time progress tracking, and detailed analytics. The app integrates with wearable devices to provide accurate health metrics and offers AI-powered recommendations.",
+      "A Flutter-based pet tracking application that allows owners to monitor their pets' location, activity, and health in real-time. Features include live GPS tracking on an interactive map, geofencing with boundary alerts, daily activity analytics, and a health calendar for scheduling vet appointments and medications. The app uses a dual backend system with Firebase as primary and MongoDB Atlas as fallback, ensuring reliable data sync and push notifications.",
     tag: "Mobile App",
     category: "Mobile Apps",
-    techStack: ["React Native", "Firebase", "Redux", "Node.js", "TensorFlow"],
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "MongoDB Atlas",
+      "Google Maps",
+      "Provider",
+      "Syncfusion Charts"
+    ],
     gradientFrom: "#667eea",
     gradientTo: "#764ba2",
     features: [
-      "Personalized workout plans based on user goals",
-      "Real-time heart rate and calorie tracking",
-      "Integration with Apple Health and Google Fit",
-      "Social features for workout challenges",
-      "AI-powered form correction using camera",
-      "Detailed progress analytics and reports",
+      "Real-time GPS tracking with live map view",
+      "Activity monitoring with daily analytics",
+      "Geofencing with boundary alerts",
+      "Health calendar for vet appointments and medications",
+      "Location history with date filtering",
+      "Subscription management for device plans",
+      "Activity reports with statistics",
+      "Multi-language support (EN, GR, FI, SE)"
     ],
     challenges:
-      "The main challenge was implementing real-time synchronization across devices while maintaining battery efficiency. We optimized the data sync algorithm and implemented intelligent caching to reduce API calls by 60%.",
+      "The main challenge was building a reliable real-time tracking system with a dual backend architecture. Implementing stream-based device updates while maintaining battery efficiency on mobile devices required careful optimization of location polling and data synchronization.",
     outcome:
-      "The app achieved 50,000+ downloads in the first month with a 4.8-star rating. User engagement increased by 40% compared to the client's previous solution.",
-    year: "2024",
-    role: "Lead Developer",
-    images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg",
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "2",
-    title: "Telefarm tracking",
-    description:
-      "Modern dashboard for managing projects, teams, and workflows with real-time collaboration.",
-    fullDescription:
-      "A comprehensive project management solution built for modern teams. The dashboard provides real-time collaboration features, Kanban boards, Gantt charts, time tracking, and detailed reporting. Designed with a focus on user experience and team productivity.",
-    tag: "Web App",
-    category: "Mobile Apps",
-    techStack: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Socket.io"],
-    gradientFrom: "#f093fb",
-    gradientTo: "#f5576c",
-    features: [
-      "Real-time collaborative editing",
-      "Customizable Kanban boards",
-      "Interactive Gantt charts",
-      "Time tracking and reporting",
-      "Team workload management",
-      "Integration with Slack and GitHub",
-    ],
-    challenges:
-      "Implementing real-time collaboration without conflicts was complex. We built a custom CRDT-based system for conflict resolution and optimized WebSocket connections for handling thousands of concurrent users.",
-    outcome:
-      "Reduced project delivery time by 35% for teams using the platform. Currently serving 200+ enterprise clients with 99.9% uptime.",
-    year: "2024",
-    role: "Full Stack Developer",
-    images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
-    ],
-    liveUrl: "https://example.com",
-  },
-  {
-    id: "3",
-    title: "Camel study",
-    description:
-      "Full-featured online store with seamless checkout experience and admin panel.",
-    fullDescription:
-      "A scalable e-commerce platform built from the ground up with modern technologies. Features include a headless CMS, multi-vendor support, advanced inventory management, and a powerful admin dashboard. The platform handles high traffic with ease and provides an exceptional shopping experience.",
-    tag: "Website",
-    category: "Mobile Apps",
-    techStack: ["Next.js", "Stripe", "MongoDB", "Redis", "AWS"],
-    gradientFrom: "#4facfe",
-    gradientTo: "#00f2fe",
-    features: [
-      "Headless CMS for content management",
-      "Multi-vendor marketplace support",
-      "Advanced inventory management",
-      "Real-time order tracking",
-      "AI-powered product recommendations",
-      "Multiple payment gateway integrations",
-    ],
-    challenges:
-      "Handling Black Friday traffic spikes was critical. We implemented auto-scaling infrastructure on AWS and optimized database queries, achieving sub-100ms response times even under 10x normal load.",
-    outcome:
-      "Platform processes $2M+ in monthly transactions with 99.99% payment success rate. Conversion rate improved by 25% compared to the previous platform.",
-    year: "2023",
-    role: "Technical Lead",
-    images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
-    ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "4",
-    title: "mCubed manager",
-    description:
-      "Seamless food ordering experience with live tracking and smart recommendations.",
-    fullDescription:
-      "A feature-rich food delivery application connecting users with local restaurants. The app provides real-time order tracking, AI-powered recommendations based on preferences and past orders, and a seamless payment experience. Built for both iOS and Android with a single codebase.",
-    tag: "Mobile App",
-    category: "Mobile Apps",
-    techStack: ["Flutter", "Node.js", "PostgreSQL", "Redis", "Google Maps API"],
-    gradientFrom: "#fa709a",
-    gradientTo: "#fee140",
-    features: [
-      "Real-time GPS order tracking",
-      "AI-powered restaurant recommendations",
-      "In-app chat with delivery partners",
-      "Multiple payment options",
-      "Loyalty rewards program",
-      "Restaurant partner dashboard",
-    ],
-    challenges:
-      "Accurate ETA predictions were crucial for user satisfaction. We developed a machine learning model that considers traffic, restaurant preparation time, and driver location to provide ETAs with 95% accuracy.",
-    outcome:
-      "App handles 10,000+ daily orders with an average delivery time 20% faster than competitors. Customer satisfaction rating of 4.7 stars.",
+      "The app provides pet owners with comprehensive tracking and health management tools. Users can monitor their pets' locations, receive instant alerts when boundaries are crossed, and keep track of health schedules from a single mobile interface.",
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/mcubed-tracker/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.mcubed&hl=el",
+  },
+  {
+    id: "2",
+    title: "Telefarm Tracking",
+    description:
+      "GPS pet and livestock tracking app with real-time location, geofencing, and activity monitoring.",
+    fullDescription:
+      "A Flutter-based GPS tracking application for pets and livestock. Users can monitor real-time locations on a map, set up geofencing with boundary alerts, track daily activity levels and movement patterns, and schedule events like vet appointments and medications. The app supports multiple languages (English, Greek, Finnish, Swedish) and includes subscription management with day-based tracking. Built with Firebase for backend services and Google Maps for location visualization.",
+    tag: "Mobile App",
+    category: "Mobile Apps",
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "Google Maps",
+      "Provider",
+      "Syncfusion Charts",
+      "FCM"
+    ],
+    gradientFrom: "#f093fb",
+    gradientTo: "#f5576c",
+    features: [
+      "Real-time GPS location tracking on map",
+      "Geofencing with boundary alerts",
+      "Daily activity and movement monitoring",
+      "Calendar for vet appointments, medications, and events",
+      "Location history and reports",
+      "Subscription management with day tracking",
+      "Multi-language support (EN, GR, FI, SE)",
+      "Push notifications via Firebase Cloud Messaging"
+    ],
+    challenges:
+      "The main challenge was implementing accurate real-time GPS tracking while optimizing battery consumption on mobile devices. Building a reliable geofencing system that triggers alerts promptly when animals cross boundaries required careful handling of location updates and background services.",
+    outcome:
+      "The app provides pet and livestock owners with peace of mind through real-time tracking and instant alerts. Users can monitor their animals' locations, activity levels, and health schedules from a single mobile interface.",
+    year: "2024",
+    role: "Mobile Developer",
+    images: [
+      "/images/projects/telefarm-tracking/preview.svg"
+    ],
+    liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.telecubed&hl=el",
+  },
+  {
+    id: "3",
+    title: "Camel Study",
+    description:
+      "Adaptive study timer app with dynamic scheduling, session types, and animated visual feedback.",
+    fullDescription:
+      "A Flutter study management app that creates personalized study schedules based on available time. Unlike fixed Pomodoro timers, Camel Study dynamically generates optimized schedules with hard sessions (50-90 min), easy sessions (25 min), and appropriate breaks. The app schedules longer sessions first when energy is highest, and features animated pink bubbles that gradually fill the screen as time runs out, providing gentle visual reminders.",
+    tag: "Mobile App",
+    category: "Mobile Apps",
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Material Design 3",
+      "SharedPreferences",
+      "Physics Engine"
+    ],
+    gradientFrom: "#ff6b9d",
+    gradientTo: "#c44569",
+    features: [
+      "Adaptive timer with auto-generated study schedules",
+      "Hard sessions (50-90 min) and easy sessions (25 min)",
+      "Intelligent time distribution algorithm",
+      "Animated bubble visual feedback with physics",
+      "State persistence when leaving/returning to app",
+      "Dark theme with pink accents",
+      "Clear study/break session indicators",
+      "Realistic bubble collision detection"
+    ],
+    challenges:
+      "The main challenge was implementing the schedule algorithm that intelligently splits available time into appropriate session types. Building the physics engine for bubble animations with realistic collision detection while maintaining smooth performance required careful optimization.",
+    outcome:
+      "The app provides a unique study experience that adapts to how much time users have. The visual bubble feedback creates a gentle, non-intrusive way to stay aware of remaining time without the anxiety of a traditional countdown timer.",
+    year: "2024",
+    role: "Mobile Developer",
+    images: [
+      "/images/projects/camel-study/preview.svg"
+    ],
+    liveUrl: "https://github.com/pagman/camel_study",
+  },
+  {
+    id: "4",
+    title: "MCubed Manager",
+    description:
+      "Device management and SMS communication platform for IoT/GPS tracking devices.",
+    fullDescription:
+      "A Flutter-based mobile application for managing IoT and GPS tracking devices. The platform allows users to register devices with IMEI and SIM information, send SMS commands remotely to configure device settings (APN, server connections, restarts), and manage device reports with status tracking. The app integrates with multiple SMS providers and uses Firebase Firestore, MongoDB Atlas, and Google Sheets for data management.",
+    tag: "Mobile App",
+    category: "Mobile Apps",
+    techStack: [
+      "Flutter",
+      "Dart",
+      "Firebase Firestore",
+      "MongoDB Atlas",
+      "Google Sheets API",
+      "SMS APIs"
+    ],
+    gradientFrom: "#0f2027",
+    gradientTo: "#2c5364",
+    features: [
+      "Device registration with IMEI and SIM management",
+      "Remote SMS command sending for device configuration",
+      "QR code scanning for quick IMEI entry",
+      "Device type support (P-BOX, Goat V3, Cow)",
+      "Report management with open/solved status tracking",
+      "Multi-provider SMS integration (SimBase, Things Mobile, Nexmo)",
+      "Google Sheets device registry sync",
+      "Material Design 3 interface"
+    ],
+    challenges:
+      "The main challenge was integrating multiple SMS providers with different APIs and response formats while maintaining a consistent user experience. Syncing device data across Firebase, MongoDB, and Google Sheets required careful architecture to prevent data inconsistencies.",
+    outcome:
+      "The app provides a centralized platform for managing IoT device fleets, enabling remote configuration and monitoring. Technicians can quickly register devices, send commands, and track issues from a single mobile interface.",
+    year: "2024",
+    role: "Mobile Developer",
+    images: [
+      "/images/projects/mcubed-manager/preview.svg"
+    ],
   },
   {
     id: "5",
-    title: "Habit tracker",
+    title: "Habit Tracker",
     description:
-      "Powerful analytics platform for tracking social media performance and engagement metrics.",
+      "Beautiful habit tracking app with streak tracking, statistics dashboard, and customizable colors.",
     fullDescription:
-      "An enterprise-grade analytics platform for social media managers and marketing teams. Provides comprehensive insights across all major social platforms, competitor analysis, sentiment tracking, and automated reporting. Built to handle millions of data points in real-time.",
+      "A modern habit tracking application built with Next.js 16 and shadcn/ui. Users can create and track daily habits, build streaks, and visualize progress with an intuitive interface. The app features a 7-day view for quick weekly overview, statistics dashboard showing completion rates, and 17 customizable color options for personalizing habits. All data persists locally in the browser with full dark mode support.",
     tag: "Web App",
     category: "Web Apps",
-    techStack: ["React", "D3.js", "Express", "MongoDB", "Apache Kafka"],
-    gradientFrom: "#30cfd0",
-    gradientTo: "#330867",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "Radix UI",
+      "Local Storage"
+    ],
+    gradientFrom: "#6366f1",
+    gradientTo: "#a855f7",
     features: [
-      "Multi-platform analytics dashboard",
-      "Real-time engagement tracking",
-      "Competitor benchmarking",
-      "Sentiment analysis with NLP",
-      "Automated PDF report generation",
-      "Custom alert notifications",
+      "Visual progress tracking with habit cards",
+      "Current and longest streak calculations",
+      "7-day completion overview",
+      "Statistics dashboard with completion rates",
+      "17 customizable color options per habit",
+      "Local storage data persistence",
+      "Responsive design for all devices",
+      "Dark mode support"
     ],
     challenges:
-      "Processing millions of social media posts in real-time required careful architecture. We implemented a distributed system using Apache Kafka for stream processing and optimized our NLP pipeline for 10x faster sentiment analysis.",
+      "The main challenge was building a smooth and responsive UI that updates in real-time while persisting data to local storage. Implementing streak calculations that correctly handle missed days and timezone differences required careful logic to ensure accurate tracking.",
     outcome:
-      "Platform analyzes 5M+ posts daily for 500+ brands. Helped clients achieve an average 30% improvement in engagement rates through data-driven insights.",
-    year: "2023",
-    role: "Backend Developer",
+      "The app provides a clean, distraction-free way to build and maintain daily habits. Users can quickly log completions, track their streaks, and see their progress at a glance with an elegant, customizable interface.",
+    year: "2024",
+    role: "Full Stack Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/habit-tracker/preview.svg"
     ],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    liveUrl: "https://habit-tracker-phi-hazel.vercel.app/",
   },
   {
     id: "6",
     title: "Replog",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Full-stack gym tracking PWA for logging workouts, tracking progress, and sharing programs.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
+      "A modern gym tracking application built with Next.js 15, TypeScript, and MongoDB. Users can create custom workout programs, log weights, reps, and sets for every exercise, and monitor progress over time. The app displays previous workout data to help beat personal records, supports program sharing via email, and automatically saves workout progress for resuming unfinished sessions. Built as a Progressive Web App, it works offline and can be installed on any device.",
+    tag: "Web App",
     category: "Web Apps",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "Prisma ORM",
+      "Tailwind CSS",
+      "NextAuth.js",
+      "PWA"
+    ],
+    gradientFrom: "#ff416c",
+    gradientTo: "#ff4b2b",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "User authentication with NextAuth.js",
+      "Custom workout program creation",
+      "Workout logging with weights, reps, and sets",
+      "Previous workout data for beating PRs",
+      "One-click copy from previous workouts",
+      "Program sharing with other users",
+      "Auto-save and resume unfinished workouts",
+      "Installable PWA with offline support"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The main challenge was building a seamless workout tracking experience that persists progress even when the app is closed unexpectedly. Implementing auto-save to localStorage with MongoDB sync, along with PWA functionality for offline use, required careful state management and data synchronization logic.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The app provides a complete gym tracking solution that users can install on their devices. Athletes can track their progress, share programs, and never lose workout data thanks to automatic saving and resume functionality.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/replog/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://replog-pi.vercel.app/",
   },
   {
     id: "7",
-    title: "mCubed dashboard",
+    title: "MCubed Dashboard",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Device management and GPS tracking dashboard with real-time monitoring, geofencing, and activity analytics.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
+      "A comprehensive device management and tracking dashboard application built with Next.js and MongoDB. The system enables real-time GPS tracking of devices, user management with push notifications via Firebase Cloud Messaging, SMS functionality, SIM card management, and detailed activity monitoring. The dashboard provides location history with satellite data, geofencing capabilities, and comprehensive reporting tools for tracking device usage patterns.",
+    tag: "Web App",
     category: "Web Apps",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "MongoDB",
+      "Prisma ORM",
+      "Tailwind CSS",
+      "Radix UI",
+      "Leaflet",
+      "Google APIs"
+    ],
+    gradientFrom: "#4776e6",
+    gradientTo: "#8e54e9",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Real-time GPS device tracking with location history",
+      "Geofencing and boundary alerts",
+      "User management with FCM push notifications",
+      "SMS messaging to devices",
+      "SIM card management system",
+      "Activity monitoring with calories, walks, and duration",
+      "Interactive maps with Leaflet",
+      "System notifications and user reports"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The main challenge was building a real-time tracking system that handles multiple devices simultaneously while maintaining performance. Integrating GPS data with interactive maps and implementing geofencing logic required careful architecture to ensure accurate and responsive location updates.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The dashboard provides a centralized platform for managing GPS-enabled devices, enabling users to track locations, monitor activity, and receive alerts in real-time. The system handles device fleets efficiently with comprehensive reporting capabilities.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/mcubed-dashboard/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://mcubed.io",
   },
   {
     id: "8",
-    title: "Trip cost calculator",
+    title: "Trip Cost Calculator",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Road trip cost calculator for Greece with fuel consumption, toll fees, and interactive route mapping.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Web Apps",
+      "A web application that helps travelers estimate the total cost of road trips in Greece by calculating fuel consumption and toll road fees. Built with Next.js, TypeScript, and Mapbox, the calculator provides an intuitive interface with real-time route visualization. Users can select vehicle types, split costs among passengers, compare toll vs. toll-free routes, and get accurate estimates for any journey across Greece.",
+    tag: "Web App",
     category: "Web Apps",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Mapbox GL JS",
+      "React Map GL",
+      "Mapbox APIs"
+    ],
+    gradientFrom: "#11998e",
+    gradientTo: "#38ef7d",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Interactive route mapping with Mapbox",
+      "Fuel cost calculation based on vehicle type and consumption",
+      "Smart toll estimation for 7 major routes",
+      "Multiple vehicle types with different toll multipliers",
+      "Cost splitting among passengers",
+      "Toll-free alternative route finder",
+      "Detailed cost breakdown with distance and duration"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The main challenge was building accurate toll estimation logic that works for both known routes with fixed prices and unknown routes using distance-based formulas. Integrating Mapbox for real-time route visualization while keeping the interface simple required careful UX decisions.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The calculator helps travelers plan road trips with accurate cost estimates, compare routes, and fairly split expenses among companions. It serves as a practical tool for anyone driving in Greece.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Full Stack Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/trip-cost-calculator/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://trip-cost-calculator-psi.vercel.app/",
   },
   {
     id: "9",
-    title: "Capcap",
+    title: "CapCap",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Website for Greece's most beloved cupcake and sweets shop with menu, locations, and catering services.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+      "A WordPress website developed for CapCap, the biggest and most popular cupcake and sweets destination in Greece. Built with Elementor, the site showcases the irresistible menu of cupcakes, cakes, and sweet treats that have made CapCap a must-visit spot for dessert lovers. The design captures the playful and indulgent spirit of the brand while helping customers explore the menu, find store locations, and inquire about catering for special events.",
     tag: "Website",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Contact Forms"
+    ],
+    gradientFrom: "#ff758c",
+    gradientTo: "#ff7eb3",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Cupcake and sweets menu showcase",
+      "Store locations across Greece",
+      "Catering and event inquiry forms",
+      "Seasonal specials and new arrivals section",
+      "Brand story and company heritage",
+      "Mobile-responsive design",
+      "Social media integration"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The challenge was creating a website that captures the joy and indulgence of the CapCap experience while making it easy for customers to explore the menu and find their nearest location. The design needed to be as inviting and sweet as the products themselves, encouraging visitors to stop by.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The website showcases why CapCap has become a beloved destination for sweets lovers across Greece, driving foot traffic to stores and generating catering inquiries for parties and corporate events.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/capcap/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://www.capcap.gr/",
   },
   {
     id: "10",
-    title: "Bubble tea",
+    title: "Bubble Tea",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Website for Greece's largest bubble tea brand featuring menu, locations, and franchise information.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+      "A WordPress website developed for the biggest bubble tea chain in Greece. Built with Elementor, the site showcases the full drink menu with customization options, store locations across the country, and franchise opportunities. The design captures the fun and colorful identity of the brand while providing customers with everything they need to find their nearest store and explore the menu before visiting.",
     tag: "Website",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Contact Forms"
+    ],
+    gradientFrom: "#ee9ca7",
+    gradientTo: "#ffdde1",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Interactive drink menu with customization options",
+      "Store locator with all Greek locations",
+      "Franchise inquiry and partnership information",
+      "Brand story and company information",
+      "Mobile-responsive design",
+      "Social media integration",
+      "Contact forms for business inquiries"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The challenge was presenting a large and customizable drink menu in an engaging way while making it easy for customers to find their nearest location. The design needed to reflect the playful brand identity while remaining functional and informative for both customers and potential franchise partners.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The website serves as the central hub for the brand, helping customers discover locations and menu options while generating franchise inquiries from entrepreneurs looking to join Greece's leading bubble tea chain.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/bubble-tea/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://bubbletea.gr/",
   },
   {
     id: "11",
     title: "Econest",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "E-commerce store for home renovation products including furniture, decor, and building materials.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
+      "A WordPress e-commerce website built for a home renovation retailer offering everything from furniture and decor to tools and building materials. Using WooCommerce and Elementor, the store provides customers with a comprehensive catalog organized by room type, project category, and brand. The site is designed to help homeowners and contractors find exactly what they need for any renovation project, with detailed product specifications and easy bulk ordering options.",
+    tag: "E-commerce",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "WooCommerce",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Online Payments"
+    ],
+    gradientFrom: "#f5af19",
+    gradientTo: "#f12711",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Large product catalog with category organization",
+      "Filtering by room, project type, and brand",
+      "Detailed product specifications and dimensions",
+      "Cart and secure checkout system",
+      "Bulk ordering for contractors",
+      "Stock and inventory management",
+      "Mobile-friendly shopping experience"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The main challenge was organizing a large and diverse product catalog in a way that makes it easy for both homeowners and professionals to find what they need. Custom category structures and filtering options were implemented to streamline product discovery across different renovation projects.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The business now reaches customers online with a well-organized store that handles everything from small decor purchases to large material orders. The client manages products, pricing, and orders directly from the WordPress dashboard.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/econest/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://econestshop.gr/",
   },
   {
     id: "12",
-    title: "Goldensmile",
+    title: "Golden Smile",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Professional dentistry website showcasing dental services, team, and appointment booking.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+      "A WordPress website currently under development for a dental clinic in Greece. Built with Elementor, the site presents the clinic's services, introduces the dental team, and provides patients with essential information about treatments. The design prioritizes trust and professionalism, with clear navigation to help visitors find the services they need and easily get in touch with the clinic.",
     tag: "Website",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Contact Forms"
+    ],
+    gradientFrom: "#56ccf2",
+    gradientTo: "#2f80ed",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Service pages for dental treatments",
+      "Team and dentist profile sections",
+      "Contact and appointment inquiry forms",
+      "Clinic location and hours information",
+      "Mobile-responsive design",
+      "SEO-optimized structure for local search",
+      "Before/after treatment gallery"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The challenge is creating a website that conveys professionalism and trust while making it easy for patients to understand available treatments and contact the clinic. The design balances medical credibility with approachability to reduce patient anxiety about dental visits.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
-    year: "2024",
-    role: "Frontend Developer",
+      "Currently under development. The website will help the clinic establish a stronger online presence and make it easier for new patients to discover their services and book appointments.",
+    year: "2025",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/golden-smile/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://goldensmile.gr/",
   },
   {
     id: "13",
-    title: "Greek property hunters",
+    title: "Greek Property Hunters",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Subscription platform for finding value-for-money land opportunities across Greece with email notifications.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+      "A WordPress subscription-based platform helping users discover the best value-for-money land listings across Greece. Built with Elementor and integrated with a membership system, subscribers receive curated property alerts based on their preferences, budget, and desired locations. The site aggregates land opportunities, evaluates them for investment potential, and notifies members before properties hit the mainstream market.",
     tag: "Website",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Membership System",
+      "Email Notifications"
+    ],
+    gradientFrom: "#667eea",
+    gradientTo: "#764ba2",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Subscription-based membership system",
+      "Curated land listing alerts via email",
+      "Property filtering by region, size, and budget",
+      "Value-for-money analysis on each listing",
+      "Member dashboard with saved searches",
+      "Early access to new listings before public release",
+      "Mobile-friendly property browsing"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The challenge was building a reliable notification system that delivers timely alerts without overwhelming subscribers. Custom automation was set up to filter new listings based on member preferences and send targeted emails only for relevant opportunities.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "Subscribers now receive personalized land alerts directly to their inbox, helping them find investment opportunities faster than browsing traditional listing sites. The platform has grown a loyal member base seeking land deals across Greece.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/greek-property-hunters/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://greekpropertyhunters.com/",
   },
   {
     id: "14",
-    title: "Hona festival",
+    title: "Hona Festival",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "Event website for a Naxos cultural festival with online ticketing and event schedule.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+      "A WordPress website developed for a cultural festival in Naxos, Greece. Built with Elementor, the site serves as the central hub for event information, artist lineups, and ticket purchases. The online ticketing system allows visitors to browse available events, select seats or ticket types, and complete secure purchases. The design captures the vibrant atmosphere of the festival while providing a straightforward path from discovery to booking.",
     tag: "Website",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Online Ticketing System",
+      "Payment Integration"
+    ],
+    gradientFrom: "#f6d365",
+    gradientTo: "#fda085",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Online ticket purchasing system",
+      "Event schedule and artist lineup pages",
+      "Secure payment processing",
+      "Mobile-responsive event browsing",
+      "Ticket management from WordPress admin",
+      "Event countdown and announcements",
+      "Social media integration for event sharing"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The main challenge was implementing a reliable ticketing system that could handle high demand during ticket release periods while keeping the booking process simple for users unfamiliar with online purchases. The system was configured to manage ticket inventory and prevent overselling.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The festival successfully sold tickets online for the first time, reducing manual box office work and reaching a wider audience beyond Naxos. Organizers can now track sales and manage event capacity directly from the dashboard.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/hona-festival/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://honafestival.com/",
   },
   {
     id: "15",
-    title: "Ichnos soap",
+    title: "Ichnos Soap",
     description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
+      "E-commerce website for handcrafted organic soaps and natural skincare products.",
     fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
+      "A WordPress e-commerce website developed for a local artisan brand specializing in handmade organic soaps and natural skincare. Built with WooCommerce and Elementor, the site showcases the brand's commitment to eco-friendly ingredients while providing customers with a seamless shopping experience. The design emphasizes the natural and organic nature of the products through earthy tones and clean layouts, making it easy for customers to explore product ingredients and benefits before purchase.",
+    tag: "E-commerce",
     category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
+    techStack: [
+      "WordPress",
+      "WooCommerce",
+      "Elementor",
+      "PHP",
+      "JavaScript",
+      "HTML/CSS",
+      "Online Payments"
+    ],
+    gradientFrom: "#d4fc79",
+    gradientTo: "#96e6a1",
     features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
+      "Product catalog with ingredient transparency",
+      "Organic certification badges and trust signals",
+      "Cart and secure checkout system",
+      "Product filtering by skin type and ingredients",
+      "Stock and inventory management",
+      "Mobile-optimized shopping experience",
+      "Customer reviews and ratings system"
     ],
     challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+      "The challenge was presenting detailed ingredient information and organic certifications in a way that builds customer trust without overwhelming the shopping experience. Custom product templates were created to highlight natural ingredients while keeping the purchase flow simple and intuitive.",
     outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+      "The brand successfully transitioned to online sales, reaching customers beyond the local market. The client manages all products, orders, and inventory independently through the WordPress dashboard.",
     year: "2024",
-    role: "Frontend Developer",
+    role: "Web Developer",
     images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
+      "/images/projects/ichnos-soap/preview.svg"
     ],
-    liveUrl: "https://example.com",
+    liveUrl: "https://ichnossoap.gr",
   },
   {
-    id: "16",
-    title: "Milianjo",
-    description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
-    fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
-    category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
-    features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
-    ],
-    challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
-    outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
-    year: "2024",
-    role: "Frontend Developer",
-    images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
-    ],
-    liveUrl: "https://example.com",
-  },
+  id: "16",
+  title: "Milianjo",
+  description:
+    "WooCommerce e-commerce website for beauty products with full shopping and checkout flow.",
+  fullDescription:
+    "A custom WordPress e-commerce website built for a beauty products brand. Using WooCommerce and Elementor, the site allows customers to browse products, manage their cart, and complete secure online purchases. The project focused on creating a clean shopping experience while giving the client full control over products, stock, and orders through the WordPress admin panel.",
+  tag: "E-commerce",
+  category: "Websites",
+  techStack: [
+    "WordPress",
+    "WooCommerce",
+    "Elementor",
+    "PHP",
+    "JavaScript",
+    "HTML/CSS",
+    "Online Payments"
+  ],
+  gradientFrom: "#a8edea",
+  gradientTo: "#fed6e3",
+  features: [
+    "Custom WooCommerce shop design",
+    "Product management and inventory control",
+    "Cart and checkout system",
+    "Secure online payments",
+    "Order management from WordPress admin",
+    "Mobile-first responsive shopping experience",
+    "SEO-friendly product pages"
+  ],
+  challenges:
+    "The main challenge was designing a clean and trustworthy shopping experience while ensuring the client could easily manage products, prices, and orders without technical knowledge. WooCommerce was customized to fit the brand and improve usability.",
+  outcome:
+    "The business can now sell products online with a smooth checkout process and manage all orders and inventory directly from the WordPress dashboard.",
+  year: "2024",
+  role: "Web Developer",
+  images: [
+    "/images/projects/milianjo/preview.svg"
+  ],
+  liveUrl: "https://milianjo.gr/"
+},
   {
-    id: "17",
-    title: "Selene luxury rooms",
-    description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
-    fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
-    category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
-    features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
-    ],
-    challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
-    outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
-    year: "2024",
-    role: "Frontend Developer",
-    images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
-    ],
-    liveUrl: "https://example.com",
-  },
+  id: "17",
+  title: "Selene Luxury Rooms",
+  description:
+    "WordPress booking website with room reservations and Airbnb calendar synchronization.",
+  fullDescription:
+    "A custom WordPress website for a luxury rooms rental business. Built with Elementor, the site allows visitors to book rooms directly through an integrated booking system while automatically synchronizing availability with the Airbnb calendar. The project focused on creating an elegant presentation for the property while solving the client's real operational need for managing bookings across multiple platforms without double reservations.",
+  tag: "Website",
+  category: "Websites",
+  techStack: [
+    "WordPress",
+    "Elementor",
+    "PHP",
+    "JavaScript",
+    "HTML/CSS",
+    "Booking System",
+    "Airbnb iCal Calendar Sync"
+  ],
+  gradientFrom: "#a8edea",
+  gradientTo: "#fed6e3",
+  features: [
+    "Custom design built with Elementor",
+    "Room booking and reservation system",
+    "Airbnb calendar synchronization via iCal",
+    "Availability management from WordPress admin",
+    "Mobile-first responsive design",
+    "SEO-friendly structure"
+  ],
+  challenges:
+    "The main challenge was preventing double bookings between the website and Airbnb. iCal synchronization was implemented to keep availability updated automatically while ensuring the client could easily manage reservations from the WordPress dashboard.",
+  outcome:
+    "The client can now manage all room reservations from one place without double bookings, reducing manual work and increasing direct bookings through the website.",
+  year: "2024",
+  role: "Web Developer",
+  images: [
+    "/images/projects/selene-luxury-rooms/preview.svg"
+  ],
+  liveUrl: "https://example.com"
+},
   {
-    id: "18",
-    title: "Velvore transfers",
-    description:
-      "Stunning portfolio website with smooth animations and interactive elements.",
-    fullDescription:
-      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
-    tag: "Website",
-    category: "Websites",
-    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
-    gradientFrom: "#a8edea",
-    gradientTo: "#fed6e3",
-    features: [
-      "Immersive 3D hero section",
-      "Smooth page transitions",
-      "Interactive case study presentations",
-      "Custom cursor effects",
-      "Performance-optimized animations",
-      "CMS for easy content updates",
-    ],
-    challenges:
-      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
-    outcome:
-      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
-    year: "2024",
-    role: "Frontend Developer",
-    images: [
-      "/images/projects/fitness-tracker-pro/dashboard.svg"
-    ],
-    liveUrl: "https://example.com",
-  },
+  id: "18",
+  title: "Velvore Transfers",
+  description:
+    "Custom WordPress business website with dynamic trip cost calculator and booking forms.",
+  fullDescription:
+    "A fully custom-designed WordPress website for a luxury transfers company in Greece. Built with Elementor, the site includes dynamic booking and contact forms, as well as a custom trip cost calculator that calculates transfer prices based on user input. The project focused on creating a premium visual identity while ensuring the client could easily manage content and pricing through the WordPress admin panel.",
+  tag: "Website",
+  category: "Websites",
+  techStack: [
+    "WordPress",
+    "Elementor",
+    "PHP",
+    "JavaScript",
+    "HTML/CSS",
+    "Contact Form",
+    "Custom Price Calculator Logic"
+  ],
+  gradientFrom: "#a8edea",
+  gradientTo: "#fed6e3",
+  features: [
+    "Custom premium design built with Elementor",
+    "Dynamic trip cost calculator based on distance and route",
+    "Booking and contact forms",
+    "Mobile-first responsive layout",
+    "Easy content and price management via WordPress admin",
+    "SEO-friendly structure"
+  ],
+  challenges:
+    "The main challenge was implementing a dynamic pricing calculator inside a WordPress + Elementor environment while keeping the interface simple for users and editable for the client. Custom JavaScript and PHP logic were integrated with the form system to achieve this.",
+  outcome:
+    "The client now receives automated booking inquiries with calculated trip costs, reducing manual communication time and improving conversion rates.",
+  year: "2024",
+  role: "Web Developer",
+  images: [
+    "/images/projects/velvore-transfers/preview.svg"
+  ],
+  liveUrl: "http://velvoretransfers.gr/"
+}
+
 ];
 
 export const filterTabs = ["All", "Mobile Apps", "Web Apps", "Websites"];
