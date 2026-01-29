@@ -3,8 +3,14 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Node.js",
-  "React Native",
+  "Flutter",
+  "Firebase",
+  "MongoDB",
+  "Prisma",
+  "NextAuth",
   "Tailwind",
+  "WordPress",
+  "PHP",
 ];
 
 export function AboutSection() {
