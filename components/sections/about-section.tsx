@@ -23,7 +23,7 @@ export function AboutSection() {
         {/* Profile image */}
         <div className="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden">
           <Image
-            src="/images/me.jfif"
+            src="/images/me.png"
             alt="Profile picture"
             width={400}
             height={400}
