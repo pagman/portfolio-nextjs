@@ -21,7 +21,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Fitness Tracker Pro",
+    title: "mCubed tracker",
     description:
       "A comprehensive fitness tracking app with real-time analytics and personalized workout plans.",
     fullDescription:
@@ -54,13 +54,13 @@ export const projects: Project[] = [
   },
   {
     id: "2",
-    title: "Project Management Dashboard",
+    title: "Telefarm tracking",
     description:
       "Modern dashboard for managing projects, teams, and workflows with real-time collaboration.",
     fullDescription:
       "A comprehensive project management solution built for modern teams. The dashboard provides real-time collaboration features, Kanban boards, Gantt charts, time tracking, and detailed reporting. Designed with a focus on user experience and team productivity.",
     tag: "Web App",
-    category: "Web Apps",
+    category: "Mobile Apps",
     techStack: ["Next.js", "TypeScript", "Tailwind", "PostgreSQL", "Socket.io"],
     gradientFrom: "#f093fb",
     gradientTo: "#f5576c",
@@ -85,13 +85,13 @@ export const projects: Project[] = [
   },
   {
     id: "3",
-    title: "E-commerce Platform",
+    title: "Camel study",
     description:
       "Full-featured online store with seamless checkout experience and admin panel.",
     fullDescription:
       "A scalable e-commerce platform built from the ground up with modern technologies. Features include a headless CMS, multi-vendor support, advanced inventory management, and a powerful admin dashboard. The platform handles high traffic with ease and provides an exceptional shopping experience.",
     tag: "Website",
-    category: "Websites",
+    category: "Mobile Apps",
     techStack: ["Next.js", "Stripe", "MongoDB", "Redis", "AWS"],
     gradientFrom: "#4facfe",
     gradientTo: "#00f2fe",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
   },
   {
     id: "4",
-    title: "Food Delivery App",
+    title: "mCubed manager",
     description:
       "Seamless food ordering experience with live tracking and smart recommendations.",
     fullDescription:
@@ -148,7 +148,7 @@ export const projects: Project[] = [
   },
   {
     id: "5",
-    title: "Social Media Analytics",
+    title: "Habit tracker",
     description:
       "Powerful analytics platform for tracking social media performance and engagement metrics.",
     fullDescription:
@@ -180,7 +180,379 @@ export const projects: Project[] = [
   },
   {
     id: "6",
-    title: "Creative Agency Portfolio",
+    title: "Replog",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Web Apps",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "7",
+    title: "mCubed dashboard",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Web Apps",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "8",
+    title: "Trip cost calculator",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Web Apps",
+    category: "Web Apps",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "9",
+    title: "Capcap",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "10",
+    title: "Bubble tea",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "11",
+    title: "Econest",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "12",
+    title: "Goldensmile",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "13",
+    title: "Greek property hunters",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "14",
+    title: "Hona festival",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "15",
+    title: "Ichnos soap",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "16",
+    title: "Milianjo",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "17",
+    title: "Selene luxury rooms",
+    description:
+      "Stunning portfolio website with smooth animations and interactive elements.",
+    fullDescription:
+      "A visually stunning portfolio website for a creative agency, featuring cutting-edge animations, 3D elements, and interactive storytelling. The site showcases the agency's work through immersive case studies and has won multiple design awards for its innovative approach.",
+    tag: "Website",
+    category: "Websites",
+    techStack: ["Next.js", "Framer Motion", "GSAP", "Three.js", "Sanity CMS"],
+    gradientFrom: "#a8edea",
+    gradientTo: "#fed6e3",
+    features: [
+      "Immersive 3D hero section",
+      "Smooth page transitions",
+      "Interactive case study presentations",
+      "Custom cursor effects",
+      "Performance-optimized animations",
+      "CMS for easy content updates",
+    ],
+    challenges:
+      "Balancing visual richness with performance was key. We implemented progressive loading, code splitting, and optimized 3D assets to achieve a 95+ Lighthouse performance score while maintaining the visual experience.",
+    outcome:
+      "Website won Awwwards Site of the Day and increased agency inquiries by 150%. Average session duration increased to 4+ minutes.",
+    year: "2024",
+    role: "Frontend Developer",
+    images: [
+      "/images/projects/fitness-tracker-pro/dashboard.svg"
+    ],
+    liveUrl: "https://example.com",
+  },
+  {
+    id: "18",
+    title: "Velvore transfers",
     description:
       "Stunning portfolio website with smooth animations and interactive elements.",
     fullDescription:

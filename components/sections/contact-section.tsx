@@ -2,10 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { label: "Email Me", href: "mailto:hello@example.com", icon: Mail },
-  { label: "GitHub", href: "https://github.com", icon: Github },
-  { label: "LinkedIn", href: "https://linkedin.com", icon: Linkedin },
-  { label: "Twitter", href: "https://twitter.com", icon: Twitter },
+  { label: "Email Me", href: "mailto:p.mantas@mcubed.io", icon: Mail },
+  { label: "GitHub", href: "https://github.com/pagman/", icon: Github },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/panagiotis-mantas-968ba1188/", icon: Linkedin },
 ];
 
 export function ContactSection() {
