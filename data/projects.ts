@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   fullDescription: string;
   tag: string;
-  category: "Mobile Apps" | "Web Apps" | "Websites";
+  category: "Εφαρμογές Κινητών" | "Web Εφαρμογές" | "Ιστοσελίδες";
   techStack: string[];
   gradientFrom: string;
   gradientTo: string;
@@ -23,11 +23,11 @@ export const projects: Project[] = [
     id: "1",
     title: "MCubed Tracker",
     description:
-      "Pet tracking app with real-time GPS, activity monitoring, geofencing, and health calendar.",
+      "Εφαρμογή παρακολούθησης κατοικιδίων με GPS σε πραγματικό χρόνο, παρακολούθηση δραστηριότητας, geofencing και ημερολόγιο υγείας.",
     fullDescription:
-      "A Flutter-based pet tracking application that allows owners to monitor their pets' location, activity, and health in real-time. Features include live GPS tracking on an interactive map, geofencing with boundary alerts, daily activity analytics, and a health calendar for scheduling vet appointments and medications. The app uses a dual backend system with Firebase as primary and MongoDB Atlas as fallback, ensuring reliable data sync and push notifications.",
+      "Μια εφαρμογή παρακολούθησης κατοικιδίων βασισμένη σε Flutter που επιτρέπει στους ιδιοκτήτες να παρακολουθούν την τοποθεσία, τη δραστηριότητα και την υγεία των κατοικιδίων τους σε πραγματικό χρόνο. Περιλαμβάνει ζωντανή παρακολούθηση GPS σε διαδραστικό χάρτη, geofencing με ειδοποιήσεις ορίων, ημερήσια αναλυτικά στοιχεία δραστηριότητας και ημερολόγιο υγείας για προγραμματισμό ραντεβού κτηνιάτρου και φαρμάκων. Η εφαρμογή χρησιμοποιεί διπλό backend σύστημα με Firebase ως κύριο και MongoDB Atlas ως εφεδρικό, εξασφαλίζοντας αξιόπιστο συγχρονισμό δεδομένων και push notifications.",
     tag: "Mobile App",
-    category: "Mobile Apps",
+    category: "Εφαρμογές Κινητών",
     techStack: [
       "Flutter",
       "Dart",
@@ -40,19 +40,19 @@ export const projects: Project[] = [
     gradientFrom: "#667eea",
     gradientTo: "#764ba2",
     features: [
-      "Real-time GPS tracking with live map view",
-      "Activity monitoring with daily analytics",
-      "Geofencing with boundary alerts",
-      "Health calendar for vet appointments and medications",
-      "Location history with date filtering",
-      "Subscription management for device plans",
-      "Activity reports with statistics",
-      "Multi-language support (EN, GR, FI, SE)"
+      "Παρακολούθηση GPS σε πραγματικό χρόνο με ζωντανή προβολή χάρτη",
+      "Παρακολούθηση δραστηριότητας με ημερήσια αναλυτικά στοιχεία",
+      "Geofencing με ειδοποιήσεις ορίων",
+      "Ημερολόγιο υγείας για ραντεβού κτηνιάτρου και φάρμακα",
+      "Ιστορικό τοποθεσίας με φιλτράρισμα ημερομηνίας",
+      "Διαχείριση συνδρομών για πλάνα συσκευών",
+      "Αναφορές δραστηριότητας με στατιστικά",
+      "Υποστήριξη πολλαπλών γλωσσών (EN, GR, FI, SE)"
     ],
     challenges:
-      "The main challenge was building a reliable real-time tracking system with a dual backend architecture. Implementing stream-based device updates while maintaining battery efficiency on mobile devices required careful optimization of location polling and data synchronization.",
+      "Η κύρια πρόκληση ήταν η κατασκευή ενός αξιόπιστου συστήματος παρακολούθησης σε πραγματικό χρόνο με διπλή αρχιτεκτονική backend. Η υλοποίηση ενημερώσεων συσκευών βασισμένων σε streams διατηρώντας παράλληλα την αποδοτικότητα της μπαταρίας στις κινητές συσκευές απαίτησε προσεκτική βελτιστοποίηση του polling τοποθεσίας και του συγχρονισμού δεδομένων.",
     outcome:
-      "The app provides pet owners with comprehensive tracking and health management tools. Users can monitor their pets' locations, receive instant alerts when boundaries are crossed, and keep track of health schedules from a single mobile interface.",
+      "Η εφαρμογή παρέχει στους ιδιοκτήτες κατοικιδίων ολοκληρωμένα εργαλεία παρακολούθησης και διαχείρισης υγείας. Οι χρήστες μπορούν να παρακολουθούν τις τοποθεσίες των κατοικιδίων τους, να λαμβάνουν άμεσες ειδοποιήσεις όταν παραβιάζονται τα όρια και να παρακολουθούν τα προγράμματα υγείας από μία ενιαία διεπαφή κινητού.",
     year: "2024",
     role: "Mobile Developer",
     images: [
@@ -66,11 +66,11 @@ export const projects: Project[] = [
     id: "2",
     title: "Telefarm Tracking",
     description:
-      "GPS pet and livestock tracking app with real-time location, geofencing, and activity monitoring.",
+      "Εφαρμογή GPS παρακολούθησης κατοικιδίων και ζώων με τοποθεσία σε πραγματικό χρόνο, geofencing και παρακολούθηση δραστηριότητας.",
     fullDescription:
-      "A Flutter-based GPS tracking application for pets and livestock. Users can monitor real-time locations on a map, set up geofencing with boundary alerts, track daily activity levels and movement patterns, and schedule events like vet appointments and medications. The app supports multiple languages (English, Greek, Finnish, Swedish) and includes subscription management with day-based tracking. Built with Firebase for backend services and Google Maps for location visualization.",
+      "Μια εφαρμογή GPS παρακολούθησης βασισμένη σε Flutter για κατοικίδια και ζώα. Οι χρήστες μπορούν να παρακολουθούν τοποθεσίες σε πραγματικό χρόνο στον χάρτη, να ρυθμίζουν geofencing με ειδοποιήσεις ορίων, να παρακολουθούν τα ημερήσια επίπεδα δραστηριότητας και τα μοτίβα κίνησης, και να προγραμματίζουν συμβάντα όπως ραντεβού κτηνιάτρου και φάρμακα. Η εφαρμογή υποστηρίζει πολλαπλές γλώσσες (Αγγλικά, Ελληνικά, Φινλανδικά, Σουηδικά) και περιλαμβάνει διαχείριση συνδρομών με παρακολούθηση ανά ημέρα. Κατασκευασμένη με Firebase για backend υπηρεσίες και Google Maps για οπτικοποίηση τοποθεσίας.",
     tag: "Mobile App",
-    category: "Mobile Apps",
+    category: "Εφαρμογές Κινητών",
     techStack: [
       "Flutter",
       "Dart",
@@ -83,19 +83,19 @@ export const projects: Project[] = [
     gradientFrom: "#f093fb",
     gradientTo: "#f5576c",
     features: [
-      "Real-time GPS location tracking on map",
-      "Geofencing with boundary alerts",
-      "Daily activity and movement monitoring",
-      "Calendar for vet appointments, medications, and events",
-      "Location history and reports",
-      "Subscription management with day tracking",
-      "Multi-language support (EN, GR, FI, SE)",
-      "Push notifications via Firebase Cloud Messaging"
+      "Παρακολούθηση τοποθεσίας GPS σε πραγματικό χρόνο στον χάρτη",
+      "Geofencing με ειδοποιήσεις ορίων",
+      "Ημερήσια παρακολούθηση δραστηριότητας και κίνησης",
+      "Ημερολόγιο για ραντεβού κτηνιάτρου, φάρμακα και συμβάντα",
+      "Ιστορικό τοποθεσίας και αναφορές",
+      "Διαχείριση συνδρομών με παρακολούθηση ανά ημέρα",
+      "Υποστήριξη πολλαπλών γλωσσών (EN, GR, FI, SE)",
+      "Push notifications μέσω Firebase Cloud Messaging"
     ],
     challenges:
-      "The main challenge was implementing accurate real-time GPS tracking while optimizing battery consumption on mobile devices. Building a reliable geofencing system that triggers alerts promptly when animals cross boundaries required careful handling of location updates and background services.",
+      "Η κύρια πρόκληση ήταν η υλοποίηση ακριβούς παρακολούθησης GPS σε πραγματικό χρόνο με παράλληλη βελτιστοποίηση της κατανάλωσης μπαταρίας στις κινητές συσκευές. Η κατασκευή ενός αξιόπιστου συστήματος geofencing που ενεργοποιεί ειδοποιήσεις άμεσα όταν τα ζώα διασχίζουν τα όρια απαίτησε προσεκτική διαχείριση των ενημερώσεων τοποθεσίας και των background services.",
     outcome:
-      "The app provides pet and livestock owners with peace of mind through real-time tracking and instant alerts. Users can monitor their animals' locations, activity levels, and health schedules from a single mobile interface.",
+      "Η εφαρμογή παρέχει στους ιδιοκτήτες κατοικιδίων και ζώων ηρεμία μέσω παρακολούθησης σε πραγματικό χρόνο και άμεσων ειδοποιήσεων. Οι χρήστες μπορούν να παρακολουθούν τις τοποθεσίες των ζώων τους, τα επίπεδα δραστηριότητας και τα προγράμματα υγείας από μία ενιαία διεπαφή κινητού.",
     year: "2024",
     role: "Mobile Developer",
     images: [
@@ -109,11 +109,11 @@ export const projects: Project[] = [
     id: "3",
     title: "Camel Study",
     description:
-      "Adaptive study timer app with dynamic scheduling, session types, and animated visual feedback.",
+      "Προσαρμοστική εφαρμογή χρονομέτρησης μελέτης με δυναμικό προγραμματισμό, τύπους συνεδριών και κινούμενη οπτική ανατροφοδότηση.",
     fullDescription:
-      "A Flutter study management app that creates personalized study schedules based on available time. Unlike fixed Pomodoro timers, Camel Study dynamically generates optimized schedules with hard sessions (50-90 min), easy sessions (25 min), and appropriate breaks. The app schedules longer sessions first when energy is highest, and features animated pink bubbles that gradually fill the screen as time runs out, providing gentle visual reminders.",
+      "Μια εφαρμογή διαχείρισης μελέτης Flutter που δημιουργεί εξατομικευμένα προγράμματα μελέτης βάσει του διαθέσιμου χρόνου. Σε αντίθεση με τους σταθερούς χρονομετρητές Pomodoro, το Camel Study δημιουργεί δυναμικά βελτιστοποιημένα προγράμματα με δύσκολες συνεδρίες (50-90 λεπτά), εύκολες συνεδρίες (25 λεπτά) και κατάλληλα διαλείμματα. Η εφαρμογή προγραμματίζει πρώτα τις μεγαλύτερες συνεδρίες όταν η ενέργεια είναι υψηλότερη, και διαθέτει κινούμενες ροζ φυσαλίδες που γεμίζουν σταδιακά την οθόνη καθώς τελειώνει ο χρόνος, παρέχοντας ήπιες οπτικές υπενθυμίσεις.",
     tag: "Mobile App",
-    category: "Mobile Apps",
+    category: "Εφαρμογές Κινητών",
     techStack: [
       "Flutter",
       "Dart",
@@ -124,19 +124,19 @@ export const projects: Project[] = [
     gradientFrom: "#ff6b9d",
     gradientTo: "#c44569",
     features: [
-      "Adaptive timer with auto-generated study schedules",
-      "Hard sessions (50-90 min) and easy sessions (25 min)",
-      "Intelligent time distribution algorithm",
-      "Animated bubble visual feedback with physics",
-      "State persistence when leaving/returning to app",
-      "Dark theme with pink accents",
-      "Clear study/break session indicators",
-      "Realistic bubble collision detection"
+      "Προσαρμοστικός χρονομετρητής με αυτόματα δημιουργούμενα προγράμματα μελέτης",
+      "Δύσκολες συνεδρίες (50-90 λεπτά) και εύκολες συνεδρίες (25 λεπτά)",
+      "Ευφυής αλγόριθμος κατανομής χρόνου",
+      "Κινούμενη οπτική ανατροφοδότηση φυσαλίδων με φυσική",
+      "Διατήρηση κατάστασης κατά την έξοδο/επιστροφή στην εφαρμογή",
+      "Σκοτεινό θέμα με ροζ τόνους",
+      "Σαφείς ενδείξεις συνεδρίας μελέτης/διαλείμματος",
+      "Ρεαλιστική ανίχνευση σύγκρουσης φυσαλίδων"
     ],
     challenges:
-      "The main challenge was implementing the schedule algorithm that intelligently splits available time into appropriate session types. Building the physics engine for bubble animations with realistic collision detection while maintaining smooth performance required careful optimization.",
+      "Η κύρια πρόκληση ήταν η υλοποίηση του αλγορίθμου προγραμματισμού που χωρίζει ευφυώς τον διαθέσιμο χρόνο σε κατάλληλους τύπους συνεδριών. Η κατασκευή της μηχανής φυσικής για τα animations φυσαλίδων με ρεαλιστική ανίχνευση συγκρούσεων διατηρώντας παράλληλα ομαλή απόδοση απαίτησε προσεκτική βελτιστοποίηση.",
     outcome:
-      "The app provides a unique study experience that adapts to how much time users have. The visual bubble feedback creates a gentle, non-intrusive way to stay aware of remaining time without the anxiety of a traditional countdown timer.",
+      "Η εφαρμογή παρέχει μια μοναδική εμπειρία μελέτης που προσαρμόζεται στον διαθέσιμο χρόνο των χρηστών. Η οπτική ανατροφοδότηση φυσαλίδων δημιουργεί έναν ήπιο, μη παρεμβατικό τρόπο να παραμένεις ενήμερος για τον εναπομείναντα χρόνο χωρίς το άγχος ενός παραδοσιακού χρονομέτρου αντίστροφης μέτρησης.",
     year: "2024",
     role: "Mobile Developer",
     images: [
@@ -150,11 +150,11 @@ export const projects: Project[] = [
     id: "4",
     title: "MCubed Manager",
     description:
-      "Device management and SMS communication platform for IoT/GPS tracking devices.",
+      "Πλατφόρμα διαχείρισης συσκευών και επικοινωνίας SMS για συσκευές IoT/GPS παρακολούθησης.",
     fullDescription:
-      "A Flutter-based mobile application for managing IoT and GPS tracking devices. The platform allows users to register devices with IMEI and SIM information, send SMS commands remotely to configure device settings (APN, server connections, restarts), and manage device reports with status tracking. The app integrates with multiple SMS providers and uses Firebase Firestore, MongoDB Atlas, and Google Sheets for data management.",
+      "Μια εφαρμογή κινητού βασισμένη σε Flutter για τη διαχείριση συσκευών IoT και GPS παρακολούθησης. Η πλατφόρμα επιτρέπει στους χρήστες να καταχωρούν συσκευές με πληροφορίες IMEI και SIM, να στέλνουν εντολές SMS εξ αποστάσεως για τη διαμόρφωση ρυθμίσεων συσκευών (APN, συνδέσεις server, επανεκκινήσεις) και να διαχειρίζονται αναφορές συσκευών με παρακολούθηση κατάστασης. Η εφαρμογή ενσωματώνεται με πολλαπλούς παρόχους SMS και χρησιμοποιεί Firebase Firestore, MongoDB Atlas και Google Sheets για τη διαχείριση δεδομένων.",
     tag: "Mobile App",
-    category: "Mobile Apps",
+    category: "Εφαρμογές Κινητών",
     techStack: [
       "Flutter",
       "Dart",
@@ -166,19 +166,19 @@ export const projects: Project[] = [
     gradientFrom: "#0f2027",
     gradientTo: "#2c5364",
     features: [
-      "Device registration with IMEI and SIM management",
-      "Remote SMS command sending for device configuration",
-      "QR code scanning for quick IMEI entry",
-      "Device type support (P-BOX, Goat V3, Cow)",
-      "Report management with open/solved status tracking",
-      "Multi-provider SMS integration (SimBase, Things Mobile, Nexmo)",
-      "Google Sheets device registry sync",
-      "Material Design 3 interface"
+      "Καταχώρηση συσκευών με διαχείριση IMEI και SIM",
+      "Αποστολή εντολών SMS εξ αποστάσεως για διαμόρφωση συσκευών",
+      "Σάρωση QR code για γρήγορη εισαγωγή IMEI",
+      "Υποστήριξη τύπων συσκευών (P-BOX, Goat V3, Cow)",
+      "Διαχείριση αναφορών με παρακολούθηση κατάστασης ανοιχτό/επιλυμένο",
+      "Ενσωμάτωση πολλαπλών παρόχων SMS (SimBase, Things Mobile, Nexmo)",
+      "Συγχρονισμός μητρώου συσκευών με Google Sheets",
+      "Διεπαφή Material Design 3"
     ],
     challenges:
-      "The main challenge was integrating multiple SMS providers with different APIs and response formats while maintaining a consistent user experience. Syncing device data across Firebase, MongoDB, and Google Sheets required careful architecture to prevent data inconsistencies.",
+      "Η κύρια πρόκληση ήταν η ενσωμάτωση πολλαπλών παρόχων SMS με διαφορετικά APIs και μορφές απόκρισης διατηρώντας παράλληλα μια συνεπή εμπειρία χρήστη. Ο συγχρονισμός δεδομένων συσκευών μεταξύ Firebase, MongoDB και Google Sheets απαίτησε προσεκτική αρχιτεκτονική για την αποφυγή ασυνεπειών δεδομένων.",
     outcome:
-      "The app provides a centralized platform for managing IoT device fleets, enabling remote configuration and monitoring. Technicians can quickly register devices, send commands, and track issues from a single mobile interface.",
+      "Η εφαρμογή παρέχει μια κεντρική πλατφόρμα για τη διαχείριση στόλων συσκευών IoT, επιτρέποντας την απομακρυσμένη διαμόρφωση και παρακολούθηση. Οι τεχνικοί μπορούν να καταχωρούν γρήγορα συσκευές, να στέλνουν εντολές και να παρακολουθούν προβλήματα από μία ενιαία διεπαφή κινητού.",
     year: "2024",
     role: "Mobile Developer",
     images: [
@@ -191,11 +191,11 @@ export const projects: Project[] = [
     id: "5",
     title: "Habit Tracker",
     description:
-      "Beautiful habit tracking app with streak tracking, statistics dashboard, and customizable colors.",
+      "Όμορφη εφαρμογή παρακολούθησης συνηθειών με παρακολούθηση σερί, dashboard στατιστικών και προσαρμόσιμα χρώματα.",
     fullDescription:
-      "A modern habit tracking application built with Next.js 16 and shadcn/ui. Users can create and track daily habits, build streaks, and visualize progress with an intuitive interface. The app features a 7-day view for quick weekly overview, statistics dashboard showing completion rates, and 17 customizable color options for personalizing habits. All data persists locally in the browser with full dark mode support.",
+      "Μια σύγχρονη εφαρμογή παρακολούθησης συνηθειών κατασκευασμένη με Next.js 16 και shadcn/ui. Οι χρήστες μπορούν να δημιουργούν και να παρακολουθούν καθημερινές συνήθειες, να χτίζουν σερί και να οπτικοποιούν την πρόοδό τους με μια διαισθητική διεπαφή. Η εφαρμογή διαθέτει προβολή 7 ημερών για γρήγορη εβδομαδιαία επισκόπηση, dashboard στατιστικών που δείχνει ποσοστά ολοκλήρωσης και 17 προσαρμόσιμες επιλογές χρωμάτων για εξατομίκευση συνηθειών. Όλα τα δεδομένα αποθηκεύονται τοπικά στον browser με πλήρη υποστήριξη dark mode.",
     tag: "Web App",
-    category: "Web Apps",
+    category: "Web Εφαρμογές",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -208,19 +208,19 @@ export const projects: Project[] = [
     gradientFrom: "#6366f1",
     gradientTo: "#a855f7",
     features: [
-      "Visual progress tracking with habit cards",
-      "Current and longest streak calculations",
-      "7-day completion overview",
-      "Statistics dashboard with completion rates",
-      "17 customizable color options per habit",
-      "Local storage data persistence",
-      "Responsive design for all devices",
-      "Dark mode support"
+      "Οπτική παρακολούθηση προόδου με κάρτες συνηθειών",
+      "Υπολογισμοί τρέχοντος και μεγαλύτερου σερί",
+      "Επισκόπηση ολοκλήρωσης 7 ημερών",
+      "Dashboard στατιστικών με ποσοστά ολοκλήρωσης",
+      "17 προσαρμόσιμες επιλογές χρωμάτων ανά συνήθεια",
+      "Τοπική αποθήκευση δεδομένων",
+      "Responsive σχεδιασμός για όλες τις συσκευές",
+      "Υποστήριξη dark mode"
     ],
     challenges:
-      "The main challenge was building a smooth and responsive UI that updates in real-time while persisting data to local storage. Implementing streak calculations that correctly handle missed days and timezone differences required careful logic to ensure accurate tracking.",
+      "Η κύρια πρόκληση ήταν η κατασκευή μιας ομαλής και responsive διεπαφής που ενημερώνεται σε πραγματικό χρόνο ενώ αποθηκεύει δεδομένα στο local storage. Η υλοποίηση υπολογισμών σερί που διαχειρίζονται σωστά τις χαμένες ημέρες και τις διαφορές ζωνών ώρας απαίτησε προσεκτική λογική για ακριβή παρακολούθηση.",
     outcome:
-      "The app provides a clean, distraction-free way to build and maintain daily habits. Users can quickly log completions, track their streaks, and see their progress at a glance with an elegant, customizable interface.",
+      "Η εφαρμογή παρέχει έναν καθαρό, χωρίς περισπασμούς τρόπο για να χτίζεις και να διατηρείς καθημερινές συνήθειες. Οι χρήστες μπορούν γρήγορα να καταγράφουν ολοκληρώσεις, να παρακολουθούν τα σερί τους και να βλέπουν την πρόοδό τους με μια ματιά μέσω μιας κομψής, προσαρμόσιμης διεπαφής.",
     year: "2024",
     role: "Full Stack Developer",
     images: [
@@ -232,11 +232,11 @@ export const projects: Project[] = [
     id: "6",
     title: "Replog",
     description:
-      "Full-stack gym tracking PWA for logging workouts, tracking progress, and sharing programs.",
+      "Full-stack PWA παρακολούθησης γυμναστικής για καταγραφή προπονήσεων, παρακολούθηση προόδου και κοινοποίηση προγραμμάτων.",
     fullDescription:
-      "A modern gym tracking application built with Next.js 15, TypeScript, and MongoDB. Users can create custom workout programs, log weights, reps, and sets for every exercise, and monitor progress over time. The app displays previous workout data to help beat personal records, supports program sharing via email, and automatically saves workout progress for resuming unfinished sessions. Built as a Progressive Web App, it works offline and can be installed on any device.",
+      "Μια σύγχρονη εφαρμογή παρακολούθησης γυμναστικής κατασκευασμένη με Next.js 15, TypeScript και MongoDB. Οι χρήστες μπορούν να δημιουργούν προσαρμοσμένα προγράμματα προπόνησης, να καταγράφουν βάρη, επαναλήψεις και σετ για κάθε άσκηση, και να παρακολουθούν την πρόοδό τους με τον καιρό. Η εφαρμογή εμφανίζει δεδομένα προηγούμενων προπονήσεων για να βοηθήσει στο σπάσιμο προσωπικών ρεκόρ, υποστηρίζει κοινοποίηση προγραμμάτων μέσω email και αποθηκεύει αυτόματα την πρόοδο προπόνησης για συνέχιση ημιτελών συνεδριών. Κατασκευασμένη ως Progressive Web App, λειτουργεί offline και μπορεί να εγκατασταθεί σε οποιαδήποτε συσκευή.",
     tag: "Web App",
-    category: "Web Apps",
+    category: "Web Εφαρμογές",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -249,19 +249,19 @@ export const projects: Project[] = [
     gradientFrom: "#ff416c",
     gradientTo: "#ff4b2b",
     features: [
-      "User authentication with NextAuth.js",
-      "Custom workout program creation",
-      "Workout logging with weights, reps, and sets",
-      "Previous workout data for beating PRs",
-      "One-click copy from previous workouts",
-      "Program sharing with other users",
-      "Auto-save and resume unfinished workouts",
-      "Installable PWA with offline support"
+      "Αυθεντικοποίηση χρηστών με NextAuth.js",
+      "Δημιουργία προσαρμοσμένων προγραμμάτων προπόνησης",
+      "Καταγραφή προπόνησης με βάρη, επαναλήψεις και σετ",
+      "Δεδομένα προηγούμενων προπονήσεων για σπάσιμο ρεκόρ",
+      "Αντιγραφή με ένα κλικ από προηγούμενες προπονήσεις",
+      "Κοινοποίηση προγραμμάτων με άλλους χρήστες",
+      "Αυτόματη αποθήκευση και συνέχιση ημιτελών προπονήσεων",
+      "Εγκαταστάσιμο PWA με υποστήριξη offline"
     ],
     challenges:
-      "The main challenge was building a seamless workout tracking experience that persists progress even when the app is closed unexpectedly. Implementing auto-save to localStorage with MongoDB sync, along with PWA functionality for offline use, required careful state management and data synchronization logic.",
+      "Η κύρια πρόκληση ήταν η κατασκευή μιας απρόσκοπτης εμπειρίας παρακολούθησης προπόνησης που διατηρεί την πρόοδο ακόμα και όταν η εφαρμογή κλείσει απροσδόκητα. Η υλοποίηση αυτόματης αποθήκευσης σε localStorage με συγχρονισμό MongoDB, μαζί με λειτουργικότητα PWA για χρήση offline, απαίτησε προσεκτική διαχείριση κατάστασης και λογική συγχρονισμού δεδομένων.",
     outcome:
-      "The app provides a complete gym tracking solution that users can install on their devices. Athletes can track their progress, share programs, and never lose workout data thanks to automatic saving and resume functionality.",
+      "Η εφαρμογή παρέχει μια ολοκληρωμένη λύση παρακολούθησης γυμναστικής που οι χρήστες μπορούν να εγκαταστήσουν στις συσκευές τους. Οι αθλητές μπορούν να παρακολουθούν την πρόοδό τους, να μοιράζονται προγράμματα και να μην χάνουν ποτέ δεδομένα προπόνησης χάρη στην αυτόματη αποθήκευση και τη λειτουργία συνέχισης.",
     year: "2024",
     role: "Full Stack Developer",
     images: [
@@ -275,11 +275,11 @@ export const projects: Project[] = [
     id: "7",
     title: "MCubed Dashboard",
     description:
-      "Device management and GPS tracking dashboard with real-time monitoring, geofencing, and activity analytics.",
+      "Dashboard διαχείρισης συσκευών και GPS παρακολούθησης με παρακολούθηση σε πραγματικό χρόνο, geofencing και αναλυτικά στοιχεία δραστηριότητας.",
     fullDescription:
-      "A comprehensive device management and tracking dashboard application built with Next.js and MongoDB. The system enables real-time GPS tracking of devices, user management with push notifications via Firebase Cloud Messaging, SMS functionality, SIM card management, and detailed activity monitoring. The dashboard provides location history with satellite data, geofencing capabilities, and comprehensive reporting tools for tracking device usage patterns.",
+      "Μια ολοκληρωμένη εφαρμογή dashboard διαχείρισης συσκευών και παρακολούθησης κατασκευασμένη με Next.js και MongoDB. Το σύστημα επιτρέπει την παρακολούθηση GPS συσκευών σε πραγματικό χρόνο, διαχείριση χρηστών με push notifications μέσω Firebase Cloud Messaging, λειτουργικότητα SMS, διαχείριση καρτών SIM και λεπτομερή παρακολούθηση δραστηριότητας. Το dashboard παρέχει ιστορικό τοποθεσίας με δορυφορικά δεδομένα, δυνατότητες geofencing και ολοκληρωμένα εργαλεία αναφορών για παρακολούθηση μοτίβων χρήσης συσκευών.",
     tag: "Web App",
-    category: "Web Apps",
+    category: "Web Εφαρμογές",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -293,19 +293,19 @@ export const projects: Project[] = [
     gradientFrom: "#4776e6",
     gradientTo: "#8e54e9",
     features: [
-      "Real-time GPS device tracking with location history",
-      "Geofencing and boundary alerts",
-      "User management with FCM push notifications",
-      "SMS messaging to devices",
-      "SIM card management system",
-      "Activity monitoring with calories, walks, and duration",
-      "Interactive maps with Leaflet",
-      "System notifications and user reports"
+      "Παρακολούθηση GPS συσκευών σε πραγματικό χρόνο με ιστορικό τοποθεσίας",
+      "Geofencing και ειδοποιήσεις ορίων",
+      "Διαχείριση χρηστών με FCM push notifications",
+      "Αποστολή SMS σε συσκευές",
+      "Σύστημα διαχείρισης καρτών SIM",
+      "Παρακολούθηση δραστηριότητας με θερμίδες, βόλτες και διάρκεια",
+      "Διαδραστικοί χάρτες με Leaflet",
+      "Ειδοποιήσεις συστήματος και αναφορές χρηστών"
     ],
     challenges:
-      "The main challenge was building a real-time tracking system that handles multiple devices simultaneously while maintaining performance. Integrating GPS data with interactive maps and implementing geofencing logic required careful architecture to ensure accurate and responsive location updates.",
+      "Η κύρια πρόκληση ήταν η κατασκευή ενός συστήματος παρακολούθησης σε πραγματικό χρόνο που διαχειρίζεται πολλαπλές συσκευές ταυτόχρονα διατηρώντας την απόδοση. Η ενσωμάτωση δεδομένων GPS με διαδραστικούς χάρτες και η υλοποίηση λογικής geofencing απαίτησε προσεκτική αρχιτεκτονική για ακριβείς και responsive ενημερώσεις τοποθεσίας.",
     outcome:
-      "The dashboard provides a centralized platform for managing GPS-enabled devices, enabling users to track locations, monitor activity, and receive alerts in real-time. The system handles device fleets efficiently with comprehensive reporting capabilities.",
+      "Το dashboard παρέχει μια κεντρική πλατφόρμα για τη διαχείριση συσκευών με GPS, επιτρέποντας στους χρήστες να παρακολουθούν τοποθεσίες, να παρακολουθούν τη δραστηριότητα και να λαμβάνουν ειδοποιήσεις σε πραγματικό χρόνο. Το σύστημα διαχειρίζεται αποτελεσματικά στόλους συσκευών με ολοκληρωμένες δυνατότητες αναφορών.",
     year: "2024",
     role: "Full Stack Developer",
     images: [
@@ -318,11 +318,11 @@ export const projects: Project[] = [
     id: "8",
     title: "Trip Cost Calculator",
     description:
-      "Road trip cost calculator for Greece with fuel consumption, toll fees, and interactive route mapping.",
+      "Υπολογιστής κόστους ταξιδιού για την Ελλάδα με κατανάλωση καυσίμου, διόδια και διαδραστική χαρτογράφηση διαδρομής.",
     fullDescription:
-      "A web application that helps travelers estimate the total cost of road trips in Greece by calculating fuel consumption and toll road fees. Built with Next.js, TypeScript, and Mapbox, the calculator provides an intuitive interface with real-time route visualization. Users can select vehicle types, split costs among passengers, compare toll vs. toll-free routes, and get accurate estimates for any journey across Greece.",
+      "Μια web εφαρμογή που βοηθά τους ταξιδιώτες να εκτιμήσουν το συνολικό κόστος οδικών ταξιδιών στην Ελλάδα υπολογίζοντας την κατανάλωση καυσίμου και τα διόδια. Κατασκευασμένη με Next.js, TypeScript και Mapbox, ο υπολογιστής παρέχει μια διαισθητική διεπαφή με οπτικοποίηση διαδρομής σε πραγματικό χρόνο. Οι χρήστες μπορούν να επιλέξουν τύπους οχημάτων, να μοιραστούν τα κόστη μεταξύ επιβατών, να συγκρίνουν διαδρομές με ή χωρίς διόδια και να λάβουν ακριβείς εκτιμήσεις για οποιοδήποτε ταξίδι στην Ελλάδα.",
     tag: "Web App",
-    category: "Web Apps",
+    category: "Web Εφαρμογές",
     techStack: [
       "Next.js",
       "TypeScript",
@@ -334,18 +334,18 @@ export const projects: Project[] = [
     gradientFrom: "#11998e",
     gradientTo: "#38ef7d",
     features: [
-      "Interactive route mapping with Mapbox",
-      "Fuel cost calculation based on vehicle type and consumption",
-      "Smart toll estimation for 7 major routes",
-      "Multiple vehicle types with different toll multipliers",
-      "Cost splitting among passengers",
-      "Toll-free alternative route finder",
-      "Detailed cost breakdown with distance and duration"
+      "Διαδραστική χαρτογράφηση διαδρομής με Mapbox",
+      "Υπολογισμός κόστους καυσίμου βάσει τύπου οχήματος και κατανάλωσης",
+      "Έξυπνη εκτίμηση διοδίων για 7 κύριες διαδρομές",
+      "Πολλαπλοί τύποι οχημάτων με διαφορετικούς πολλαπλασιαστές διοδίων",
+      "Διαμερισμός κόστους μεταξύ επιβατών",
+      "Εύρεση εναλλακτικής διαδρομής χωρίς διόδια",
+      "Λεπτομερής ανάλυση κόστους με απόσταση και διάρκεια"
     ],
     challenges:
-      "The main challenge was building accurate toll estimation logic that works for both known routes with fixed prices and unknown routes using distance-based formulas. Integrating Mapbox for real-time route visualization while keeping the interface simple required careful UX decisions.",
+      "Η κύρια πρόκληση ήταν η κατασκευή ακριβούς λογικής εκτίμησης διοδίων που λειτουργεί τόσο για γνωστές διαδρομές με σταθερές τιμές όσο και για άγνωστες διαδρομές χρησιμοποιώντας φόρμουλες βάσει απόστασης. Η ενσωμάτωση Mapbox για οπτικοποίηση διαδρομής σε πραγματικό χρόνο διατηρώντας απλή τη διεπαφή απαίτησε προσεκτικές αποφάσεις UX.",
     outcome:
-      "The calculator helps travelers plan road trips with accurate cost estimates, compare routes, and fairly split expenses among companions. It serves as a practical tool for anyone driving in Greece.",
+      "Ο υπολογιστής βοηθά τους ταξιδιώτες να σχεδιάσουν οδικά ταξίδια με ακριβείς εκτιμήσεις κόστους, να συγκρίνουν διαδρομές και να μοιράζονται δίκαια τα έξοδα μεταξύ συνταξιδιωτών. Χρησιμεύει ως πρακτικό εργαλείο για οποιονδήποτε οδηγεί στην Ελλάδα.",
     year: "2024",
     role: "Full Stack Developer",
     images: [
@@ -357,11 +357,11 @@ export const projects: Project[] = [
     id: "9",
     title: "CapCap",
     description:
-      "Website for Greece's most beloved cupcake and sweets shop with menu, locations, and catering services.",
+      "Ιστοσελίδα για το πιο αγαπημένο κατάστημα cupcakes και γλυκών της Ελλάδας με μενού, τοποθεσίες και υπηρεσίες catering.",
     fullDescription:
-      "A WordPress website developed for CapCap, the biggest and most popular cupcake and sweets destination in Greece. Built with Elementor, the site showcases the irresistible menu of cupcakes, cakes, and sweet treats that have made CapCap a must-visit spot for dessert lovers. The design captures the playful and indulgent spirit of the brand while helping customers explore the menu, find store locations, and inquire about catering for special events.",
+      "Μια ιστοσελίδα WordPress που αναπτύχθηκε για το CapCap, τον μεγαλύτερο και πιο δημοφιλή προορισμό για cupcakes και γλυκά στην Ελλάδα. Κατασκευασμένη με Elementor, η ιστοσελίδα παρουσιάζει το αξιολάτρευτο μενού από cupcakes, τούρτες και γλυκές απολαύσεις που έχουν κάνει το CapCap απαραίτητη στάση για τους λάτρεις των γλυκών. Ο σχεδιασμός αποτυπώνει το παιχνιδιάρικο και απολαυστικό πνεύμα της μάρκας ενώ βοηθά τους πελάτες να εξερευνήσουν το μενού, να βρουν τοποθεσίες καταστημάτων και να ρωτήσουν για catering για ειδικές εκδηλώσεις.",
     tag: "Website",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "Elementor",
@@ -373,18 +373,18 @@ export const projects: Project[] = [
     gradientFrom: "#ff758c",
     gradientTo: "#ff7eb3",
     features: [
-      "Cupcake and sweets menu showcase",
-      "Store locations across Greece",
-      "Catering and event inquiry forms",
-      "Seasonal specials and new arrivals section",
-      "Brand story and company heritage",
-      "Mobile-responsive design",
-      "Social media integration"
+      "Παρουσίαση μενού cupcakes και γλυκών",
+      "Τοποθεσίες καταστημάτων σε όλη την Ελλάδα",
+      "Φόρμες ερωτήσεων για catering και εκδηλώσεις",
+      "Ενότητα εποχιακών προσφορών και νέων αφίξεων",
+      "Ιστορία μάρκας και κληρονομιά εταιρείας",
+      "Mobile-responsive σχεδιασμός",
+      "Ενσωμάτωση social media"
     ],
     challenges:
-      "The challenge was creating a website that captures the joy and indulgence of the CapCap experience while making it easy for customers to explore the menu and find their nearest location. The design needed to be as inviting and sweet as the products themselves, encouraging visitors to stop by.",
+      "Η πρόκληση ήταν η δημιουργία μιας ιστοσελίδας που αποτυπώνει τη χαρά και την απόλαυση της εμπειρίας CapCap ενώ διευκολύνει τους πελάτες να εξερευνήσουν το μενού και να βρουν το πλησιέστερο κατάστημα. Ο σχεδιασμός έπρεπε να είναι εξίσου προσκλητικός και γλυκός με τα ίδια τα προϊόντα, ενθαρρύνοντας τους επισκέπτες να περάσουν από το κατάστημα.",
     outcome:
-      "The website showcases why CapCap has become a beloved destination for sweets lovers across Greece, driving foot traffic to stores and generating catering inquiries for parties and corporate events.",
+      "Η ιστοσελίδα παρουσιάζει γιατί το CapCap έχει γίνει αγαπημένος προορισμός για τους λάτρεις των γλυκών σε όλη την Ελλάδα, οδηγώντας επισκεψιμότητα στα καταστήματα και δημιουργώντας ερωτήματα για catering για πάρτι και εταιρικές εκδηλώσεις.",
     year: "2024",
     role: "Web Developer",
     images: [
@@ -398,11 +398,11 @@ export const projects: Project[] = [
     id: "10",
     title: "Bubble Tea",
     description:
-      "Website for Greece's largest bubble tea brand featuring menu, locations, and franchise information.",
+      "Ιστοσελίδα για τη μεγαλύτερη αλυσίδα bubble tea της Ελλάδας με μενού, τοποθεσίες και πληροφορίες franchise.",
     fullDescription:
-      "A WordPress website developed for the biggest bubble tea chain in Greece. Built with Elementor, the site showcases the full drink menu with customization options, store locations across the country, and franchise opportunities. The design captures the fun and colorful identity of the brand while providing customers with everything they need to find their nearest store and explore the menu before visiting.",
+      "Μια ιστοσελίδα WordPress που αναπτύχθηκε για τη μεγαλύτερη αλυσίδα bubble tea στην Ελλάδα. Κατασκευασμένη με Elementor, η ιστοσελίδα παρουσιάζει το πλήρες μενού ροφημάτων με επιλογές προσαρμογής, τοποθεσίες καταστημάτων σε όλη τη χώρα και ευκαιρίες franchise. Ο σχεδιασμός αποτυπώνει τη διασκεδαστική και πολύχρωμη ταυτότητα της μάρκας ενώ παρέχει στους πελάτες όλα όσα χρειάζονται για να βρουν το πλησιέστερο κατάστημα και να εξερευνήσουν το μενού πριν την επίσκεψη.",
     tag: "Website",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "Elementor",
@@ -414,18 +414,18 @@ export const projects: Project[] = [
     gradientFrom: "#ee9ca7",
     gradientTo: "#ffdde1",
     features: [
-      "Interactive drink menu with customization options",
-      "Store locator with all Greek locations",
-      "Franchise inquiry and partnership information",
-      "Brand story and company information",
-      "Mobile-responsive design",
-      "Social media integration",
-      "Contact forms for business inquiries"
+      "Διαδραστικό μενού ροφημάτων με επιλογές προσαρμογής",
+      "Εύρεση καταστήματος με όλες τις ελληνικές τοποθεσίες",
+      "Πληροφορίες franchise και συνεργασιών",
+      "Ιστορία μάρκας και πληροφορίες εταιρείας",
+      "Mobile-responsive σχεδιασμός",
+      "Ενσωμάτωση social media",
+      "Φόρμες επικοινωνίας για επαγγελματικές ερωτήσεις"
     ],
     challenges:
-      "The challenge was presenting a large and customizable drink menu in an engaging way while making it easy for customers to find their nearest location. The design needed to reflect the playful brand identity while remaining functional and informative for both customers and potential franchise partners.",
+      "Η πρόκληση ήταν η παρουσίαση ενός μεγάλου και προσαρμόσιμου μενού ροφημάτων με ελκυστικό τρόπο διευκολύνοντας παράλληλα τους πελάτες να βρουν το πλησιέστερο κατάστημα. Ο σχεδιασμός έπρεπε να αντικατοπτρίζει την παιχνιδιάρικη ταυτότητα της μάρκας παραμένοντας λειτουργικός και ενημερωτικός τόσο για πελάτες όσο και για πιθανούς συνεργάτες franchise.",
     outcome:
-      "The website serves as the central hub for the brand, helping customers discover locations and menu options while generating franchise inquiries from entrepreneurs looking to join Greece's leading bubble tea chain.",
+      "Η ιστοσελίδα λειτουργεί ως κεντρικός κόμβος για τη μάρκα, βοηθώντας τους πελάτες να ανακαλύψουν τοποθεσίες και επιλογές μενού ενώ δημιουργεί ερωτήματα franchise από επιχειρηματίες που θέλουν να συμμετάσχουν στην κορυφαία αλυσίδα bubble tea της Ελλάδας.",
     year: "2024",
     role: "Web Developer",
     images: [
@@ -438,11 +438,11 @@ export const projects: Project[] = [
     id: "11",
     title: "Econest",
     description:
-      "E-commerce store for home renovation products including furniture, decor, and building materials.",
+      "E-commerce κατάστημα για προϊόντα ανακαίνισης σπιτιού συμπεριλαμβανομένων επίπλων, διακόσμησης και οικοδομικών υλικών.",
     fullDescription:
-      "A WordPress e-commerce website built for a home renovation retailer offering everything from furniture and decor to tools and building materials. Using WooCommerce and Elementor, the store provides customers with a comprehensive catalog organized by room type, project category, and brand. The site is designed to help homeowners and contractors find exactly what they need for any renovation project, with detailed product specifications and easy bulk ordering options.",
+      "Μια e-commerce ιστοσελίδα WordPress κατασκευασμένη για λιανοπωλητή προϊόντων ανακαίνισης που προσφέρει τα πάντα, από έπιπλα και διακόσμηση έως εργαλεία και οικοδομικά υλικά. Χρησιμοποιώντας WooCommerce και Elementor, το κατάστημα παρέχει στους πελάτες έναν ολοκληρωμένο κατάλογο οργανωμένο κατά τύπο δωματίου, κατηγορία έργου και μάρκα. Η ιστοσελίδα έχει σχεδιαστεί για να βοηθά ιδιοκτήτες σπιτιών και εργολάβους να βρίσκουν ακριβώς αυτό που χρειάζονται για οποιοδήποτε έργο ανακαίνισης, με λεπτομερείς προδιαγραφές προϊόντων και εύκολες επιλογές χονδρικής παραγγελίας.",
     tag: "E-commerce",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "WooCommerce",
@@ -455,18 +455,18 @@ export const projects: Project[] = [
     gradientFrom: "#f5af19",
     gradientTo: "#f12711",
     features: [
-      "Large product catalog with category organization",
-      "Filtering by room, project type, and brand",
-      "Detailed product specifications and dimensions",
-      "Cart and secure checkout system",
-      "Bulk ordering for contractors",
-      "Stock and inventory management",
-      "Mobile-friendly shopping experience"
+      "Μεγάλος κατάλογος προϊόντων με οργάνωση κατηγοριών",
+      "Φιλτράρισμα κατά δωμάτιο, τύπο έργου και μάρκα",
+      "Λεπτομερείς προδιαγραφές προϊόντων και διαστάσεις",
+      "Καλάθι και ασφαλές σύστημα checkout",
+      "Χονδρικές παραγγελίες για εργολάβους",
+      "Διαχείριση αποθέματος και inventory",
+      "Mobile-friendly εμπειρία αγορών"
     ],
     challenges:
-      "The main challenge was organizing a large and diverse product catalog in a way that makes it easy for both homeowners and professionals to find what they need. Custom category structures and filtering options were implemented to streamline product discovery across different renovation projects.",
+      "Η κύρια πρόκληση ήταν η οργάνωση ενός μεγάλου και ποικίλου καταλόγου προϊόντων με τρόπο που διευκολύνει τόσο τους ιδιοκτήτες σπιτιών όσο και τους επαγγελματίες να βρουν αυτό που χρειάζονται. Υλοποιήθηκαν προσαρμοσμένες δομές κατηγοριών και επιλογές φιλτραρίσματος για τον εξορθολογισμό της ανακάλυψης προϊόντων σε διαφορετικά έργα ανακαίνισης.",
     outcome:
-      "The business now reaches customers online with a well-organized store that handles everything from small decor purchases to large material orders. The client manages products, pricing, and orders directly from the WordPress dashboard.",
+      "Η επιχείρηση πλέον φτάνει πελάτες online με ένα καλά οργανωμένο κατάστημα που διαχειρίζεται τα πάντα, από μικρές αγορές διακόσμησης έως μεγάλες παραγγελίες υλικών. Ο πελάτης διαχειρίζεται προϊόντα, τιμολόγηση και παραγγελίες απευθείας από το WordPress dashboard.",
     year: "2024",
     role: "Web Developer",
     images: [
@@ -479,11 +479,11 @@ export const projects: Project[] = [
     id: "12",
     title: "Golden Smile",
     description:
-      "Professional dentistry website showcasing dental services, team, and appointment booking.",
+      "Επαγγελματική ιστοσελίδα οδοντιατρείου που παρουσιάζει οδοντιατρικές υπηρεσίες, ομάδα και κράτηση ραντεβού.",
     fullDescription:
-      "A WordPress website currently under development for a dental clinic in Greece. Built with Elementor, the site presents the clinic's services, introduces the dental team, and provides patients with essential information about treatments. The design prioritizes trust and professionalism, with clear navigation to help visitors find the services they need and easily get in touch with the clinic.",
+      "Μια ιστοσελίδα WordPress που βρίσκεται υπό ανάπτυξη για οδοντιατρική κλινική στην Ελλάδα. Κατασκευασμένη με Elementor, η ιστοσελίδα παρουσιάζει τις υπηρεσίες της κλινικής, εισάγει την οδοντιατρική ομάδα και παρέχει στους ασθενείς βασικές πληροφορίες για τις θεραπείες. Ο σχεδιασμός δίνει προτεραιότητα στην εμπιστοσύνη και τον επαγγελματισμό, με σαφή πλοήγηση για να βοηθήσει τους επισκέπτες να βρουν τις υπηρεσίες που χρειάζονται και να επικοινωνήσουν εύκολα με την κλινική.",
     tag: "Website",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "Elementor",
@@ -495,18 +495,18 @@ export const projects: Project[] = [
     gradientFrom: "#56ccf2",
     gradientTo: "#2f80ed",
     features: [
-      "Service pages for dental treatments",
-      "Team and dentist profile sections",
-      "Contact and appointment inquiry forms",
-      "Clinic location and hours information",
-      "Mobile-responsive design",
-      "SEO-optimized structure for local search",
-      "Before/after treatment gallery"
+      "Σελίδες υπηρεσιών για οδοντιατρικές θεραπείες",
+      "Ενότητες ομάδας και προφίλ οδοντιάτρων",
+      "Φόρμες επικοινωνίας και κράτησης ραντεβού",
+      "Πληροφορίες τοποθεσίας και ωραρίου κλινικής",
+      "Mobile-responsive σχεδιασμός",
+      "SEO-βελτιστοποιημένη δομή για τοπική αναζήτηση",
+      "Γκαλερί πριν/μετά τη θεραπεία"
     ],
     challenges:
-      "The challenge is creating a website that conveys professionalism and trust while making it easy for patients to understand available treatments and contact the clinic. The design balances medical credibility with approachability to reduce patient anxiety about dental visits.",
+      "Η πρόκληση είναι η δημιουργία μιας ιστοσελίδας που μεταδίδει επαγγελματισμό και εμπιστοσύνη ενώ διευκολύνει τους ασθενείς να κατανοήσουν τις διαθέσιμες θεραπείες και να επικοινωνήσουν με την κλινική. Ο σχεδιασμός ισορροπεί την ιατρική αξιοπιστία με την προσιτότητα για να μειώσει το άγχος των ασθενών για τις οδοντιατρικές επισκέψεις.",
     outcome:
-      "Currently under development. The website will help the clinic establish a stronger online presence and make it easier for new patients to discover their services and book appointments.",
+      "Βρίσκεται υπό ανάπτυξη. Η ιστοσελίδα θα βοηθήσει την κλινική να εδραιώσει ισχυρότερη online παρουσία και να διευκολύνει τους νέους ασθενείς να ανακαλύψουν τις υπηρεσίες τους και να κλείσουν ραντεβού.",
     year: "2025",
     role: "Web Developer",
     images: [
@@ -520,11 +520,11 @@ export const projects: Project[] = [
     id: "13",
     title: "Greek Property Hunters",
     description:
-      "Subscription platform for finding value-for-money land opportunities across Greece with email notifications.",
+      "Πλατφόρμα συνδρομής για εύρεση ευκαιριών οικοπέδων με καλή σχέση ποιότητας-τιμής σε όλη την Ελλάδα με email ειδοποιήσεις.",
     fullDescription:
-      "A WordPress subscription-based platform helping users discover the best value-for-money land listings across Greece. Built with Elementor and integrated with a membership system, subscribers receive curated property alerts based on their preferences, budget, and desired locations. The site aggregates land opportunities, evaluates them for investment potential, and notifies members before properties hit the mainstream market.",
+      "Μια πλατφόρμα συνδρομής WordPress που βοηθά τους χρήστες να ανακαλύψουν τις καλύτερες καταχωρήσεις οικοπέδων με σχέση ποιότητας-τιμής σε όλη την Ελλάδα. Κατασκευασμένη με Elementor και ενσωματωμένη με σύστημα μελών, οι συνδρομητές λαμβάνουν επιλεγμένες ειδοποιήσεις ακινήτων βάσει των προτιμήσεών τους, του προϋπολογισμού και των επιθυμητών τοποθεσιών. Η ιστοσελίδα συγκεντρώνει ευκαιρίες οικοπέδων, τις αξιολογεί για επενδυτικό δυναμικό και ειδοποιεί τα μέλη πριν τα ακίνητα εμφανιστούν στην κύρια αγορά.",
     tag: "Website",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "Elementor",
@@ -537,18 +537,18 @@ export const projects: Project[] = [
     gradientFrom: "#667eea",
     gradientTo: "#764ba2",
     features: [
-      "Subscription-based membership system",
-      "Curated land listing alerts via email",
-      "Property filtering by region, size, and budget",
-      "Value-for-money analysis on each listing",
-      "Member dashboard with saved searches",
-      "Early access to new listings before public release",
-      "Mobile-friendly property browsing"
+      "Σύστημα μελών βασισμένο σε συνδρομή",
+      "Επιλεγμένες ειδοποιήσεις οικοπέδων μέσω email",
+      "Φιλτράρισμα ακινήτων κατά περιοχή, μέγεθος και προϋπολογισμό",
+      "Ανάλυση σχέσης ποιότητας-τιμής για κάθε καταχώρηση",
+      "Dashboard μέλους με αποθηκευμένες αναζητήσεις",
+      "Πρώιμη πρόσβαση σε νέες καταχωρήσεις πριν τη δημόσια κυκλοφορία",
+      "Mobile-friendly περιήγηση ακινήτων"
     ],
     challenges:
-      "The challenge was building a reliable notification system that delivers timely alerts without overwhelming subscribers. Custom automation was set up to filter new listings based on member preferences and send targeted emails only for relevant opportunities.",
+      "Η πρόκληση ήταν η κατασκευή ενός αξιόπιστου συστήματος ειδοποιήσεων που παραδίδει έγκαιρες ειδοποιήσεις χωρίς να κατακλύζει τους συνδρομητές. Ρυθμίστηκε προσαρμοσμένος αυτοματισμός για να φιλτράρει νέες καταχωρήσεις βάσει προτιμήσεων μελών και να στέλνει στοχευμένα emails μόνο για σχετικές ευκαιρίες.",
     outcome:
-      "Subscribers now receive personalized land alerts directly to their inbox, helping them find investment opportunities faster than browsing traditional listing sites. The platform has grown a loyal member base seeking land deals across Greece.",
+      "Οι συνδρομητές τώρα λαμβάνουν εξατομικευμένες ειδοποιήσεις οικοπέδων απευθείας στα εισερχόμενά τους, βοηθώντας τους να βρουν επενδυτικές ευκαιρίες πιο γρήγορα από την περιήγηση σε παραδοσιακές ιστοσελίδες καταχωρήσεων. Η πλατφόρμα έχει αναπτύξει μια πιστή βάση μελών που αναζητούν ευκαιρίες οικοπέδων σε όλη την Ελλάδα.",
     year: "2024",
     role: "Web Developer",
     images: [
@@ -562,11 +562,11 @@ export const projects: Project[] = [
     id: "14",
     title: "Hona Festival",
     description:
-      "Event website for a Naxos cultural festival with online ticketing and event schedule.",
+      "Ιστοσελίδα εκδήλωσης για πολιτιστικό φεστιβάλ στη Νάξο με online πώληση εισιτηρίων και πρόγραμμα εκδηλώσεων.",
     fullDescription:
-      "A WordPress website developed for a cultural festival in Naxos, Greece. Built with Elementor, the site serves as the central hub for event information, artist lineups, and ticket purchases. The online ticketing system allows visitors to browse available events, select seats or ticket types, and complete secure purchases. The design captures the vibrant atmosphere of the festival while providing a straightforward path from discovery to booking.",
+      "Μια ιστοσελίδα WordPress που αναπτύχθηκε για ένα πολιτιστικό φεστιβάλ στη Νάξο, Ελλάδα. Κατασκευασμένη με Elementor, η ιστοσελίδα λειτουργεί ως κεντρικός κόμβος για πληροφορίες εκδηλώσεων, προγράμματα καλλιτεχνών και αγορές εισιτηρίων. Το online σύστημα εισιτηρίων επιτρέπει στους επισκέπτες να περιηγηθούν στις διαθέσιμες εκδηλώσεις, να επιλέξουν θέσεις ή τύπους εισιτηρίων και να ολοκληρώσουν ασφαλείς αγορές. Ο σχεδιασμός αποτυπώνει τη ζωντανή ατμόσφαιρα του φεστιβάλ ενώ παρέχει μια απλή διαδρομή από την ανακάλυψη στην κράτηση.",
     tag: "Website",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "Elementor",
@@ -579,18 +579,18 @@ export const projects: Project[] = [
     gradientFrom: "#f6d365",
     gradientTo: "#fda085",
     features: [
-      "Online ticket purchasing system",
-      "Event schedule and artist lineup pages",
-      "Secure payment processing",
-      "Mobile-responsive event browsing",
-      "Ticket management from WordPress admin",
-      "Event countdown and announcements",
-      "Social media integration for event sharing"
+      "Online σύστημα αγοράς εισιτηρίων",
+      "Σελίδες προγράμματος εκδηλώσεων και lineup καλλιτεχνών",
+      "Ασφαλής επεξεργασία πληρωμών",
+      "Mobile-responsive περιήγηση εκδηλώσεων",
+      "Διαχείριση εισιτηρίων από το WordPress admin",
+      "Αντίστροφη μέτρηση και ανακοινώσεις εκδηλώσεων",
+      "Ενσωμάτωση social media για κοινοποίηση εκδηλώσεων"
     ],
     challenges:
-      "The main challenge was implementing a reliable ticketing system that could handle high demand during ticket release periods while keeping the booking process simple for users unfamiliar with online purchases. The system was configured to manage ticket inventory and prevent overselling.",
+      "Η κύρια πρόκληση ήταν η υλοποίηση ενός αξιόπιστου συστήματος εισιτηρίων που μπορεί να διαχειριστεί υψηλή ζήτηση κατά τις περιόδους κυκλοφορίας εισιτηρίων διατηρώντας παράλληλα απλή τη διαδικασία κράτησης για χρήστες που δεν είναι εξοικειωμένοι με online αγορές. Το σύστημα διαμορφώθηκε για να διαχειρίζεται το απόθεμα εισιτηρίων και να αποτρέπει την υπερπώληση.",
     outcome:
-      "The festival successfully sold tickets online for the first time, reducing manual box office work and reaching a wider audience beyond Naxos. Organizers can now track sales and manage event capacity directly from the dashboard.",
+      "Το φεστιβάλ πούλησε επιτυχώς εισιτήρια online για πρώτη φορά, μειώνοντας τη χειρωνακτική εργασία ταμείου και φτάνοντας ευρύτερο κοινό πέρα από τη Νάξο. Οι διοργανωτές μπορούν τώρα να παρακολουθούν τις πωλήσεις και να διαχειρίζονται τη χωρητικότητα εκδηλώσεων απευθείας από το dashboard.",
     year: "2024",
     role: "Web Developer",
     images: [
@@ -604,11 +604,11 @@ export const projects: Project[] = [
     id: "15",
     title: "Ichnos Soap",
     description:
-      "E-commerce website for handcrafted organic soaps and natural skincare products.",
+      "E-commerce ιστοσελίδα για χειροποίητα βιολογικά σαπούνια και φυσικά προϊόντα περιποίησης δέρματος.",
     fullDescription:
-      "A WordPress e-commerce website developed for a local artisan brand specializing in handmade organic soaps and natural skincare. Built with WooCommerce and Elementor, the site showcases the brand's commitment to eco-friendly ingredients while providing customers with a seamless shopping experience. The design emphasizes the natural and organic nature of the products through earthy tones and clean layouts, making it easy for customers to explore product ingredients and benefits before purchase.",
+      "Μια e-commerce ιστοσελίδα WordPress που αναπτύχθηκε για τοπική χειροτεχνική μάρκα που ειδικεύεται σε χειροποίητα βιολογικά σαπούνια και φυσική περιποίηση δέρματος. Κατασκευασμένη με WooCommerce και Elementor, η ιστοσελίδα παρουσιάζει τη δέσμευση της μάρκας σε οικολογικά συστατικά ενώ παρέχει στους πελάτες μια απρόσκοπτη εμπειρία αγορών. Ο σχεδιασμός τονίζει τη φυσική και βιολογική φύση των προϊόντων μέσω γήινων τόνων και καθαρών layouts, διευκολύνοντας τους πελάτες να εξερευνήσουν τα συστατικά και τα οφέλη των προϊόντων πριν την αγορά.",
     tag: "E-commerce",
-    category: "Websites",
+    category: "Ιστοσελίδες",
     techStack: [
       "WordPress",
       "WooCommerce",
@@ -621,18 +621,18 @@ export const projects: Project[] = [
     gradientFrom: "#d4fc79",
     gradientTo: "#96e6a1",
     features: [
-      "Product catalog with ingredient transparency",
-      "Organic certification badges and trust signals",
-      "Cart and secure checkout system",
-      "Product filtering by skin type and ingredients",
-      "Stock and inventory management",
-      "Mobile-optimized shopping experience",
-      "Customer reviews and ratings system"
+      "Κατάλογος προϊόντων με διαφάνεια συστατικών",
+      "Σήματα βιολογικής πιστοποίησης και σήματα εμπιστοσύνης",
+      "Καλάθι και ασφαλές σύστημα checkout",
+      "Φιλτράρισμα προϊόντων κατά τύπο δέρματος και συστατικά",
+      "Διαχείριση αποθέματος και inventory",
+      "Mobile-optimized εμπειρία αγορών",
+      "Σύστημα κριτικών και βαθμολογιών πελατών"
     ],
     challenges:
-      "The challenge was presenting detailed ingredient information and organic certifications in a way that builds customer trust without overwhelming the shopping experience. Custom product templates were created to highlight natural ingredients while keeping the purchase flow simple and intuitive.",
+      "Η πρόκληση ήταν η παρουσίαση λεπτομερών πληροφοριών συστατικών και βιολογικών πιστοποιήσεων με τρόπο που χτίζει εμπιστοσύνη πελατών χωρίς να κατακλύζει την εμπειρία αγορών. Δημιουργήθηκαν προσαρμοσμένα templates προϊόντων για να τονίσουν τα φυσικά συστατικά διατηρώντας απλή και διαισθητική τη ροή αγοράς.",
     outcome:
-      "The brand successfully transitioned to online sales, reaching customers beyond the local market. The client manages all products, orders, and inventory independently through the WordPress dashboard.",
+      "Η μάρκα μετέβη επιτυχώς σε online πωλήσεις, φτάνοντας πελάτες πέρα από την τοπική αγορά. Ο πελάτης διαχειρίζεται όλα τα προϊόντα, τις παραγγελίες και το απόθεμα ανεξάρτητα μέσω του WordPress dashboard.",
     year: "2024",
     role: "Web Developer",
     images: [
@@ -644,11 +644,11 @@ export const projects: Project[] = [
   id: "16",
   title: "Milianjo",
   description:
-    "WooCommerce e-commerce website for beauty products with full shopping and checkout flow.",
+    "WooCommerce e-commerce ιστοσελίδα για προϊόντα ομορφιάς με πλήρη ροή αγορών και checkout.",
   fullDescription:
-    "A custom WordPress e-commerce website built for a beauty products brand. Using WooCommerce and Elementor, the site allows customers to browse products, manage their cart, and complete secure online purchases. The project focused on creating a clean shopping experience while giving the client full control over products, stock, and orders through the WordPress admin panel.",
+    "Μια προσαρμοσμένη e-commerce ιστοσελίδα WordPress κατασκευασμένη για μάρκα προϊόντων ομορφιάς. Χρησιμοποιώντας WooCommerce και Elementor, η ιστοσελίδα επιτρέπει στους πελάτες να περιηγηθούν σε προϊόντα, να διαχειριστούν το καλάθι τους και να ολοκληρώσουν ασφαλείς online αγορές. Το έργο επικεντρώθηκε στη δημιουργία μιας καθαρής εμπειρίας αγορών δίνοντας παράλληλα στον πελάτη πλήρη έλεγχο επί των προϊόντων, αποθέματος και παραγγελιών μέσω του WordPress admin panel.",
   tag: "E-commerce",
-  category: "Websites",
+  category: "Ιστοσελίδες",
   techStack: [
     "WordPress",
     "WooCommerce",
@@ -661,18 +661,18 @@ export const projects: Project[] = [
   gradientFrom: "#a8edea",
   gradientTo: "#fed6e3",
   features: [
-    "Custom WooCommerce shop design",
-    "Product management and inventory control",
-    "Cart and checkout system",
-    "Secure online payments",
-    "Order management from WordPress admin",
-    "Mobile-first responsive shopping experience",
-    "SEO-friendly product pages"
+    "Προσαρμοσμένος σχεδιασμός WooCommerce καταστήματος",
+    "Διαχείριση προϊόντων και έλεγχος αποθέματος",
+    "Σύστημα καλαθιού και checkout",
+    "Ασφαλείς online πληρωμές",
+    "Διαχείριση παραγγελιών από το WordPress admin",
+    "Mobile-first responsive εμπειρία αγορών",
+    "SEO-friendly σελίδες προϊόντων"
   ],
   challenges:
-    "The main challenge was designing a clean and trustworthy shopping experience while ensuring the client could easily manage products, prices, and orders without technical knowledge. WooCommerce was customized to fit the brand and improve usability.",
+    "Η κύρια πρόκληση ήταν ο σχεδιασμός μιας καθαρής και αξιόπιστης εμπειρίας αγορών διασφαλίζοντας ότι ο πελάτης μπορεί εύκολα να διαχειριστεί προϊόντα, τιμές και παραγγελίες χωρίς τεχνικές γνώσεις. Το WooCommerce προσαρμόστηκε για να ταιριάζει με τη μάρκα και να βελτιώσει τη χρηστικότητα.",
   outcome:
-    "The business can now sell products online with a smooth checkout process and manage all orders and inventory directly from the WordPress dashboard.",
+    "Η επιχείρηση μπορεί τώρα να πουλά προϊόντα online με μια ομαλή διαδικασία checkout και να διαχειρίζεται όλες τις παραγγελίες και το απόθεμα απευθείας από το WordPress dashboard.",
   year: "2024",
   role: "Web Developer",
   images: [
@@ -686,11 +686,11 @@ export const projects: Project[] = [
   id: "17",
   title: "Selene Luxury Rooms",
   description:
-    "WordPress booking website with room reservations and Airbnb calendar synchronization.",
+    "WordPress ιστοσελίδα κρατήσεων με κρατήσεις δωματίων και συγχρονισμό ημερολογίου Airbnb.",
   fullDescription:
-    "A custom WordPress website for a luxury rooms rental business. Built with Elementor, the site allows visitors to book rooms directly through an integrated booking system while automatically synchronizing availability with the Airbnb calendar. The project focused on creating an elegant presentation for the property while solving the client's real operational need for managing bookings across multiple platforms without double reservations.",
+    "Μια προσαρμοσμένη ιστοσελίδα WordPress για επιχείρηση ενοικίασης πολυτελών δωματίων. Κατασκευασμένη με Elementor, η ιστοσελίδα επιτρέπει στους επισκέπτες να κάνουν κράτηση δωματίων απευθείας μέσω ενσωματωμένου συστήματος κρατήσεων ενώ συγχρονίζει αυτόματα τη διαθεσιμότητα με το ημερολόγιο Airbnb. Το έργο επικεντρώθηκε στη δημιουργία μιας κομψής παρουσίασης του ακινήτου ενώ έλυνε την πραγματική λειτουργική ανάγκη του πελάτη για διαχείριση κρατήσεων σε πολλαπλές πλατφόρμες χωρίς διπλές κρατήσεις.",
   tag: "Website",
-  category: "Websites",
+  category: "Ιστοσελίδες",
   techStack: [
     "WordPress",
     "Elementor",
@@ -703,17 +703,17 @@ export const projects: Project[] = [
   gradientFrom: "#a8edea",
   gradientTo: "#fed6e3",
   features: [
-    "Custom design built with Elementor",
-    "Room booking and reservation system",
-    "Airbnb calendar synchronization via iCal",
-    "Availability management from WordPress admin",
-    "Mobile-first responsive design",
-    "SEO-friendly structure"
+    "Προσαρμοσμένος σχεδιασμός με Elementor",
+    "Σύστημα κράτησης και κρατήσεων δωματίων",
+    "Συγχρονισμός ημερολογίου Airbnb μέσω iCal",
+    "Διαχείριση διαθεσιμότητας από το WordPress admin",
+    "Mobile-first responsive σχεδιασμός",
+    "SEO-friendly δομή"
   ],
   challenges:
-    "The main challenge was preventing double bookings between the website and Airbnb. iCal synchronization was implemented to keep availability updated automatically while ensuring the client could easily manage reservations from the WordPress dashboard.",
+    "Η κύρια πρόκληση ήταν η αποτροπή διπλών κρατήσεων μεταξύ της ιστοσελίδας και του Airbnb. Υλοποιήθηκε συγχρονισμός iCal για να διατηρείται η διαθεσιμότητα ενημερωμένη αυτόματα διασφαλίζοντας ότι ο πελάτης μπορεί εύκολα να διαχειριστεί τις κρατήσεις από το WordPress dashboard.",
   outcome:
-    "The client can now manage all room reservations from one place without double bookings, reducing manual work and increasing direct bookings through the website.",
+    "Ο πελάτης μπορεί τώρα να διαχειρίζεται όλες τις κρατήσεις δωματίων από ένα μέρος χωρίς διπλές κρατήσεις, μειώνοντας τη χειρωνακτική εργασία και αυξάνοντας τις άμεσες κρατήσεις μέσω της ιστοσελίδας.",
   year: "2024",
   role: "Web Developer",
   images: [
@@ -726,11 +726,11 @@ export const projects: Project[] = [
   id: "18",
   title: "Velvore Transfers",
   description:
-    "Custom WordPress business website with dynamic trip cost calculator and booking forms.",
+    "Προσαρμοσμένη WordPress επιχειρηματική ιστοσελίδα με δυναμικό υπολογιστή κόστους ταξιδιού και φόρμες κράτησης.",
   fullDescription:
-    "A fully custom-designed WordPress website for a luxury transfers company in Greece. Built with Elementor, the site includes dynamic booking and contact forms, as well as a custom trip cost calculator that calculates transfer prices based on user input. The project focused on creating a premium visual identity while ensuring the client could easily manage content and pricing through the WordPress admin panel.",
+    "Μια πλήρως προσαρμοσμένη ιστοσελίδα WordPress για εταιρεία πολυτελών μεταφορών στην Ελλάδα. Κατασκευασμένη με Elementor, η ιστοσελίδα περιλαμβάνει δυναμικές φόρμες κράτησης και επικοινωνίας, καθώς και έναν προσαρμοσμένο υπολογιστή κόστους ταξιδιού που υπολογίζει τις τιμές μεταφοράς βάσει εισαγωγής χρήστη. Το έργο επικεντρώθηκε στη δημιουργία μιας premium οπτικής ταυτότητας διασφαλίζοντας ότι ο πελάτης μπορεί εύκολα να διαχειριστεί περιεχόμενο και τιμολόγηση μέσω του WordPress admin panel.",
   tag: "Website",
-  category: "Websites",
+  category: "Ιστοσελίδες",
   techStack: [
     "WordPress",
     "Elementor",
@@ -743,17 +743,17 @@ export const projects: Project[] = [
   gradientFrom: "#a8edea",
   gradientTo: "#fed6e3",
   features: [
-    "Custom premium design built with Elementor",
-    "Dynamic trip cost calculator based on distance and route",
-    "Booking and contact forms",
+    "Προσαρμοσμένος premium σχεδιασμός με Elementor",
+    "Δυναμικός υπολογιστής κόστους ταξιδιού βάσει απόστασης και διαδρομής",
+    "Φόρμες κράτησης και επικοινωνίας",
     "Mobile-first responsive layout",
-    "Easy content and price management via WordPress admin",
-    "SEO-friendly structure"
+    "Εύκολη διαχείριση περιεχομένου και τιμών μέσω WordPress admin",
+    "SEO-friendly δομή"
   ],
   challenges:
-    "The main challenge was implementing a dynamic pricing calculator inside a WordPress + Elementor environment while keeping the interface simple for users and editable for the client. Custom JavaScript and PHP logic were integrated with the form system to achieve this.",
+    "Η κύρια πρόκληση ήταν η υλοποίηση ενός δυναμικού υπολογιστή τιμών μέσα σε περιβάλλον WordPress + Elementor διατηρώντας απλή τη διεπαφή για τους χρήστες και επεξεργάσιμη για τον πελάτη. Προσαρμοσμένη λογική JavaScript και PHP ενσωματώθηκε με το σύστημα φορμών για να επιτευχθεί αυτό.",
   outcome:
-    "The client now receives automated booking inquiries with calculated trip costs, reducing manual communication time and improving conversion rates.",
+    "Ο πελάτης τώρα λαμβάνει αυτοματοποιημένα αιτήματα κράτησης με υπολογισμένα κόστη ταξιδιού, μειώνοντας τον χρόνο χειρωνακτικής επικοινωνίας και βελτιώνοντας τα ποσοστά μετατροπής.",
   year: "2024",
   role: "Web Developer",
   images: [
@@ -767,7 +767,7 @@ export const projects: Project[] = [
 
 ];
 
-export const filterTabs = ["All", "Mobile Apps", "Web Apps", "Websites"];
+export const filterTabs = ["Όλα", "Εφαρμογές Κινητών", "Web Εφαρμογές", "Ιστοσελίδες"];
 
 export function getProjectById(id: string): Project | undefined {
   return projects.find((project) => project.id === id);

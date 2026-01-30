@@ -24,7 +24,7 @@ export function AboutSection() {
         <div className="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden">
           <Image
             src="/images/me.png"
-            alt="Profile picture"
+            alt="Φωτογραφία προφίλ"
             width={400}
             height={400}
             className="w-full h-full object-cover"
@@ -34,23 +34,23 @@ export function AboutSection() {
         {/* About text */}
         <div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Full-Stack Developer
+            Full-Stack Προγραμματιστής
           </h2>
           <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
             <p>
-              I&apos;m a passionate full-stack developer with a keen eye for
-              design. I specialize in creating seamless digital experiences
-              across mobile, web, and desktop platforms.
+              Είμαι ένας παθιασμένος full-stack προγραμματιστής με έντονη αίσθηση
+              για το design. Εξειδικεύομαι στη δημιουργία απρόσκοπτων ψηφιακών
+              εμπειριών σε πλατφόρμες κινητών, web και desktop.
             </p>
             <p>
-              With 10+ years of experience, I&apos;ve helped startups and
-              established companies bring their ideas to life through clean code
-              and intuitive interfaces.
+              Με 10+ χρόνια εμπειρίας, έχω βοηθήσει startups και καθιερωμένες
+              εταιρείες να υλοποιήσουν τις ιδέες τους μέσω καθαρού κώδικα και
+              διαισθητικών διεπαφών.
             </p>
             <p>
-              When I&apos;m not coding, you&apos;ll find me exploring new
-              technologies, contributing to open-source projects, or sharing
-              knowledge with the developer community.
+              Όταν δεν γράφω κώδικα, θα με βρείτε να εξερευνώ νέες τεχνολογίες,
+              να συνεισφέρω σε open-source projects ή να μοιράζομαι γνώσεις με
+              την κοινότητα των προγραμματιστών.
             </p>
           </div>
         </div>

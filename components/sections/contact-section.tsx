@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 
 const socialLinks = [
-  { label: "Email Me", href: "mailto:p.mantas@mcubed.io", icon: Mail },
+  { label: "Στείλτε Email", href: "mailto:p.mantas@mcubed.io", icon: Mail },
   { label: "GitHub", href: "https://github.com/pagman/", icon: Github },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/panagiotis-mantas-968ba1188/", icon: Linkedin },
 ];
@@ -12,10 +12,10 @@ export function ContactSection() {
     <section id="contact" className="py-16 md:py-24 px-[5%]">
       <div className="text-center max-w-2xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          Let&apos;s Work Together
+          Ας Συνεργαστούμε
         </h2>
         <p className="text-muted-foreground text-base md:text-xl mb-8 md:mb-12">
-          Have a project in mind? Let&apos;s create something amazing together.
+          Έχετε κάποιο project στο μυαλό σας; Ας δημιουργήσουμε κάτι καταπληκτικό μαζί.
         </p>
 
         <div className="flex gap-3 md:gap-6 justify-center flex-wrap">

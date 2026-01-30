@@ -26,13 +26,19 @@ export async function generateMetadata({
 
   if (!project) {
     return {
-      title: "Project Not Found",
+      title: "Το έργο δεν βρέθηκε | mCubedDevLabs",
     };
   }
 
   return {
-    title: `${project.title} | YourName`,
+    title: `${project.title} | mCubedDevLabs`,
     description: project.description,
+    openGraph: {
+      title: `${project.title} | mCubedDevLabs`,
+      description: project.description,
+      type: "article",
+      locale: "el_GR",
+    },
   };
 }
 
@@ -82,7 +88,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               className="inline-flex items-center gap-2 text-muted-foreground hover:text-white transition-colors mb-8"
             >
               <ArrowLeft size={20} />
-              Back to Projects
+              Πίσω στα Έργα
             </Link>
 
             {/* Tag */}
@@ -134,7 +140,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <section className="py-16 md:py-24 px-[5%] max-w-4xl mx-auto">
           {/* Tech Stack */}
           <div className="mb-12">
-            <h2 className="text-xl font-semibold mb-4">Tech Stack</h2>
+            <h2 className="text-xl font-semibold mb-4">Τεχνολογίες</h2>
             <div className="flex gap-2 flex-wrap">
               {project.techStack.map((tech) => (
                 <Badge
@@ -150,7 +156,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           {/* Full Description */}
           <div className="mb-12">
-            <h2 className="text-xl font-semibold mb-4">Overview</h2>
+            <h2 className="text-xl font-semibold mb-4">Επισκόπηση</h2>
             <p className="text-muted-foreground leading-relaxed text-lg">
               {project.fullDescription}
             </p>
@@ -158,7 +164,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           {/* Features */}
           <div className="mb-12">
-            <h2 className="text-xl font-semibold mb-4">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4">Βασικά Χαρακτηριστικά</h2>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {project.features.map((feature, index) => (
                 <li
@@ -184,7 +190,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {/* Challenges & Solutions */}
           <div className="mb-12">
             <h2 className="text-xl font-semibold mb-4">
-              Challenges & Solutions
+              Προκλήσεις & Λύσεις
             </h2>
             <div className="p-6 bg-card rounded-xl border border-border">
               <p className="text-muted-foreground leading-relaxed">
@@ -195,7 +201,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           {/* Outcome */}
           <div className="mb-12">
-            <h2 className="text-xl font-semibold mb-4">Results & Impact</h2>
+            <h2 className="text-xl font-semibold mb-4">Αποτελέσματα & Αντίκτυπος</h2>
             <div
               className="p-6 rounded-xl"
               style={{
@@ -224,7 +230,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   className="flex items-center gap-2"
                 >
                   <ExternalLink size={18} />
-                  View Live Demo
+                  Δείτε το Live
                 </a>
               </Button>
             )}
@@ -242,7 +248,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   className="flex items-center gap-2"
                 >
                   <Github size={18} />
-                  View Source Code
+                  Πηγαίος Κώδικας
                 </a>
               </Button>
             )}
@@ -253,10 +259,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <section className="py-16 px-[5%] border-t border-border">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl font-bold mb-4">
-              Interested in working together?
+              Ενδιαφέρεστε για συνεργασία;
             </h2>
             <p className="text-muted-foreground mb-8">
-              Let&apos;s discuss your next project and create something amazing.
+              Ας συζητήσουμε το επόμενο project σας και ας δημιουργήσουμε κάτι καταπληκτικό.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button
@@ -264,7 +270,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 size="lg"
                 className="gradient-bg hover:opacity-90 transition-opacity text-white font-semibold px-8 rounded-full"
               >
-                <Link href="/#contact">Get in Touch</Link>
+                <Link href="/#contact">Επικοινωνήστε</Link>
               </Button>
               <Button
                 asChild
@@ -272,7 +278,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 size="lg"
                 className="border-2 border-white/20 hover:bg-white/5 px-8 rounded-full"
               >
-                <Link href="/#projects">View More Projects</Link>
+                <Link href="/#projects">Δείτε Περισσότερα Έργα</Link>
               </Button>
             </div>
           </div>

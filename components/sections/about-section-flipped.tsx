@@ -19,14 +19,14 @@ export function AboutSectionFlipped() {
         {/* About text (placed second in DOM but visually on the right) */}
         <div className="order-2 lg:order-1">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            UI/UX Designer
+            UI/UX Σχεδιάστρια
           </h2>
           <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
             <p>
-              I’m a UI/UX Designer focused on creating intuitive, human-centered digital experiences. My work spans the full design process, from research and problem definition to user flows, wireframing, and high-fidelity UI design. Translating complex requirements into clear, accessible interfaces and validating solutions through prototyping and usability testing are core parts of my approach.
+              Είμαι UI/UX Designer με επίκεντρο τη δημιουργία διαισθητικών, ανθρωποκεντρικών ψηφιακών εμπειριών. Η δουλειά μου καλύπτει όλη τη διαδικασία σχεδιασμού, από την έρευνα και τον ορισμό του προβλήματος έως τα user flows, το wireframing και το high-fidelity UI design. Η μετατροπή πολύπλοκων απαιτήσεων σε σαφείς, προσβάσιμες διεπαφές και η επικύρωση λύσεων μέσω prototyping και usability testing είναι βασικά μέρη της προσέγγισής μου.
             </p>
             <p>
-              Great design, to me, is rooted in empathy, curiosity, and collaboration, with a constant focus on improving interactions, solving user pain points, and contributing meaningfully to the products I help shape.
+              Ο σπουδαίος σχεδιασμός, για μένα, βασίζεται στην ενσυναίσθηση, την περιέργεια και τη συνεργασία, με συνεχή εστίαση στη βελτίωση των αλληλεπιδράσεων, την επίλυση των προβλημάτων των χρηστών και την ουσιαστική συνεισφορά στα προϊόντα που βοηθώ να διαμορφωθούν.
             </p>
           </div>
         </div>
@@ -35,7 +35,7 @@ export function AboutSectionFlipped() {
         <div className="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden order-1 lg:order-2">
           <Image
             src="/images/maria.png"
-            alt="Colleague profile"
+            alt="Φωτογραφία συνεργάτη"
             width={400}
             height={400}
             className="w-full h-full object-cover"

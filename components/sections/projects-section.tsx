@@ -7,18 +7,18 @@ import { ProjectCard } from "@/components/shared/project-card";
 import { projects, filterTabs } from "@/data/projects";
 
 export function ProjectsSection() {
-  const [activeTab, setActiveTab] = useState("All");
+  const [activeTab, setActiveTab] = useState("Όλα");
 
   const filteredProjects =
-    activeTab === "All"
+    activeTab === "Όλα"
       ? projects
       : projects.filter((project) => project.category === activeTab);
 
   return (
     <section id="projects" className="py-16 md:py-24 px-[5%] max-w-7xl mx-auto">
       <SectionHeader
-        title="Featured Projects"
-        subtitle="Explore my latest work across different platforms"
+        title="Επιλεγμένα Έργα"
+        subtitle="Εξερευνήστε τις τελευταίες μου δουλειές σε διαφορετικές πλατφόρμες"
       />
 
       <FilterTabs
