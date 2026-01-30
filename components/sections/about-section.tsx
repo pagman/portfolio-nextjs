@@ -38,9 +38,8 @@ export function AboutSection() {
           </h2>
           <div className="space-y-4 text-muted-foreground text-base md:text-lg leading-relaxed">
             <p>
-              Είμαι ένας παθιασμένος full-stack προγραμματιστής με έντονη αίσθηση
-              για το design. Εξειδικεύομαι στη δημιουργία απρόσκοπτων ψηφιακών
-              εμπειριών σε πλατφόρμες κινητών, web και desktop.
+              Είμαι full-stack προγραμματιστής με πάθος για την ανάπτυξη ποιοτικών ψηφιακών εφαρμογών. 
+              Εξειδικεύομαι στη δημιουργία αξιόπιστων λύσεων για web, mobile και desktop περιβάλλοντα.
             </p>
             <p>
               Με 10+ χρόνια εμπειρίας, έχω βοηθήσει startups και καθιερωμένες

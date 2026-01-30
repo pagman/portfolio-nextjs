@@ -140,7 +140,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="text-center z-10 max-w-4xl">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 gradient-text leading-tight">
-          Δημιουργικός Προγραμματιστής & Σχεδιαστής
+          Σχεδιασμός και Ανάπτυξη Ψηφιακών Προϊόντων
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
           Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες
@@ -151,7 +151,7 @@ export function HeroSection() {
           size="lg"
           className="gradient-bg hover:opacity-90 transition-all text-white font-semibold px-8 py-6 rounded-full text-base shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5"
         >
-          <a href="#projects">Δείτε τη Δουλειά μου</a>
+          <a href="#projects">Δείτε τη Δουλειά μας</a>
         </Button>
       </div>
     </section>
