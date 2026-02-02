@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "mCubedDevLabs - Δημιουργικός Προγραμματιστής & Σχεδιαστής",
+    title: "mCubedDevLabs - Σχεδιασμός και Ανάπτυξη Ψηφιακών Προϊόντων",
     description:
       "Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες που κάνουν τη διαφορά",
     type: "website",
