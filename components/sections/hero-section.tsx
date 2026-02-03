@@ -143,8 +143,8 @@ export function HeroSection() {
           Σχεδιασμός και Ανάπτυξη Ψηφιακών Προϊόντων
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες
-          που κάνουν τη διαφορά
+          Δημιουργούμε εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες
+          που κάνουν τη διαφορά.
         </p>
         <Button
           asChild

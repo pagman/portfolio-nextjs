@@ -83,13 +83,15 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
           <div className="relative z-10 max-w-4xl mx-auto text-center">
             {/* Back button */}
-            <Link
-              href="/#projects"
-              className="inline-flex items-center gap-2 text-muted-foreground hover:text-white transition-colors mb-8"
-            >
-              <ArrowLeft size={20} />
-              Πίσω στα Έργα
-            </Link>
+            <div className="mb-8">
+              <Link
+                href="/#projects"
+                className="inline-flex items-center gap-2 text-muted-foreground hover:text-white transition-colors"
+              >
+                <ArrowLeft size={20} />
+                Πίσω στα Έργα
+              </Link>
+            </div>
 
             {/* Tag */}
             <Badge
