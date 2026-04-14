@@ -24,7 +24,7 @@ export function AboutSection() {
         <div className="aspect-square w-full max-w-md mx-auto lg:max-w-none rounded-2xl overflow-hidden">
           <Image
             src="/images/me.png"
-            alt="Φωτογραφία προφίλ"
+            alt="Παναγιώτης Μάντας - Full-Stack Developer & UI/UX Designer"
             width={400}
             height={400}
             className="w-full h-full object-cover"

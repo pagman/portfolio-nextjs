@@ -140,11 +140,10 @@ export function HeroSection() {
       {/* Content */}
       <div className="text-center z-10 max-w-4xl">
         <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 gradient-text leading-tight">
-          Σχεδιασμός και Ανάπτυξη Ψηφιακών Προϊόντων
+          Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps.
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Δημιουργούμε εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες
-          που κάνουν τη διαφορά.
+          Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.
         </p>
         <Button
           asChild

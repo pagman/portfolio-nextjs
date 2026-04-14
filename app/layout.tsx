@@ -22,7 +22,7 @@ const jsonLd = {
       url: "https://mcubeddevlabs.gr",
       name: "mCubedDevLabs",
       description:
-        "Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες που κάνουν τη διαφορά",
+        "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
       inLanguage: "el-GR",
       publisher: {
         "@id": "https://mcubeddevlabs.gr/#person",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://mcubeddevlabs.gr"),
   title: "mCubedDevLabs - Δημιουργικός Προγραμματιστής & Σχεδιαστής",
   description:
-    "Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες που κάνουν τη διαφορά. Με έδρα την Ελλάδα, προσφέρω υπηρεσίες ανάπτυξης λογισμικού υψηλής ποιότητας.",
+    "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
   keywords: [
     "προγραμματιστής",
     "portfolio",
@@ -110,7 +110,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "mCubedDevLabs - Σχεδιασμός και Ανάπτυξη Ψηφιακών Προϊόντων",
     description:
-      "Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες που κάνουν τη διαφορά",
+      "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
     type: "website",
     locale: "el_GR",
     url: "https://mcubeddevlabs.gr",
@@ -120,7 +120,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Παναγιώτης Μάντας | mCubedDevLabs",
     description:
-      "Δημιουργώ όμορφες εφαρμογές για κινητά, web εφαρμογές και ιστοσελίδες που κάνουν τη διαφορά",
+      "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
   },
   alternates: {
     canonical: "https://mcubeddevlabs.gr",
