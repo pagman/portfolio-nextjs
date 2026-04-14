@@ -720,7 +720,7 @@ export const projects: Project[] = [
     "/images/projects/selene/selene_1.png",
     "/images/projects/selene/selene_2.png"
   ],
-  liveUrl: "https://example.com"
+  // liveUrl: "https://example.com"
 },
   {
   id: "18",
