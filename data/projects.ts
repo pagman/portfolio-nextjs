@@ -21,7 +21,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "MCubed Tracker",
+    title: "mCubed Tracker",
     description:
       "Εφαρμογή παρακολούθησης κατοικιδίων με GPS σε πραγματικό χρόνο, παρακολούθηση δραστηριότητας, geofencing και ημερολόγιο υγείας.",
     fullDescription:
@@ -29,13 +29,13 @@ export const projects: Project[] = [
     tag: "Mobile App",
     category: "Εφαρμογές Κινητών",
     techStack: [
-      "Flutter",
-      "Dart",
-      "Firebase",
-      "MongoDB Atlas",
-      "Google Maps",
-      "Provider",
-      "Syncfusion Charts"
+      "Next.js",
+      "TypeScript",
+      "React",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "Radix UI",
+      "Local Storage"
     ],
     gradientFrom: "#667eea",
     gradientTo: "#764ba2",
@@ -60,7 +60,7 @@ export const projects: Project[] = [
       "/images/projects/mCubedTracker/mCubedTracker_mobile_2.png",
       "/images/projects/mCubedTracker/mCubedTracker_mobile_3.png"
     ],
-    liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.mcubed&hl=el",
+    liveUrl: "mcubed.app",
   },
   {
     id: "2",
