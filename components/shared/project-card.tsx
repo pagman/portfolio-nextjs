@@ -8,8 +8,8 @@ export interface ProjectCardProps {
   description: string;
   tag: string;
   techStack: string[];
-  gradientFrom: string;
-  gradientTo: string;
+  gradientFrom?: string;
+  gradientTo?: string;
   image?: string;
 }
 
@@ -19,20 +19,13 @@ export function ProjectCard({
   description,
   tag,
   techStack,
-  gradientFrom,
-  gradientTo,
   image,
 }: ProjectCardProps) {
   return (
     <Link href={`/projects/${id}`} className="group block h-full">
       <div className="bg-white/2 border border-white/6 rounded-2xl overflow-hidden h-full flex flex-col transition-all duration-300 hover:bg-white/4 hover:border-white/12 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40">
-        {/* Image area — subtle gradient tint, no harsh fill */}
-        <div
-          className="w-full aspect-video relative overflow-hidden shrink-0"
-          style={{
-            background: `linear-gradient(135deg, ${gradientFrom}14 0%, ${gradientTo}14 100%)`,
-          }}
-        >
+        {/* Image area */}
+        <div className="w-full aspect-video relative overflow-hidden shrink-0 bg-white/3">
           {image ? (
             <Image
               src={image}

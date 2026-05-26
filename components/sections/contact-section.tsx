@@ -13,17 +13,8 @@ const socialLinks = [
 export function ContactSection() {
   return (
     <section id="contact" className="py-16 md:py-24 px-[5%] max-w-7xl mx-auto">
-      <div className="relative rounded-3xl border border-white/6 overflow-hidden p-10 md:p-20">
-        {/* Subtle gradient glow inside card */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "radial-gradient(ellipse 60% 50% at 50% 110%, rgba(102, 126, 234, 0.1) 0%, transparent 60%)",
-          }}
-        />
-
-        <div className="relative text-center">
+      <div className="rounded-3xl border border-white/6 p-10 md:p-20">
+        <div className="text-center">
           <span className="text-xs text-white/30 tracking-[0.2em] uppercase font-medium mb-6 block">
             Επικοινωνία
           </span>

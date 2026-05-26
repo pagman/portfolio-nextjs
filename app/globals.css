@@ -45,9 +45,11 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
-  /* Custom gradient colors */
-  --color-gradient-start: #667eea;
-  --color-gradient-end: #764ba2;
+  /* Palette accent colors */
+  --color-accent-teal: #00AFC0;
+  --color-accent-blue: #407CAC;
+  --color-accent-green: #67B869;
+  --color-accent-pink: #EC8E92;
 }
 
 :root {
@@ -59,18 +61,18 @@
   --card-foreground: #ffffff;
   --popover: #0a0a0a;
   --popover-foreground: #ffffff;
-  --primary: #667eea;
+  --primary: #00AFC0;
   --primary-foreground: #ffffff;
-  --secondary: #764ba2;
+  --secondary: #407CAC;
   --secondary-foreground: #ffffff;
   --muted: rgba(255, 255, 255, 0.05);
-  --muted-foreground: #a0a0a0;
-  --accent: rgba(102, 126, 234, 0.2);
-  --accent-foreground: #667eea;
+  --muted-foreground: #6D6D6D;
+  --accent: rgba(0, 175, 192, 0.12);
+  --accent-foreground: #00AFC0;
   --destructive: oklch(0.704 0.191 22.216);
   --border: rgba(255, 255, 255, 0.1);
   --input: rgba(255, 255, 255, 0.15);
-  --ring: #667eea;
+  --ring: #00AFC0;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -78,12 +80,12 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: #0a0a0a;
   --sidebar-foreground: #ffffff;
-  --sidebar-primary: #667eea;
+  --sidebar-primary: #00AFC0;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: rgba(102, 126, 234, 0.2);
-  --sidebar-accent-foreground: #667eea;
+  --sidebar-accent: rgba(0, 175, 192, 0.12);
+  --sidebar-accent-foreground: #00AFC0;
   --sidebar-border: rgba(255, 255, 255, 0.1);
-  --sidebar-ring: #667eea;
+  --sidebar-ring: #00AFC0;
 }
 
 html {
@@ -99,17 +101,14 @@ html {
   }
 }
 
-/* Gradient text utility */
+/* Accent text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #00AFC0;
 }
 
-/* Gradient background utility */
+/* Accent background utility */
 .gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #00AFC0;
 }
 
 /* Hero background animations */

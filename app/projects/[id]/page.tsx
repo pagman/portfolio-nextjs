@@ -55,33 +55,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
       <Navbar />
       <main className="pt-20">
         {/* Hero Section */}
-        <section
-          className="relative min-h-[60vh] flex items-center justify-center px-[5%] overflow-hidden"
-          style={{
-            background: `linear-gradient(135deg, ${project.gradientFrom}20 0%, ${project.gradientTo}20 100%)`,
-          }}
-        >
-          {/* Background gradient orbs */}
-          <div className="absolute inset-0 pointer-events-none">
-            <div
-              className="absolute w-[600px] h-[600px] rounded-full blur-[150px] opacity-30"
-              style={{
-                background: project.gradientFrom,
-                left: "10%",
-                top: "20%",
-              }}
-            />
-            <div
-              className="absolute w-[400px] h-[400px] rounded-full blur-[120px] opacity-20"
-              style={{
-                background: project.gradientTo,
-                right: "10%",
-                bottom: "10%",
-              }}
-            />
-          </div>
-
-          <div className="relative z-10 max-w-4xl mx-auto text-center">
+        <section className="min-h-[60vh] flex items-center justify-center px-[5%] border-b border-white/6">
+          <div className="max-w-4xl mx-auto text-center">
             {/* Back button */}
             <div className="mb-8">
               <Link
@@ -95,11 +70,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
             {/* Tag */}
             <Badge
-              className="mb-6 text-sm px-4 py-1"
-              style={{
-                background: `linear-gradient(135deg, ${project.gradientFrom} 0%, ${project.gradientTo} 100%)`,
-                color: "white",
-              }}
+              className="mb-6 text-sm px-4 py-1 bg-accent-teal text-white border-none"
             >
               {project.tag}
             </Badge>
@@ -133,8 +104,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           <ImageSlider
             images={project.images || []}
             alt={project.title}
-            gradientFrom={project.gradientFrom}
-            gradientTo={project.gradientTo}
           />
         </section>
 
@@ -173,12 +142,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                   key={index}
                   className="flex items-start gap-3 p-4 bg-card rounded-xl border border-border"
                 >
-                  <div
-                    className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
-                    style={{
-                      background: `linear-gradient(135deg, ${project.gradientFrom} 0%, ${project.gradientTo} 100%)`,
-                    }}
-                  >
+                  <div className="w-6 h-6 rounded-full bg-accent-teal flex items-center justify-center shrink-0 mt-0.5">
                     <span className="text-white text-xs font-bold">
                       {index + 1}
                     </span>
@@ -204,13 +168,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {/* Outcome */}
           <div className="mb-12">
             <h2 className="text-xl font-semibold mb-4">Αποτελέσματα & Αντίκτυπος</h2>
-            <div
-              className="p-6 rounded-xl"
-              style={{
-                background: `linear-gradient(135deg, ${project.gradientFrom}15 0%, ${project.gradientTo}15 100%)`,
-                borderLeft: `4px solid ${project.gradientFrom}`,
-              }}
-            >
+            <div className="p-6 rounded-xl bg-accent-teal/10 border-l-4 border-accent-teal">
               <p className="text-foreground leading-relaxed">
                 {project.outcome}
               </p>

@@ -4,46 +4,10 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center px-[5%] pt-24 pb-16 relative overflow-hidden"
+      className="min-h-screen flex items-center px-[5%] pt-24 pb-16"
     >
-      {/* Clean background — two soft glows, no particles */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 70% 60% at 5% 60%, rgba(102, 126, 234, 0.07) 0%, transparent 65%)",
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(ellipse 50% 40% at 95% 15%, rgba(118, 75, 162, 0.06) 0%, transparent 60%)",
-          }}
-        />
-        {/* Subtle horizontal scanlines */}
-        <div
-          className="absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(0deg, rgba(255,255,255,0.6) 0px, rgba(255,255,255,0.6) 1px, transparent 1px, transparent 80px)",
-          }}
-        />
-      </div>
 
-      <div className="relative z-10 max-w-7xl w-full mx-auto">
-        {/* Status badge */}
-        <div className="inline-flex items-center gap-2.5 mb-10 px-4 py-2 rounded-full border border-white/10 bg-white/3">
-          <span
-            className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"
-            style={{ boxShadow: "0 0 6px rgba(52, 211, 153, 0.9)" }}
-          />
-          <span className="text-xs text-white/50 tracking-[0.15em] uppercase font-medium">
-            Διαθέσιμοι για Συνεργασία
-          </span>
-        </div>
-
+<div className="relative z-10 max-w-7xl w-full mx-auto">
         {/* Display heading */}
         <h1
           className="font-black leading-[0.9] tracking-[-0.03em] mb-8"
