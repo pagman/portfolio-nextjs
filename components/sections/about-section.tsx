@@ -27,7 +27,7 @@ export function AboutSection() {
         <div className="relative">
           <div className="aspect-4/5 w-full max-w-sm rounded-2xl overflow-hidden">
             <Image
-              src="/images/me.png"
+              src="/images/me.webp"
               alt="Παναγιώτης Μάντας - Full-Stack Developer & UI/UX Designer"
               width={400}
               height={500}

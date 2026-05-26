@@ -130,8 +130,8 @@ export const metadata: Metadata = {
   },
   category: "technology",
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/images/logo.webp",
+    apple: "/images/logo.webp",
   },
 };
 

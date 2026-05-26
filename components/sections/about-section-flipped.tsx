@@ -43,7 +43,7 @@ export function AboutSectionFlipped() {
         <div className="relative order-1 lg:order-2">
           <div className="aspect-4/5 w-full max-w-sm mx-auto lg:mx-0 lg:ml-auto rounded-2xl overflow-hidden">
             <Image
-              src="/images/maria.png"
+              src="/images/maria.webp"
               alt="Μαρία Μαντά - UI/UX Designer, mCubedDevLabs"
               width={400}
               height={500}
@@ -51,8 +51,8 @@ export function AboutSectionFlipped() {
             />
           </div>
           <div className="absolute bottom-6 -left-2 md:-left-6 bg-black/80 backdrop-blur-xl border border-white/8 rounded-2xl p-4 md:p-5">
+            <div className="text-xs text-white/40 mb-0.5 whitespace-nowrap">Από το</div>
             <div className="text-2xl font-black gradient-text">2022</div>
-            <div className="text-xs text-white/40 mt-0.5 whitespace-nowrap">Από το</div>
           </div>
         </div>
       </div>

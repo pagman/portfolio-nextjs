@@ -56,9 +56,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/mCubedTracker/mCubedTracker_mobile_1.png",
-      "/images/projects/mCubedTracker/mCubedTracker_mobile_2.png",
-      "/images/projects/mCubedTracker/mCubedTracker_mobile_3.png"
+      "/images/projects/mCubedTracker/mCubedTracker_mobile_1.webp",
+      "/images/projects/mCubedTracker/mCubedTracker_mobile_2.webp",
+      "/images/projects/mCubedTracker/mCubedTracker_mobile_3.webp"
     ],
     liveUrl: "mcubed.app",
   },
@@ -99,9 +99,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/TMTracking/TMTracking_mobile_1.png",
-      "/images/projects/TMTracking/TMTracking_mobile_2.png",
-      "/images/projects/TMTracking/TMTracking_mobile_3.png"
+      "/images/projects/TMTracking/TMTracking_mobile_1.webp",
+      "/images/projects/TMTracking/TMTracking_mobile_2.webp",
+      "/images/projects/TMTracking/TMTracking_mobile_3.webp"
     ],
     liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.telecubed&hl=el",
   },
@@ -140,9 +140,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/CamelStudy/CamelStudy_mobile_1.png",
-      "/images/projects/CamelStudy/CamelStudy_mobile_2.png",
-      "/images/projects/CamelStudy/CamelStudy_laptop_1.png"
+      "/images/projects/CamelStudy/CamelStudy_mobile_1.webp",
+      "/images/projects/CamelStudy/CamelStudy_mobile_2.webp",
+      "/images/projects/CamelStudy/CamelStudy_laptop_1.webp"
     ],
     liveUrl: "https://github.com/pagman/camel_study",
   },
@@ -182,9 +182,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Mobile Developer",
     images: [
-      "/images/projects/mCubedManager/mCubedManager_mobile_1.png",
-      "/images/projects/mCubedManager/mCubedManager_mobile_2.png",
-      "/images/projects/mCubedManager/mCubedManager_mobile_3.png"
+      "/images/projects/mCubedManager/mCubedManager_mobile_1.webp",
+      "/images/projects/mCubedManager/mCubedManager_mobile_2.webp",
+      "/images/projects/mCubedManager/mCubedManager_mobile_3.webp"
     ],
   },
   {
@@ -224,7 +224,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/habit-tracker/habit-tracker_laptop_1.png"
+      "/images/projects/habit-tracker/habit-tracker_laptop_1.webp"
     ],
     liveUrl: "https://habit-tracker-phi-hazel.vercel.app/",
   },
@@ -265,9 +265,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/replog/replog_laptop_1.png",
-      "/images/projects/replog/replog_laptop_2.png",
-      "/images/projects/replog/replog_laptop_3.png"
+      "/images/projects/replog/replog_laptop_1.webp",
+      "/images/projects/replog/replog_laptop_2.webp",
+      "/images/projects/replog/replog_laptop_3.webp"
     ],
     liveUrl: "https://replog-pi.vercel.app/",
   },
@@ -309,8 +309,8 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/mcubedDashboard/mcubedDashboard_laptop_1.png",
-      "/images/projects/mcubedDashboard/mcubedDashboard_laptop_2.png"
+      "/images/projects/mcubedDashboard/mcubedDashboard_laptop_1.webp",
+      "/images/projects/mcubedDashboard/mcubedDashboard_laptop_2.webp"
     ],
     liveUrl: "https://mcubed.io",
   },
@@ -349,7 +349,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Full Stack Developer",
     images: [
-      "/images/projects/tripcost/tripcost_laptop_1.png"
+      "/images/projects/tripcost/tripcost_laptop_1.webp"
     ],
     liveUrl: "https://trip-cost-calculator-psi.vercel.app/",
   },
@@ -388,9 +388,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/capcap/capcap_1.png",
-      "/images/projects/capcap/capcap_2.png",
-      "/images/projects/capcap/capcap_3.png",
+      "/images/projects/capcap/capcap_1.webp",
+      "/images/projects/capcap/capcap_2.webp",
+      "/images/projects/capcap/capcap_3.webp",
     ],
     liveUrl: "https://www.capcap.gr/",
   },
@@ -429,8 +429,8 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/bubbletea/bubble_1.png",
-      "/images/projects/bubbletea/bubble_2.png"
+      "/images/projects/bubbletea/bubble_1.webp",
+      "/images/projects/bubbletea/bubble_2.webp"
     ],
     liveUrl: "https://bubbletea.gr/",
   },
@@ -470,8 +470,8 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/econest/econest_laptop_1.png",
-      "/images/projects/econest/econest_laptop_2.png"
+      "/images/projects/econest/econest_laptop_1.webp",
+      "/images/projects/econest/econest_laptop_2.webp"
     ],
     liveUrl: "https://econestshop.gr/",
   },
@@ -510,9 +510,9 @@ export const projects: Project[] = [
     year: "2025",
     role: "Web Developer",
     images: [
-      "/images/projects/goldensmile/goldensmile_laptop_1.png",
-      "/images/projects/goldensmile/goldensmile_laptop_2.png",
-      "/images/projects/goldensmile/goldensmile_laptop_3.png"
+      "/images/projects/goldensmile/goldensmile_laptop_1.webp",
+      "/images/projects/goldensmile/goldensmile_laptop_2.webp",
+      "/images/projects/goldensmile/goldensmile_laptop_3.webp"
     ],
     liveUrl: "https://goldensmile.gr/",
   },
@@ -552,9 +552,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/gph/gph_laptop_1.png",
-      "/images/projects/gph/gph_laptop_2.png",
-      "/images/projects/gph/gph_laptop_3.png"
+      "/images/projects/gph/gph_laptop_1.webp",
+      "/images/projects/gph/gph_laptop_2.webp",
+      "/images/projects/gph/gph_laptop_3.webp"
     ],
     liveUrl: "https://greekpropertyhunters.com/",
   },
@@ -594,9 +594,9 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/honafestival/honafestival_laptop_1.png",
-      "/images/projects/honafestival/honafestival_laptop_2.png",
-      "/images/projects/honafestival/honafestival_laptop_3.png"
+      "/images/projects/honafestival/honafestival_laptop_1.webp",
+      "/images/projects/honafestival/honafestival_laptop_2.webp",
+      "/images/projects/honafestival/honafestival_laptop_3.webp"
     ],
     liveUrl: "https://honafestival.com/",
   },
@@ -636,7 +636,7 @@ export const projects: Project[] = [
     year: "2024",
     role: "Web Developer",
     images: [
-      "/images/projects/ichnossoap/ichnossoap_laptop_1.png"
+      "/images/projects/ichnossoap/ichnossoap_laptop_1.webp"
     ],
     liveUrl: "https://ichnossoap.gr",
   },
@@ -676,9 +676,9 @@ export const projects: Project[] = [
   year: "2024",
   role: "Web Developer",
   images: [
-    "/images/projects/milianjo/milianjo_laptop_1.png",
-    "/images/projects/milianjo/milianjo_laptop_2.png",
-    "/images/projects/milianjo/milianjo_laptop_3.png"
+    "/images/projects/milianjo/milianjo_laptop_1.webp",
+    "/images/projects/milianjo/milianjo_laptop_2.webp",
+    "/images/projects/milianjo/milianjo_laptop_3.webp"
   ],
   liveUrl: "https://milianjo.gr/"
 },
@@ -717,8 +717,8 @@ export const projects: Project[] = [
   year: "2024",
   role: "Web Developer",
   images: [
-    "/images/projects/selene/selene_1.png",
-    "/images/projects/selene/selene_2.png"
+    "/images/projects/selene/selene_1.webp",
+    "/images/projects/selene/selene_2.webp"
   ],
   // liveUrl: "https://example.com"
 },
@@ -757,10 +757,10 @@ export const projects: Project[] = [
   year: "2024",
   role: "Web Developer",
   images: [
-    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_1.png",
-    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_2.png",
-    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_3.png",
-    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_4.png"
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_1.webp",
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_2.webp",
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_3.webp",
+    "/images/projects/velvoreTransfers/velvoreTransfers_laptop_4.webp"
   ],
   liveUrl: "http://velvoretransfers.gr/"
 }

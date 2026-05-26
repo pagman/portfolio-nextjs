@@ -13,10 +13,9 @@ export function HeroSection() {
           className="font-black leading-[0.9] tracking-[-0.03em] mb-8"
           style={{ fontSize: "clamp(3rem, 9vw, 7.5rem)" }}
         >
-          <span className="block text-white">Σχεδιασμός</span>
+          <span className="block gradient-text">Σχεδιασμός</span>
           <span className="block gradient-text">&amp; Ανάπτυξη</span>
-          <span className="block text-white">Ψηφιακών</span>
-          <span className="block text-white/20">Εμπειριών.</span>
+          <span className="block text-white" style={{ fontSize: "clamp(1.5rem, 4.5vw, 3.75rem)" }}>Ψηφιακών Εμπειριών.</span>
         </h1>
 
         {/* Divider + bottom row */}
