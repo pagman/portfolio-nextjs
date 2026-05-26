@@ -4,154 +4,78 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-[5%] relative overflow-hidden"
+      className="min-h-screen flex items-center px-[5%] pt-24 pb-16 relative overflow-hidden"
     >
-      {/* Animated background gradient effects */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Primary floating orb - blue */}
+      {/* Clean background — two soft glows, no particles */}
+      <div className="absolute inset-0 pointer-events-none">
         <div
-          className="absolute animate-float-slow"
-          style={{ left: "15%", top: "50%" }}
-        >
-          <div
-            className="w-[700px] h-[700px] animate-morph"
-            style={{
-              background: "radial-gradient(circle, #667eea 0%, transparent 60%)",
-              filter: "blur(80px)",
-              opacity: 0.3,
-            }}
-          />
-        </div>
-        {/* Secondary floating orb - purple */}
-        <div
-          className="absolute animate-float-slow-reverse"
-          style={{ right: "-10%", bottom: "10%" }}
-        >
-          <div
-            className="w-[600px] h-[600px] animate-morph"
-            style={{
-              background: "radial-gradient(circle, #764ba2 0%, transparent 60%)",
-              filter: "blur(80px)",
-              opacity: 0.35,
-              animationDelay: "2s",
-            }}
-          />
-        </div>
-        {/* Third drifting orb - mixed */}
-        <div
-          className="absolute animate-drift"
-          style={{ left: "55%", top: "15%" }}
-        >
-          <div
-            className="w-[500px] h-[500px] animate-morph"
-            style={{
-              background: "radial-gradient(circle, #667eea 0%, #764ba2 40%, transparent 60%)",
-              filter: "blur(70px)",
-              opacity: 0.25,
-              animationDelay: "4s",
-            }}
-          />
-        </div>
-
-        {/* Floating geometric shapes - more visible */}
-        <div className="absolute inset-0">
-          {/* Floating squares */}
-          <div
-            className="absolute w-6 h-6 border-2 border-primary/40 rotate-45 animate-float-particle"
-            style={{ left: "10%", top: "20%", animationDelay: "0s" }}
-          />
-          <div
-            className="absolute w-8 h-8 border-2 border-secondary/40 rotate-12 animate-float-particle"
-            style={{ left: "85%", top: "25%", animationDelay: "2s" }}
-          />
-          <div
-            className="absolute w-5 h-5 border-2 border-primary/30 rotate-45 animate-float-particle"
-            style={{ left: "78%", top: "65%", animationDelay: "5s" }}
-          />
-          <div
-            className="absolute w-7 h-7 border-2 border-secondary/35 rotate-12 animate-float-particle"
-            style={{ left: "12%", top: "70%", animationDelay: "3s" }}
-          />
-          <div
-            className="absolute w-4 h-4 border-2 border-primary/35 rotate-45 animate-float-particle"
-            style={{ left: "45%", top: "15%", animationDelay: "1s" }}
-          />
-
-          {/* Floating circles */}
-          <div
-            className="absolute w-4 h-4 rounded-full bg-primary/40 animate-float-particle"
-            style={{ left: "22%", top: "35%", animationDelay: "1.5s" }}
-          />
-          <div
-            className="absolute w-5 h-5 rounded-full bg-secondary/35 animate-float-particle"
-            style={{ left: "68%", top: "40%", animationDelay: "2.5s" }}
-          />
-          <div
-            className="absolute w-3 h-3 rounded-full bg-primary/35 animate-float-particle"
-            style={{ left: "55%", top: "75%", animationDelay: "4s" }}
-          />
-          <div
-            className="absolute w-6 h-6 rounded-full bg-secondary/30 animate-float-particle"
-            style={{ left: "88%", top: "55%", animationDelay: "0.5s" }}
-          />
-          <div
-            className="absolute w-4 h-4 rounded-full bg-primary/30 animate-float-particle"
-            style={{ left: "5%", top: "50%", animationDelay: "3.5s" }}
-          />
-
-          {/* Additional triangular shapes using borders */}
-          <div
-            className="absolute w-0 h-0 animate-float-particle"
-            style={{
-              left: "30%",
-              top: "60%",
-              borderLeft: "8px solid transparent",
-              borderRight: "8px solid transparent",
-              borderBottom: "14px solid rgba(102, 126, 234, 0.3)",
-              animationDelay: "2s",
-            }}
-          />
-          <div
-            className="absolute w-0 h-0 animate-float-particle"
-            style={{
-              left: "72%",
-              top: "20%",
-              borderLeft: "10px solid transparent",
-              borderRight: "10px solid transparent",
-              borderBottom: "18px solid rgba(118, 75, 162, 0.3)",
-              animationDelay: "4.5s",
-            }}
-          />
-        </div>
-
-        {/* Subtle grid overlay */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
+          className="absolute inset-0"
           style={{
-            backgroundImage: `
-              linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px)
-            `,
-            backgroundSize: "80px 80px",
+            background:
+              "radial-gradient(ellipse 70% 60% at 5% 60%, rgba(102, 126, 234, 0.07) 0%, transparent 65%)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 50% 40% at 95% 15%, rgba(118, 75, 162, 0.06) 0%, transparent 60%)",
+          }}
+        />
+        {/* Subtle horizontal scanlines */}
+        <div
+          className="absolute inset-0 opacity-[0.025]"
+          style={{
+            backgroundImage:
+              "repeating-linear-gradient(0deg, rgba(255,255,255,0.6) 0px, rgba(255,255,255,0.6) 1px, transparent 1px, transparent 80px)",
           }}
         />
       </div>
 
-      {/* Content */}
-      <div className="text-center z-10 max-w-4xl">
-        <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-4 gradient-text leading-tight">
-          Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps.
-        </h1>
-        <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.
-        </p>
-        <Button
-          asChild
-          size="lg"
-          className="gradient-bg hover:opacity-90 transition-all text-white font-semibold px-8 py-6 rounded-full text-base shadow-lg hover:shadow-primary/40 hover:-translate-y-0.5"
+      <div className="relative z-10 max-w-7xl w-full mx-auto">
+        {/* Status badge */}
+        <div className="inline-flex items-center gap-2.5 mb-10 px-4 py-2 rounded-full border border-white/10 bg-white/3">
+          <span
+            className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0"
+            style={{ boxShadow: "0 0 6px rgba(52, 211, 153, 0.9)" }}
+          />
+          <span className="text-xs text-white/50 tracking-[0.15em] uppercase font-medium">
+            Διαθέσιμοι για Συνεργασία
+          </span>
+        </div>
+
+        {/* Display heading */}
+        <h1
+          className="font-black leading-[0.9] tracking-[-0.03em] mb-8"
+          style={{ fontSize: "clamp(3rem, 9vw, 7.5rem)" }}
         >
-          <a href="#projects">Δείτε τη Δουλειά μας</a>
-        </Button>
+          <span className="block text-white">Σχεδιασμός</span>
+          <span className="block gradient-text">&amp; Ανάπτυξη</span>
+          <span className="block text-white">Ψηφιακών</span>
+          <span className="block text-white/20">Εμπειριών.</span>
+        </h1>
+
+        {/* Divider + bottom row */}
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-16 items-start mt-10 pt-10 border-t border-white/6">
+          <p className="text-white/40 text-base leading-relaxed max-w-xs">
+            Full-stack development &amp; UI/UX design με 10+ χρόνια εμπειρίας.
+            React, Next.js, Flutter &amp; WordPress.
+          </p>
+          <div className="flex items-center gap-5">
+            <Button
+              asChild
+              className="gradient-bg hover:opacity-90 transition-opacity text-white font-semibold px-7 py-5 rounded-full text-sm tracking-wide shadow-lg hover:shadow-primary/30"
+            >
+              <a href="#projects">Δείτε τη Δουλειά μας</a>
+            </Button>
+            <a
+              href="#contact"
+              className="text-white/35 hover:text-white text-sm transition-colors duration-200"
+            >
+              Επικοινωνία →
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -242,3 +242,17 @@ html {
 .animate-morph {
   animation: morph 10s ease-in-out infinite;
 }
+
+/* Marquee for skills ticker */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-slow {
+  animation: marquee 35s linear infinite;
+}

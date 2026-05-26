@@ -1,12 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { ArrowUpRight } from "lucide-react";
 
 export interface ProjectCardProps {
   id: string;
@@ -30,55 +24,56 @@ export function ProjectCard({
   image,
 }: ProjectCardProps) {
   return (
-    <Link href={`/projects/${id}`}>
-      <Card className="bg-card border-border rounded-2xl overflow-hidden transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:border-primary/50 hover:shadow-2xl hover:shadow-primary/20 h-full">
-        <CardHeader className="p-0">
-          <div
-            className="w-full aspect-video flex items-center justify-center relative overflow-hidden"
-            style={{
-              background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)`,
-            }}
-          >
-            {image ? (
-              <Image
-                src={image}
-                alt={title}
-                fill
-                className="object-contain"
-              />
-            ) : (
-              <div className="w-[70%] h-[80%] bg-white rounded-lg shadow-xl" />
-            )}
-            {/* Hover overlay */}
-            <div className="absolute inset-0 bg-black/0 hover:bg-black/30 transition-all duration-300" />
+    <Link href={`/projects/${id}`} className="group block h-full">
+      <div className="bg-white/2 border border-white/6 rounded-2xl overflow-hidden h-full flex flex-col transition-all duration-300 hover:bg-white/4 hover:border-white/12 hover:-translate-y-1 hover:shadow-2xl hover:shadow-black/40">
+        {/* Image area — subtle gradient tint, no harsh fill */}
+        <div
+          className="w-full aspect-video relative overflow-hidden shrink-0"
+          style={{
+            background: `linear-gradient(135deg, ${gradientFrom}14 0%, ${gradientTo}14 100%)`,
+          }}
+        >
+          {image ? (
+            <Image
+              src={image}
+              alt={title}
+              fill
+              className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+            />
+          ) : (
+            <div className="absolute inset-6 bg-white/4 rounded-xl border border-white/5" />
+          )}
+        </div>
+
+        {/* Content */}
+        <div className="p-6 md:p-7 flex flex-col flex-1">
+          <div className="flex items-start justify-between gap-4 mb-3">
+            <span className="text-xs text-white/30 tracking-[0.15em] uppercase font-medium">
+              {tag}
+            </span>
+            <ArrowUpRight
+              size={15}
+              className="text-white/20 group-hover:text-white/60 transition-colors shrink-0 mt-0.5"
+            />
           </div>
-        </CardHeader>
-        <CardContent className="p-6 md:p-8">
-          <Badge
-            variant="secondary"
-            className="mb-3 bg-accent text-accent-foreground font-medium"
-          >
-            {tag}
-          </Badge>
-          <h3 className="text-xl md:text-2xl font-semibold mb-2">{title}</h3>
-          <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
+          <h3 className="text-lg md:text-xl font-semibold mb-2 leading-snug">
+            {title}
+          </h3>
+          <p className="text-white/40 text-sm leading-relaxed mb-5 flex-1">
             {description}
           </p>
-        </CardContent>
-        <CardFooter className="px-6 md:px-8 pb-6 md:pb-8 pt-0">
-          <div className="flex gap-2 flex-wrap">
+          <div className="flex gap-1.5 flex-wrap">
             {techStack.map((tech) => (
-              <Badge
+              <span
                 key={tech}
-                variant="outline"
-                className="bg-muted text-muted-foreground border-none text-xs md:text-sm"
+                className="text-xs text-white/30 bg-white/4 border border-white/6 px-2.5 py-1 rounded-full"
               >
                 {tech}
-              </Badge>
+              </span>
             ))}
           </div>
-        </CardFooter>
-      </Card>
+        </div>
+      </div>
     </Link>
   );
 }

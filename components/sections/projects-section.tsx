@@ -17,6 +17,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="py-16 md:py-24 px-[5%] max-w-7xl mx-auto">
       <SectionHeader
+        label="Portfolio"
         title="Επιλεγμένα Έργα"
         subtitle="Εξερευνήστε τις τελευταίες μου δουλειές σε διαφορετικές πλατφόρμες"
       />
