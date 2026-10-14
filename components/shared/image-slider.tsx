@@ -32,7 +32,7 @@ export function ImageSlider({ images, alt }: ImageSliderProps) {
     <div className="rounded-2xl overflow-hidden shadow-2xl aspect-video relative group bg-white/3">
       <Image
         src={images[currentIndex]}
-        alt={`${alt} - Image ${currentIndex + 1}`}
+        alt={`${alt} - Εικόνα ${currentIndex + 1}`}
         fill
         className="object-contain transition-opacity duration-300"
       />

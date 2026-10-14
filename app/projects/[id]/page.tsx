@@ -33,11 +33,15 @@ export async function generateMetadata({
   return {
     title: `${project.title} | mCubedDevLabs`,
     description: project.description,
+    alternates: { canonical: `/projects/${id}` },
     openGraph: {
       title: `${project.title} | mCubedDevLabs`,
       description: project.description,
       type: "article",
       locale: "el_GR",
+      url: `/projects/${id}`,
+      siteName: "mCubedDevLabs",
+      images: [project.images?.[0] ?? "/opengraph-image"],
     },
   };
 }
@@ -50,8 +54,26 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project.title,
+    description: project.description,
+    url: `https://mcubeddevlabs.gr/projects/${project.id}`,
+    image: project.images?.map((src) => `https://mcubeddevlabs.gr${src}`),
+    dateCreated: project.year,
+    keywords: project.techStack.join(", "),
+    inLanguage: "el-GR",
+    creator: { "@id": "https://mcubeddevlabs.gr/#person" },
+    isPartOf: { "@id": "https://mcubeddevlabs.gr/#website" },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       <main className="pt-20">
         {/* Hero Section */}

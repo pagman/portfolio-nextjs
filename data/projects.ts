@@ -20,7 +20,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "1",
+    id: "mcubed-tracker",
     title: "mCubed Tracker",
     description:
       "Εφαρμογή παρακολούθησης κατοικιδίων με GPS σε πραγματικό χρόνο, παρακολούθηση δραστηριότητας, geofencing και ημερολόγιο υγείας.",
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     liveUrl: "mcubed.app",
   },
   {
-    id: "2",
+    id: "telefarm-tracking",
     title: "Telefarm Tracking",
     description:
       "Εφαρμογή GPS παρακολούθησης κατοικιδίων και ζώων με τοποθεσία σε πραγματικό χρόνο, geofencing και παρακολούθηση δραστηριότητας.",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     liveUrl: "https://play.google.com/store/apps/details?id=io.mcubed.telecubed&hl=el",
   },
   {
-    id: "3",
+    id: "camel-study",
     title: "Camel Study",
     description:
       "Προσαρμοστική εφαρμογή χρονομέτρησης μελέτης με δυναμικό προγραμματισμό, τύπους συνεδριών και κινούμενη οπτική ανατροφοδότηση.",
@@ -147,7 +147,7 @@ export const projects: Project[] = [
     liveUrl: "https://github.com/pagman/camel_study",
   },
   {
-    id: "4",
+    id: "mcubed-manager",
     title: "MCubed Manager",
     description:
       "Πλατφόρμα διαχείρισης συσκευών και επικοινωνίας SMS για συσκευές IoT/GPS παρακολούθησης.",
@@ -188,7 +188,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: "5",
+    id: "habit-tracker",
     title: "Habit Tracker",
     description:
       "Όμορφη εφαρμογή παρακολούθησης συνηθειών με παρακολούθηση σερί, dashboard στατιστικών και προσαρμόσιμα χρώματα.",
@@ -229,7 +229,7 @@ export const projects: Project[] = [
     liveUrl: "https://habit-tracker-phi-hazel.vercel.app/",
   },
   {
-    id: "6",
+    id: "replog",
     title: "Replog",
     description:
       "Full-stack PWA παρακολούθησης γυμναστικής για καταγραφή προπονήσεων, παρακολούθηση προόδου και κοινοποίηση προγραμμάτων.",
@@ -272,7 +272,7 @@ export const projects: Project[] = [
     liveUrl: "https://replog-pi.vercel.app/",
   },
   {
-    id: "7",
+    id: "mcubed-dashboard",
     title: "MCubed Dashboard",
     description:
       "Dashboard διαχείρισης συσκευών και GPS παρακολούθησης με παρακολούθηση σε πραγματικό χρόνο, geofencing και αναλυτικά στοιχεία δραστηριότητας.",
@@ -315,7 +315,7 @@ export const projects: Project[] = [
     liveUrl: "https://mcubed.io",
   },
   {
-    id: "8",
+    id: "trip-cost-calculator",
     title: "Trip Cost Calculator",
     description:
       "Υπολογιστής κόστους ταξιδιού για την Ελλάδα με κατανάλωση καυσίμου, διόδια και διαδραστική χαρτογράφηση διαδρομής.",
@@ -354,7 +354,7 @@ export const projects: Project[] = [
     liveUrl: "https://trip-cost-calculator-psi.vercel.app/",
   },
   {
-    id: "9",
+    id: "capcap",
     title: "CapCap",
     description:
       "Ιστοσελίδα για το πιο αγαπημένο κατάστημα cupcakes και γλυκών της Ελλάδας με μενού, τοποθεσίες και υπηρεσίες catering.",
@@ -395,7 +395,7 @@ export const projects: Project[] = [
     liveUrl: "https://www.capcap.gr/",
   },
   {
-    id: "10",
+    id: "bubble-tea",
     title: "Bubble Tea",
     description:
       "Ιστοσελίδα για τη μεγαλύτερη αλυσίδα bubble tea της Ελλάδας με μενού, τοποθεσίες και πληροφορίες franchise.",
@@ -435,7 +435,7 @@ export const projects: Project[] = [
     liveUrl: "https://bubbletea.gr/",
   },
   {
-    id: "11",
+    id: "econest",
     title: "Econest",
     description:
       "E-commerce κατάστημα για προϊόντα ανακαίνισης σπιτιού συμπεριλαμβανομένων επίπλων, διακόσμησης και οικοδομικών υλικών.",
@@ -476,7 +476,7 @@ export const projects: Project[] = [
     liveUrl: "https://econestshop.gr/",
   },
   {
-    id: "12",
+    id: "golden-smile",
     title: "Golden Smile",
     description:
       "Επαγγελματική ιστοσελίδα οδοντιατρείου που παρουσιάζει οδοντιατρικές υπηρεσίες, ομάδα και κράτηση ραντεβού.",
@@ -517,7 +517,7 @@ export const projects: Project[] = [
     liveUrl: "https://goldensmile.gr/",
   },
   {
-    id: "13",
+    id: "greek-property-hunters",
     title: "Greek Property Hunters",
     description:
       "Πλατφόρμα συνδρομής για εύρεση ευκαιριών οικοπέδων με καλή σχέση ποιότητας-τιμής σε όλη την Ελλάδα με email ειδοποιήσεις.",
@@ -559,7 +559,7 @@ export const projects: Project[] = [
     liveUrl: "https://greekpropertyhunters.com/",
   },
   {
-    id: "14",
+    id: "hona-festival",
     title: "Hona Festival",
     description:
       "Ιστοσελίδα εκδήλωσης για πολιτιστικό φεστιβάλ στη Νάξο με online πώληση εισιτηρίων και πρόγραμμα εκδηλώσεων.",
@@ -601,7 +601,7 @@ export const projects: Project[] = [
     liveUrl: "https://honafestival.com/",
   },
   {
-    id: "15",
+    id: "ichnos-soap",
     title: "Ichnos Soap",
     description:
       "E-commerce ιστοσελίδα για χειροποίητα βιολογικά σαπούνια και φυσικά προϊόντα περιποίησης δέρματος.",
@@ -641,7 +641,7 @@ export const projects: Project[] = [
     liveUrl: "https://ichnossoap.gr",
   },
   {
-  id: "16",
+  id: "milianjo",
   title: "Milianjo",
   description:
     "WooCommerce e-commerce ιστοσελίδα για προϊόντα ομορφιάς με πλήρη ροή αγορών και checkout.",
@@ -683,7 +683,7 @@ export const projects: Project[] = [
   liveUrl: "https://milianjo.gr/"
 },
   {
-  id: "17",
+  id: "selene-luxury-rooms",
   title: "Selene Luxury Rooms",
   description:
     "WordPress ιστοσελίδα κρατήσεων με κρατήσεις δωματίων και συγχρονισμό ημερολογίου Airbnb.",
@@ -723,7 +723,7 @@ export const projects: Project[] = [
   // liveUrl: "https://example.com"
 },
   {
-  id: "18",
+  id: "velvore-transfers",
   title: "Velvore Transfers",
   description:
     "Προσαρμοσμένη WordPress επιχειρηματική ιστοσελίδα με δυναμικό υπολογιστή κόστους ταξιδιού και φόρμες κράτησης.",

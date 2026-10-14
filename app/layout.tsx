@@ -82,20 +82,6 @@ export const metadata: Metadata = {
   title: "mCubedDevLabs - Δημιουργικός Προγραμματιστής & Σχεδιαστής",
   description:
     "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
-  keywords: [
-    "προγραμματιστής",
-    "portfolio",
-    "ανάπτυξη ιστοσελίδων",
-    "κατασκευή ιστοσελίδων",
-    "εφαρμογές κινητών",
-    "web εφαρμογές",
-    "React",
-    "Next.js",
-    "Flutter",
-    "Ελλάδα",
-    "freelancer",
-    "developer Greece",
-  ],
   authors: [{ name: "Παναγιώτης Μάντας" }],
   creator: "Παναγιώτης Μάντας",
   publisher: "mCubedDevLabs",
@@ -124,9 +110,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://mcubeddevlabs.gr",
-    languages: {
-      "el-GR": "/",
-    },
   },
   category: "technology",
   icons: {
@@ -145,9 +128,9 @@ export default function RootLayout({
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-P7QKGFMQF5"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="beforeInteractive">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
