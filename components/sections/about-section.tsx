@@ -43,7 +43,7 @@ export function AboutSection() {
         {/* About text */}
         <div className="lg:pt-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8">
-            Full-Stack<br />Προγραμματιστής
+            Full-Stack{" "}<br />Προγραμματιστής
           </h2>
           <div className="space-y-4 text-white/40 text-base leading-relaxed">
             <p>

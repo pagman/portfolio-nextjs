@@ -30,11 +30,13 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
       locale: "el_GR",
       url,
       siteName: "mCubedDevLabs",
+      images: ["/opengraph-image"],
     },
     twitter: {
       card: "summary_large_image",
       title: service.metaTitle,
       description: service.description,
+      images: ["/opengraph-image"],
     },
   };
 }

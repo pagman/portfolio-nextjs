@@ -29,7 +29,7 @@ export function ProjectCard({
           {image ? (
             <Image
               src={image}
-              alt={title}
+              alt={`${title} – ${tag}: ${description}`}
               fill
               className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
             />
