@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Navbar } from "@/components/layout/navbar";
 import { ImageSlider } from "@/components/shared/image-slider";
-import { projects, getProjectById } from "@/data/projects";
+import { projects, getProjectById, getProjectSeoTitle } from "@/data/projects";
+import { siteUrl } from "@/lib/utils";
 import type { Metadata } from "next";
 
 interface ProjectPageProps {
@@ -30,18 +31,25 @@ export async function generateMetadata({
     };
   }
 
+  const title = getProjectSeoTitle(project);
+
+  // og:image comes from ./opengraph-image.tsx (PNG with width/height)
   return {
-    title: `${project.title} | mCubedDevLabs`,
+    title,
     description: project.description,
     alternates: { canonical: `/projects/${id}` },
     openGraph: {
-      title: `${project.title} | mCubedDevLabs`,
+      title,
       description: project.description,
       type: "article",
       locale: "el_GR",
       url: `/projects/${id}`,
       siteName: "mCubedDevLabs",
-      images: [project.images?.[0] ?? "/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: project.description,
     },
   };
 }
@@ -59,13 +67,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     "@type": "CreativeWork",
     name: project.title,
     description: project.description,
-    url: `https://mcubeddevlabs.gr/projects/${project.id}`,
-    image: project.images?.map((src) => `https://mcubeddevlabs.gr${src}`),
+    url: `${siteUrl}/projects/${project.id}`,
+    image: project.images?.map((src) => `${siteUrl}${src}`),
     dateCreated: project.year,
     keywords: project.techStack.join(", "),
     inLanguage: "el-GR",
-    creator: { "@id": "https://mcubeddevlabs.gr/#person" },
-    isPartOf: { "@id": "https://mcubeddevlabs.gr/#website" },
+    creator: { "@id": `${siteUrl}/#person` },
+    isPartOf: { "@id": `${siteUrl}/#website` },
   };
 
   return (
@@ -125,7 +133,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         <section className="px-[5%] -mt-16 relative z-20 max-w-5xl mx-auto">
           <ImageSlider
             images={project.images || []}
-            alt={project.title}
+            alts={project.imageAlts}
+            alt={`${project.title} – ${project.description}`}
           />
         </section>
 

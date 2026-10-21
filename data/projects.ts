@@ -14,6 +14,8 @@ export interface Project {
   year: string;
   role: string;
   images?: string[];
+  // Descriptive alt per image, same order as images
+  imageAlts?: string[];
   liveUrl?: string;
   githubUrl?: string;
 }
@@ -68,6 +70,16 @@ export const projects: Project[] = [
       "/images/projects/vivavets/vivavets_laptop_6.webp",
       "/images/projects/vivavets/vivavets_laptop_7.webp",
       "/images/projects/vivavets/vivavets_laptop_8.webp"
+    ],
+    imageAlts: [
+      "Αρχική σελίδα της πλατφόρμας τηλεκτηνιατρικής Vivavets με κουμπί κράτησης ραντεβού",
+      "Ενότητα «Πώς λειτουργεί» της Vivavets: κράτηση, βιντεοκλήση και φροντίδα σε τρία βήματα",
+      "Ενότητα άρθρων φροντίδας κατοικιδίων στην αρχική σελίδα της Vivavets",
+      "Αναζήτηση πιστοποιημένων κτηνιάτρων με φίλτρα είδους ζώου, διαθεσιμότητας και βαθμολογίας",
+      "Dashboard ιδιοκτήτη κατοικιδίων στη Vivavets με τα κατοικίδια και τα επόμενα ραντεβού",
+      "Σελίδα συχνών ερωτήσεων της πλατφόρμας Vivavets",
+      "Συχνές ερωτήσεις της Vivavets για κρατήσεις, ραντεβού και πληρωμές",
+      "Φόρμα επικοινωνίας της Vivavets με επιλογή θέματος υποστήριξης"
     ],
     liveUrl: "https://vivavets.gr/",
   },
@@ -824,3 +836,17 @@ export const filterTabs = ["Όλα", "Εφαρμογές Κινητών", "Web �
 export function getProjectById(id: string): Project | undefined {
   return projects.find((project) => project.id === id);
 }
+
+const categoryKeyword: Record<Project["category"], string> = {
+  "Εφαρμογές Κινητών": "Εφαρμογή Κινητού",
+  "Web Εφαρμογές": "Web Εφαρμογή",
+  "Ιστοσελίδες": "Κατασκευή Ιστοσελίδας",
+};
+
+// e.g. "Vivavets.gr – Web Εφαρμογή (Next.js) | mCubedDevLabs"
+export function getProjectSeoTitle(project: Project): string {
+  const kind =
+    project.tag === "E-commerce" ? "Κατασκευή Eshop" : categoryKeyword[project.category];
+  return `${project.title} – ${kind} (${project.techStack[0]}) | mCubedDevLabs`;
+}
+

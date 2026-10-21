@@ -1,8 +1,7 @@
 import { MetadataRoute } from "next";
+import { siteUrl } from "@/lib/utils";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://mcubeddevlabs.gr";
-
   return {
     rules: [
       {
@@ -11,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
+    sitemap: `${siteUrl}/sitemap.xml`,
+    host: siteUrl,
   };
 }

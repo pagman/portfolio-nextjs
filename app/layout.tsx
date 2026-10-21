@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import { siteUrl } from "@/lib/utils";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,75 +14,81 @@ const geistMono = Geist_Mono({
   subsets: ["latin", "latin-ext"],
 });
 
+const title = "Κατασκευή Ιστοσελίδων, Eshop & Εφαρμογών | mCubedDevLabs";
+const description =
+  "Κατασκευή ιστοσελίδων, eshop (WooCommerce), web εφαρμογών και εφαρμογών κινητών (Flutter). Full-stack development & UI/UX design με 10+ χρόνια εμπειρία.";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://mcubeddevlabs.gr/#website",
-      url: "https://mcubeddevlabs.gr",
+      "@id": `${siteUrl}/#website`,
+      url: siteUrl,
       name: "mCubedDevLabs",
-      description:
-        "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
+      description,
       inLanguage: "el-GR",
-      publisher: {
-        "@id": "https://mcubeddevlabs.gr/#person",
-      },
+      publisher: { "@id": `${siteUrl}/#organization` },
     },
     {
-      "@type": "Person",
-      "@id": "https://mcubeddevlabs.gr/#person",
-      name: "Παναγιώτης Μάντας",
-      alternateName: "Panagiotis Mantas",
-      url: "https://mcubeddevlabs.gr",
-      jobTitle: "Full-Stack Developer & UI/UX Designer",
-      worksFor: {
-        "@type": "Organization",
-        name: "mCubedDevLabs",
-      },
-      address: {
-        "@type": "PostalAddress",
-        addressCountry: "GR",
-        addressLocality: "Ελλάδα",
-      },
+      "@type": "ProfessionalService",
+      "@id": `${siteUrl}/#organization`,
+      name: "mCubedDevLabs",
+      url: siteUrl,
+      logo: `${siteUrl}/images/logo.webp`,
+      image: `${siteUrl}/opengraph-image`,
+      description,
+      email: "p.mantas@mcubed.io",
+      areaServed: { "@type": "Country", name: "Ελλάδα" },
+      address: { "@type": "PostalAddress", addressCountry: "GR" },
+      founder: { "@id": `${siteUrl}/#person` },
+      employee: [{ "@id": `${siteUrl}/#person` }, { "@id": `${siteUrl}/#maria` }],
       sameAs: [
         "https://github.com/pagman/",
         "https://www.linkedin.com/in/panagiotis-mantas-968ba1188/",
       ],
       knowsAbout: [
-        "React",
-        "Next.js",
-        "TypeScript",
+        "Κατασκευή ιστοσελίδων",
+        "Κατασκευή eshop",
+        "WooCommerce",
+        "Web εφαρμογές",
+        "Εφαρμογές κινητών",
         "Flutter",
-        "Mobile App Development",
-        "Web Development",
-        "WordPress",
+        "Next.js",
         "UI/UX Design",
       ],
     },
     {
-      "@type": "ProfilePage",
-      "@id": "https://mcubeddevlabs.gr/#profilepage",
-      url: "https://mcubeddevlabs.gr",
-      name: "Portfolio - Παναγιώτης Μάντας | mCubedDevLabs",
-      isPartOf: {
-        "@id": "https://mcubeddevlabs.gr/#website",
-      },
-      about: {
-        "@id": "https://mcubeddevlabs.gr/#person",
-      },
-      mainEntity: {
-        "@id": "https://mcubeddevlabs.gr/#person",
-      },
+      "@type": "Person",
+      "@id": `${siteUrl}/#person`,
+      name: "Παναγιώτης Μάντας",
+      alternateName: "Panagiotis Mantas",
+      url: siteUrl,
+      image: `${siteUrl}/images/me.webp`,
+      jobTitle: "Full-Stack Developer",
+      worksFor: { "@id": `${siteUrl}/#organization` },
+      sameAs: [
+        "https://github.com/pagman/",
+        "https://www.linkedin.com/in/panagiotis-mantas-968ba1188/",
+      ],
+      knowsAbout: ["React", "Next.js", "TypeScript", "Flutter", "WordPress"],
+    },
+    {
+      "@type": "Person",
+      "@id": `${siteUrl}/#maria`,
+      name: "Μαρία Μαντά",
+      image: `${siteUrl}/images/maria.webp`,
+      jobTitle: "UI/UX Designer",
+      worksFor: { "@id": `${siteUrl}/#organization` },
+      knowsAbout: ["UI/UX Design", "Figma", "Design Systems", "Accessibility"],
     },
   ],
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mcubeddevlabs.gr"),
-  title: "mCubedDevLabs - Δημιουργικός Προγραμματιστής & Σχεδιαστής",
-  description:
-    "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
   authors: [{ name: "Παναγιώτης Μάντας" }],
   creator: "Παναγιώτης Μάντας",
   publisher: "mCubedDevLabs",
@@ -94,22 +101,20 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "mCubedDevLabs - Σχεδιασμός και Ανάπτυξη Ψηφιακών Προϊόντων",
-    description:
-      "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
+    title,
+    description,
     type: "website",
     locale: "el_GR",
-    url: "https://mcubeddevlabs.gr",
+    url: "/",
     siteName: "mCubedDevLabs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Παναγιώτης Μάντας | mCubedDevLabs",
-    description:
-      "Σχεδιασμός και ανάπτυξη ιστοσελίδων, web εφαρμογών και mobile apps. Full-stack development & UI/UX design με 10+ χρόνια εμπειρία. Μετατρέπουμε ιδέες σε αξιόπιστα ψηφιακά προϊόντα με React, Next.js, Flutter & WordPress.",
+    title,
+    description,
   },
   alternates: {
-    canonical: "https://mcubeddevlabs.gr",
+    canonical: "/",
   },
   category: "technology",
   icons: {

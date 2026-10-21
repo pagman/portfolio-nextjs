@@ -19,7 +19,7 @@ export function ProjectsSection() {
       <SectionHeader
         label="Portfolio"
         title="Επιλεγμένα Έργα"
-        subtitle="Εξερευνήστε τις τελευταίες μου δουλειές σε διαφορετικές πλατφόρμες"
+        subtitle="Εξερευνήστε τις τελευταίες μας δουλειές σε διαφορετικές πλατφόρμες"
       />
 
       <FilterTabs
