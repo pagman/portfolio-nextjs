@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Navbar } from "@/components/layout/navbar";
 import { ImageSlider } from "@/components/shared/image-slider";
+import { ProjectCard } from "@/components/shared/project-card";
 import { projects, getProjectById, getProjectSeoTitle } from "@/data/projects";
 import { siteUrl } from "@/lib/utils";
 import type { Metadata } from "next";
@@ -61,6 +62,12 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   if (!project) {
     notFound();
   }
+
+  // Same category first, then same tag; keeps internal links between related work
+  const related = projects
+    .filter((p) => p.id !== project.id && p.category === project.category)
+    .sort((a, b) => Number(b.tag === project.tag) - Number(a.tag === project.tag))
+    .slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -245,6 +252,27 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             )}
           </div>
         </section>
+
+        {related.length > 0 && (
+          <section className="py-16 px-[5%] border-t border-border">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl font-bold mb-8">Παρόμοια Έργα</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {related.map((p) => (
+                  <ProjectCard
+                    key={p.id}
+                    id={p.id}
+                    title={p.title}
+                    description={p.description}
+                    tag={p.tag}
+                    techStack={p.techStack}
+                    image={p.images?.[0]}
+                  />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* More Projects Section */}
         <section className="py-16 px-[5%] border-t border-border">

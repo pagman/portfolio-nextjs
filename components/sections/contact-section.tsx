@@ -1,7 +1,7 @@
 import { Mail, Github, Linkedin } from "lucide-react";
 
 const socialLinks = [
-  { label: "Στείλτε Email", href: "mailto:p.mantas@mcubed.io", icon: Mail },
+  { label: "p.mantas@mcubed.io", href: "mailto:p.mantas@mcubed.io", icon: Mail },
   { label: "GitHub", href: "https://github.com/pagman/", icon: Github },
   {
     label: "LinkedIn",
@@ -34,8 +34,9 @@ export function ContactSection() {
                 <a
                   key={link.label}
                   href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  {...(link.href.startsWith("http")
+                    ? { target: "_blank", rel: "noopener noreferrer" }
+                    : {})}
                   className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-white/10 bg-white/3 text-white text-sm font-medium transition-all duration-200 hover:bg-white/8 hover:border-white/20 hover:-translate-y-0.5"
                 >
                   <Icon size={16} />
